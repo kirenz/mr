@@ -1,0 +1,864 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Histograms &#8212; Market Research</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'code/24-histograms-kernel-density-altair';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../files/course-overview.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../files/course-overview.html">
+                    Course overview
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../files/course-schedule.html">Course schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/course-syllabus.html">Course syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/course-support.html">Course support</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="code-overview.html">Code overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/programming-toolkit.html">Programming toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/programming-environment.html">Anaconda environment</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../weeks/weeks-overview.html">Overview</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week1.html">Week 1</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/kirenz/mr/blob/main/code/24-histograms-kernel-density-altair.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/kirenz/mr" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/kirenz/mr/issues/new?title=Issue%20on%20page%20%2Fcode/24-histograms-kernel-density-altair.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/code/24-histograms-kernel-density-altair.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Histograms</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kernel-density-estimate-plot">Kernel density estimate plot</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="histograms">
+<h1>Histograms<a class="headerlink" href="#histograms" title="Permalink to this heading">#</a></h1>
+<section id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">random</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
+<span class="n">alt</span><span class="o">.</span><span class="n">data_transformers</span><span class="o">.</span><span class="n">disable_max_rows</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DataTransformerRegistry.enable(&#39;default&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create data with normal distribution (n=1000)</span>
+<span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
+
+<span class="n">mean</span><span class="o">=</span> <span class="mi">11</span> 
+<span class="n">sd</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1000</span>
+
+<span class="n">interest_rates_normal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">sd</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interest_rates_normal</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([11.57197782,  9.91708488, 12.20272762,  8.2754783 , 11.56709843,
+       14.64239242, 12.38384658, 11.58984198,  8.7378272 ,  9.76036161,
+       14.45426257, 12.85052914, 13.40838775,  9.52800218, 14.44341824,
+       10.121608  ,  9.16647415, 12.25576156, 12.41775492, 11.58406413,
+        9.60761576,  8.3323999 ,  8.84843553,  8.56812567, 11.07512275,
+        9.53161669, 15.9703303 , 10.90900268, 10.36546502,  9.63073789,
+       13.85681944,  8.33987708, 10.1560069 , 10.7419587 , 12.05692278,
+        7.18388103, 11.71610121,  8.4039641 ,  8.83586778,  9.47351703,
+        9.61637068, 12.26198359,  9.81598941, 11.19161807,  9.27088582,
+       14.53714135, 12.74877639, 12.40905825, 11.94289948,  4.13510077,
+       12.65224632, 10.31209041, 10.88990541, 12.94350614,  7.76513652,
+       10.14124591, 10.23876177,  8.41594851,  9.44402409, 10.50769402,
+       11.40927915, 10.68426623, 10.50277484,  9.00577071, 12.92466186,
+        7.93343157, 10.24365632, 11.08268472, 11.79476561, 12.74585325,
+        9.85454434, 11.69385655, 10.73971055,  9.58634953, 11.29609007,
+        7.46865716, 10.57436188, 12.44896785, 11.68345233, 12.643586  ,
+        9.43003154,  9.36094057, 13.06863478,  7.12669106, 12.88805737,
+       10.82643177, 12.86845573, 13.78052648, 17.73149539, 11.76189665,
+       12.59689358, 10.52255933,  8.54066543, 12.85105983, 10.29518725,
+       12.64753213, 10.30573805, 10.27094446,  9.97868893,  8.65163315,
+        9.79896508,  7.05421214, 13.97518913, 11.18160467, 10.98378089,
+       11.8421962 , 11.18225665, 10.73111961,  9.46385966, 11.66084876,
+        7.65886692, 10.54289169, 14.57601251,  8.58409492, 14.78862288,
+       12.212726  , 10.79002738, 11.45400485,  9.07195275,  9.21993728,
+       10.31064857,  8.84906616,  7.69535086, 11.79205314, 11.61495044,
+        8.50940607, 10.68696976, 11.42377395, 16.8782313 , 11.35912023,
+       11.32401227,  7.34032434, 12.52224801, 11.24080393,  9.81064052,
+        9.0834822 , 12.72908822,  9.77411305, 12.24832097, 13.85162907,
+       12.1662896 , 13.91098774,  7.42150595,  9.94080994,  9.8671351 ,
+       10.51103383, 13.53189068, 12.74191101, 10.68395916,  9.56245695,
+        7.43921458, 13.61738513, 11.82660886, 10.01047383, 13.23270767,
+       12.66964365,  6.8170147 , 12.42551255, 10.67726161, 14.35725008,
+       12.9574048 , 12.86129502, 12.6484532 , 10.17269129,  9.63391721,
+       10.59875844, 11.31328065,  9.98339066, 13.5268355 , 12.56068851,
+       11.42189408, 14.78546301, 12.25302262,  7.94865381, 10.51434963,
+       10.43892451, 10.00833   , 10.48642591,  8.82647276, 11.75816233,
+       10.64166642,  9.19601635, 11.29560026, 11.01187352,  9.13709086,
+       11.9882162 , 11.12963834, 11.09529141, 14.12283929,  8.84113468,
+       13.30471376, 10.88252262,  6.75079395, 10.88552099, 10.8289547 ,
+        5.18025779, 11.17825805, 13.80645575,  6.45776476, 12.57113608,
+        7.9895309 , 11.7374758 , 12.46789527, 11.44852824, 10.15095043,
+        9.2180586 , 16.54969944, 12.14897822,  9.22761747, 11.73398274,
+       13.41322121, 13.03365321, 11.10746752, 11.56389636, 10.45965517,
+       10.0251979 , 13.84068382,  8.17290933, 11.30785233,  7.90374089,
+       11.22337455,  7.86996673,  7.71035005, 12.6887774 ,  9.36433071,
+       11.39389435,  9.07395864, 13.6899936 ,  8.41996214, 13.39237995,
+       10.92884055, 15.16869577, 14.26849343,  9.40218095, 12.99394099,
+       11.99869253,  6.42520713, 13.33540027, 15.22131506, 10.40733008,
+       11.72740121, 11.87111467, 12.07013197, 11.67323932, 13.05845964,
+       10.98085818,  9.53855643, 12.07788869,  7.96355947,  7.64272945,
+        9.10003006, 10.16106413,  8.43150906, 10.32403727, 13.03851286,
+       12.07147623, 11.29815746, 10.41070807, 13.44325177, 13.13967736,
+       12.13487746, 12.06164648,  9.38110565, 10.88305724, 10.27030535,
+       10.22472394,  9.27431084, 12.97857318, 11.319221  , 11.02013202,
+       11.99769611, 11.97439343, 10.49704947,  7.2008025 , 14.6870727 ,
+       13.42832461, 10.43247793,  9.64985185, 10.53129836, 11.46764411,
+       10.37140717, 11.98244592, 10.46073365, 10.71809965, 10.08676418,
+       11.38947279,  7.84869882, 10.37933132,  9.97649968, 10.25774196,
+        8.98086261, 12.55920885, 12.28401817,  9.96174495, 11.42308342,
+       10.25061272,  9.20940786, 11.61346489,  6.56394263, 11.31953284,
+        9.4339135 , 11.43015792, 11.31732395,  7.47717835, 15.36145031,
+       10.7843944 , 14.71259388, 13.6381954 , 11.32342004, 11.30898222,
+        9.87436202,  9.66471424, 10.35383818, 12.89700278, 12.41378908,
+       11.60027059, 14.163645  , 13.45763244, 12.84344345,  7.12084717,
+       11.19547126, 14.0895343 , 11.89321314,  9.11528845, 10.02103399,
+        8.80993825, 11.56501835, 10.40422526, 11.37658009, 12.23996631,
+       15.74469533,  9.86020286, 13.81414518,  7.59213611,  7.16517819,
+       11.9744765 ,  9.52637898, 10.80784038,  9.43915041, 12.26874724,
+       10.16637239, 10.57984034, 10.23988907, 11.02196943, 12.78498387,
+       11.44024108,  9.02416302, 10.99931218, 11.71419427, 11.73889593,
+       12.79827832, 11.17132028, 13.45623028, 10.92869167, 10.15225216,
+       10.51078572, 11.29274258, 10.59057914, 12.40841915,  9.54866416,
+        8.17492168,  8.64967974, 12.21833614, 12.19965603,  8.14767845,
+        8.80690504, 12.29686994, 13.01424566, 13.54879403, 11.87067247,
+       12.34304348, 14.66846338, 11.96115175, 11.10937153, 11.65271089,
+       13.16030435, 10.28481105,  9.91093033, 11.80560043,  7.44720033,
+       13.01111181,  9.91230461,  9.14918202,  8.42613883, 12.70030611,
+       13.30461107,  9.33062618,  7.42519934, 12.25426161,  9.31856837,
+        8.6491189 , 12.410466  ,  9.91237079,  8.30289901,  9.19588976,
+       12.80105089, 12.12311575, 11.21843189,  8.30553774, 11.39939389,
+       10.62452269, 10.41358877, 13.3630978 , 11.63240412, 14.67319231,
+       13.91355431, 11.07002884, 12.84247813, 11.80091211, 12.70950976,
+        7.87107282, 10.92499635, 10.33965223, 13.64694336, 12.8469324 ,
+       10.02679877,  9.76588067, 13.8962443 ,  9.2880238 , 10.17226465,
+       11.62936626, 12.53713076, 10.64404418, 12.89430588, 13.27344956,
+       11.40821299, 11.75593004, 10.56440796,  8.75231897,  8.02244284,
+       12.64979015, 11.94680195,  9.05882512, 10.4764767 , 11.11029526,
+       11.35896174,  9.04868128, 13.78768311, 10.91336503, 10.70812341,
+        8.73345234, 10.94787466,  7.51806917, 14.0572107 ,  9.56241999,
+       13.89768299, 11.52404425, 10.28268955, 11.07608147, 12.86224923,
+       14.01525877,  8.85882233, 12.4771818 , 11.41151882, 11.75786824,
+       11.58242743, 11.63382614,  9.42512835, 10.10282262, 10.18841763,
+        9.69001267, 11.38289051, 11.53032812, 10.48293592, 11.94086254,
+        9.98843679,  9.67796592, 14.27535277,  9.43729449, 11.24231643,
+       15.00122436,  8.95226497,  8.45537175, 10.8723389 ,  9.7667235 ,
+       11.2986677 , 12.1649191 , 10.29196664, 10.52012659,  8.5260284 ,
+       11.83882204,  9.07199308,  9.51845871, 15.34038603,  9.41379458,
+       12.23474852, 11.53033437,  9.85864553,  9.85709212, 11.62491636,
+       12.73021867, 10.27273296, 10.71487788, 13.16393571,  9.84370145,
+       13.50189228,  7.91906852,  8.60298858, 14.55330481, 12.22409464,
+       11.09438222, 12.2732067 , 10.52928151,  8.26575388, 10.41140292,
+       11.43083767, 14.21664629, 11.74551193, 10.82852712, 10.14578601,
+       11.51736552,  9.41144057, 13.19070705, 13.02755685, 14.7392411 ,
+       11.09656481,  8.36230759, 13.34346986,  9.15204257, 11.33207294,
+        9.42386649,  9.70907012,  8.9989411 , 10.25318479,  8.47316461,
+        9.79602517, 12.14878597,  7.08929475,  8.80170614, 10.75106027,
+       12.22070046,  8.57419164, 11.97641608, 14.59478395,  7.95005521,
+       10.63756258,  8.94122559, 10.79387392, 10.30473401,  9.27718417,
+       12.62324192, 11.61750929,  9.85119457,  8.75903447, 10.0893633 ,
+        8.26815081,  8.64881234, 15.26828405, 11.91086666,  9.74804145,
+       11.67804466, 13.09742923, 11.42505075, 11.62908554, 13.67608241,
+       10.36462698,  7.37185774, 13.68500556,  7.78305591, 10.69192187,
+       10.11848236, 12.00766205, 12.57255243, 15.04950803, 11.75321844,
+        8.79584754, 13.026819  , 10.22740703, 13.39895905, 11.37247224,
+       12.02065155, 14.26081179, 12.68398454, 11.38706872,  8.62604432,
+       10.92029654, 11.95969497, 10.74326808, 13.66361034, 14.1917261 ,
+       12.2707213 , 16.50794481,  9.879979  , 11.86691723,  6.84735163,
+        9.68618021,  5.87687218,  9.39428651,  8.41998887, 10.81190325,
+       10.70481356, 10.987567  , 10.71348866, 12.19982817, 12.81234786,
+        9.40702076, 12.53519598, 11.18219548, 11.19568861, 10.16543304,
+       12.04431038,  7.14950073, 10.84672376, 14.40255308, 12.3407983 ,
+       10.30521602, 10.79094883, 11.21946704, 11.40496066,  9.93540023,
+        9.04294468,  8.47947614, 13.17681963, 14.53424561, 12.14433151,
+       12.53945729, 11.99605059, 13.33519956,  8.18755258, 11.54662936,
+       10.91252769, 13.55873287, 12.02410484, 12.45534401, 12.16181615,
+       11.43476969, 12.86638858, 11.51012503, 14.36987392, 13.20091173,
+       10.64547759, 10.01829424, 10.54481206,  8.41947379, 11.78693161,
+        8.80245362, 12.06426228,  8.80872855, 11.47007793, 14.30062225,
+       11.03528315, 14.00433356, 13.21216829, 13.12448472, 10.59508294,
+        8.42980285, 10.20396289, 13.24803192,  7.57026434,  9.90022698,
+       15.63853838, 13.05559493, 12.21322519, 14.46431337,  7.2216191 ,
+       15.25301351,  7.83121707,  8.39927819, 14.20544093,  8.78556502,
+        9.50105498,  8.14189482, 12.98057554, 12.12203266, 12.44747035,
+       11.79878168, 13.53586715,  5.53404022,  9.87264282,  8.64571572,
+       13.93515574, 11.62778575, 11.47208253, 10.68682456, 10.84776841,
+       10.20683781, 10.45929113, 10.18271439, 13.40570462, 10.36471996,
+        9.38394787,  9.52734299, 11.93479062, 12.61253956, 14.65641262,
+       10.64396121, 13.8293614 ,  9.10153062,  9.35052608,  9.92636543,
+       10.39033407,  9.88177103,  9.61190434,  6.94558248, 13.90841631,
+        8.71051984,  9.74706894,  9.98210795,  8.88941016, 11.05049899,
+       12.80978398, 11.87684872,  8.43357471, 12.62804515, 10.27763391,
+        9.51853327, 11.57324359,  6.36190523, 11.97532851, 11.71452009,
+        7.1206373 , 13.05595562,  9.8236999 , 10.63623274, 11.70357617,
+        9.01696886, 11.74436257,  8.92655701,  7.52504802, 10.4944465 ,
+       10.03072863, 11.82682773, 10.46870848, 12.73321791,  9.16406617,
+        7.15864687, 11.06591604, 12.17327359, 11.87284201, 14.39358774,
+       10.69214869, 10.0048352 ,  5.45058495,  7.40416241,  9.35112481,
+       11.40992485, 13.69010952, 12.71943925, 10.97904213, 10.74920238,
+        9.13693327, 11.73498258,  9.03161257, 10.96062407, 10.08143938,
+       10.61968593,  7.68019637,  9.72240753, 11.25702074,  9.03518085,
+       10.73566833,  9.40222497, 10.92565037, 13.8829608 , 11.57253707,
+       10.91192461,  9.12129383, 12.09408276, 12.82747119,  9.99687624,
+        7.44370567,  6.42480456, 10.21878887, 11.94610877, 15.63012287,
+       10.99391427, 12.50903356,  6.85902786, 11.54343453, 13.39267333,
+       16.3957059 , 11.94501873, 12.99935714, 10.40499595, 12.70325265,
+       12.71425525, 10.63032142, 11.42981011, 10.95089655,  9.69964174,
+        9.99456322, 15.35604342,  8.86034785,  8.66424372,  7.42515627,
+       11.98753681,  9.86613552, 12.5203778 ,  7.07268653, 10.97222992,
+       10.28201695,  8.38074318,  7.91174198,  9.30560719, 11.36238625,
+        9.16250261, 10.21634478, 12.52172242,  9.21531889, 10.47750743,
+       10.3685989 , 10.36276951,  8.48629888,  9.27070917,  9.80986152,
+        8.02149014, 11.46685931, 10.09773065, 12.46076176, 10.95644204,
+        9.70373574, 12.05972431,  9.11580271, 13.10940526, 13.30579047,
+       12.00777483, 15.25081232, 13.44524007, 10.65535266, 13.71887277,
+        9.41781442,  9.9744917 , 11.72012145, 11.43643805, 12.18273526,
+       12.41009949, 10.43394785, 11.44057866, 13.19078393, 10.42929598,
+        9.86567882,  9.77772321,  8.26864438, 11.08516432, 12.03754543,
+       12.92522482, 11.65304723,  9.55805328, 11.42129057, 12.48387016,
+       10.04173121, 12.60742439, 12.98581945,  9.24161355, 12.67668523,
+       13.42647603, 13.90399339,  5.72995125, 11.86031953, 10.65926518,
+        9.76074669, 12.76262557, 12.65970662, 12.13718687, 14.23048395,
+       11.67059515, 10.69562097,  9.18607664,  5.56683817, 10.04560013,
+       10.55878126, 12.57983819, 13.13659339, 11.28048559, 12.54334945,
+        9.87353819, 11.04278881,  6.73227179, 10.98251848, 12.09604571,
+        9.23927714, 10.69879177,  9.23950456, 14.44491964,  9.03797664,
+       10.71925445, 11.71122369, 10.36828775,  8.95032637, 10.15966439,
+       13.89911047, 10.72974777, 14.65330336, 11.1083071 , 11.17074868,
+       10.62064369, 10.43506479,  7.10740742,  8.99340173, 14.40295712,
+       10.82071268,  9.85577267, 11.7345978 ,  8.20395068, 14.57342332,
+       13.48146724, 15.11519864, 11.54028801, 13.51051455,  7.14621701,
+       13.09368427,  9.27317357,  7.89171539, 12.45288182,  7.76837552,
+       11.73080003, 15.19247012,  6.86300775, 12.14741698, 12.31976646,
+        9.57062265,  9.38491636, 14.11035045, 12.46338364, 11.46538114,
+       11.83361201, 11.57452483,  9.27486208, 10.51977663, 13.74207885,
+       12.41321326, 13.9109041 , 10.38201337, 13.19804706,  8.53941613,
+       12.96569225, 10.12160711, 10.398349  , 12.84323348, 12.86566189,
+       10.68045834, 10.65399485, 10.71639263, 11.55283094,  8.52285318,
+       10.62879399,  8.52690351, 11.68096877, 12.16791633,  9.09602446,
+        8.53233409, 10.69086147,  8.765088  , 12.73240506, 13.26723906,
+       11.36505342, 12.21333475, 15.19267368, 10.64382712, 10.31396242,
+        8.87089187, 13.86571066, 11.27217648, 12.82750003, 10.39887778,
+        9.94057785,  8.22949577,  7.71588588, 13.08493327,  8.36319286,
+       12.07005423,  8.09047869, 12.76537734, 11.01545085, 12.32743313,
+        8.08700532, 10.79382007,  9.73438035,  8.77494339, 13.71294907,
+        9.05979014, 11.40187925, 11.03666267,  9.34257942, 11.32810167,
+       10.45852358, 14.67121373, 11.9427276 , 13.16050495, 10.7378113 ,
+        9.85234349,  9.62654176, 10.36809359, 15.40132342, 14.54409774,
+       15.51170848, 11.49788   , 11.95421455, 11.89467616, 12.10856085,
+        8.72066762, 10.61008764, 10.37622227, 15.29086907, 12.56930784,
+        8.02192537, 13.15312302, 10.13537748,  8.79433059, 11.77356915])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_normal</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;interest_rate&quot;</span><span class="p">:</span> <span class="n">___</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df_normal</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;interest_rate&quot;</span><span class="p">:</span> <span class="n">___</span><span class="p">})</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/pandas/core/frame.py:664,</span> in <span class="ni">DataFrame.__init__</span><span class="nt">(self, data, index, columns, dtype, copy)</span>
+<span class="g g-Whitespace">    </span><span class="mi">658</span>     <span class="n">mgr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_init_mgr</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">659</span>         <span class="n">data</span><span class="p">,</span> <span class="n">axes</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;index&quot;</span><span class="p">:</span> <span class="n">index</span><span class="p">,</span> <span class="s2">&quot;columns&quot;</span><span class="p">:</span> <span class="n">columns</span><span class="p">},</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="n">copy</span>
+<span class="g g-Whitespace">    </span><span class="mi">660</span>     <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">662</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">663</span>     <span class="c1"># GH#38939 de facto copy defaults to False only in non-dict cases</span>
+<span class="ne">--&gt; </span><span class="mi">664</span>     <span class="n">mgr</span> <span class="o">=</span> <span class="n">dict_to_mgr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">columns</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">,</span> <span class="n">typ</span><span class="o">=</span><span class="n">manager</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">665</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">ma</span><span class="o">.</span><span class="n">MaskedArray</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">666</span>     <span class="kn">import</span> <span class="nn">numpy.ma.mrecords</span> <span class="k">as</span> <span class="nn">mrecords</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/pandas/core/internals/construction.py:493,</span> in <span class="ni">dict_to_mgr</span><span class="nt">(data, index, columns, dtype, typ, copy)</span>
+<span class="g g-Whitespace">    </span><span class="mi">489</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">490</span>         <span class="c1"># dtype check to exclude e.g. range objects, scalars</span>
+<span class="g g-Whitespace">    </span><span class="mi">491</span>         <span class="n">arrays</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;dtype&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">arrays</span><span class="p">]</span>
+<span class="ne">--&gt; </span><span class="mi">493</span> <span class="k">return</span> <span class="n">arrays_to_mgr</span><span class="p">(</span><span class="n">arrays</span><span class="p">,</span> <span class="n">columns</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">typ</span><span class="o">=</span><span class="n">typ</span><span class="p">,</span> <span class="n">consolidate</span><span class="o">=</span><span class="n">copy</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/pandas/core/internals/construction.py:118,</span> in <span class="ni">arrays_to_mgr</span><span class="nt">(arrays, columns, index, dtype, verify_integrity, typ, consolidate)</span>
+<span class="g g-Whitespace">    </span><span class="mi">115</span> <span class="k">if</span> <span class="n">verify_integrity</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">116</span>     <span class="c1"># figure out the index, if necessary</span>
+<span class="g g-Whitespace">    </span><span class="mi">117</span>     <span class="k">if</span> <span class="n">index</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">118</span>         <span class="n">index</span> <span class="o">=</span> <span class="n">_extract_index</span><span class="p">(</span><span class="n">arrays</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">119</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">120</span>         <span class="n">index</span> <span class="o">=</span> <span class="n">ensure_index</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/pandas/core/internals/construction.py:656,</span> in <span class="ni">_extract_index</span><span class="nt">(data)</span>
+<span class="g g-Whitespace">    </span><span class="mi">653</span>         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Per-column arrays must each be 1-dimensional&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">655</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">indexes</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">raw_lengths</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">656</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;If using all scalar values, you must pass an index&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">658</span> <span class="k">elif</span> <span class="n">have_series</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">659</span>     <span class="n">index</span> <span class="o">=</span> <span class="n">union_indexes</span><span class="p">(</span><span class="n">indexes</span><span class="p">)</span>
+
+<span class="ne">ValueError</span>: If using all scalar values, you must pass an index
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="analysis">
+<h2>Analysis<a class="headerlink" href="#analysis" title="Permalink to this heading">#</a></h2>
+<section id="histogram">
+<h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Histogram </span>
+<span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">___</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;interest_rate&quot;</span><span class="p">,</span> 
+            <span class="nb">bin</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;___&#39;</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="kernel-density-estimate-plot">
+<h3>Kernel density estimate plot<a class="headerlink" href="#kernel-density-estimate-plot" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span> <span class="c1"># Kernel density estimate (KDE) plot</span>
+<span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df_normal</span><span class="p">)</span><span class="o">.</span><span class="n">transform_density</span><span class="p">(</span>
+    <span class="s1">&#39;interest_rate&#39;</span><span class="p">,</span>
+    <span class="n">as_</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;interest_rate&#39;</span><span class="p">,</span> <span class="s1">&#39;density&#39;</span><span class="p">],</span>
+<span class="p">)</span><span class="o">.</span><span class="n">mark_area</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;interest_rate:Q&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;density:Q&#39;</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./code"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kernel-density-estimate-plot">Kernel density estimate plot</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jan Kirenz
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

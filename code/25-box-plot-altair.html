@@ -1,0 +1,689 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Boxplot &#8212; Market Research</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'code/25-box-plot-altair';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../files/course-overview.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../files/course-overview.html">
+                    Course overview
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../files/course-schedule.html">Course schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/course-syllabus.html">Course syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/course-support.html">Course support</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="code-overview.html">Code overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/programming-toolkit.html">Programming toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/programming-environment.html">Anaconda environment</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../weeks/weeks-overview.html">Overview</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week1.html">Week 1</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/kirenz/mr/blob/main/code/25-box-plot-altair.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/kirenz/mr" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/kirenz/mr/issues/new?title=Issue%20on%20page%20%2Fcode/25-box-plot-altair.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/code/25-box-plot-altair.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Boxplot</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Boxplot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram-and-boxplot">Histogram and boxplot</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="boxplot">
+<h1>Boxplot<a class="headerlink" href="#boxplot" title="Permalink to this heading">#</a></h1>
+<section id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
+<span class="n">alt</span><span class="o">.</span><span class="n">data_transformers</span><span class="o">.</span><span class="n">disable_max_rows</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DataTransformerRegistry.enable(&#39;default&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ROOT</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/kirenz/datasets/master/&quot;</span>
+<span class="n">DATA</span> <span class="o">=</span> <span class="s2">&quot;loan50.csv&quot;</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">ROOT</span> <span class="o">+</span> <span class="n">DATA</span><span class="p">)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;interest_rate&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;interest_rate&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;int64&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="analysis">
+<h2>Analysis<a class="headerlink" href="#analysis" title="Permalink to this heading">#</a></h2>
+<section id="histogram">
+<h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Histogram </span>
+<span class="n">hist</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;interest_rate:Q&quot;</span><span class="p">,</span> 
+            <span class="nb">bin</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">BinParams</span><span class="p">(</span><span class="n">maxbins</span><span class="o">=</span><span class="mi">20</span><span class="p">),</span> 
+            <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">zero</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;count()&#39;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">hist</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="altair-viz-8ec3dbd51dc64e09b2aa1e0d75f019f8"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-8ec3dbd51dc64e09b2aa1e0d75f019f8") {
+      outputDiv = document.getElementById("altair-viz-8ec3dbd51dc64e09b2aa1e0d75f019f8");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.17.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "4.17.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-b111a340d3324dda9c739e686cf6be3e"}, "mark": "bar", "encoding": {"x": {"bin": {"maxbins": 20}, "field": "interest_rate", "scale": {"zero": true}, "type": "quantitative"}, "y": {"aggregate": "count", "type": "quantitative"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-b111a340d3324dda9c739e686cf6be3e": [{"state": "NJ", "emp_length": 3.0, "term": 60, "homeownership": "rent", "annual_income": 59000, "verified_income": "Not Verified", "debt_to_income": 0.5575254237288135, "total_credit_limit": 95131, "total_credit_utilized": 32894, "num_cc_carrying_balance": 8, "loan_purpose": "debt_consolidation", "loan_amount": 22000, "grade": "B", "interest_rate": 10, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 59000}, {"state": "CA", "emp_length": 10.0, "term": 36, "homeownership": "rent", "annual_income": 60000, "verified_income": "Not Verified", "debt_to_income": 1.3056833333333333, "total_credit_limit": 51929, "total_credit_utilized": 78341, "num_cc_carrying_balance": 2, "loan_purpose": "credit_card", "loan_amount": 6000, "grade": "B", "interest_rate": 9, "public_record_bankrupt": 1, "loan_status": "Current", "has_second_income": false, "total_income": 60000}, {"state": "SC", "emp_length": null, "term": 36, "homeownership": "mortgage", "annual_income": 75000, "verified_income": "Verified", "debt_to_income": 1.05628, "total_credit_limit": 301373, "total_credit_utilized": 79221, "num_cc_carrying_balance": 14, "loan_purpose": "debt_consolidation", "loan_amount": 25000, "grade": "E", "interest_rate": 26, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 75000}, {"state": "CA", "emp_length": 0.0, "term": 36, "homeownership": "rent", "annual_income": 75000, "verified_income": "Not Verified", "debt_to_income": 0.5743466666666667, "total_credit_limit": 59890, "total_credit_utilized": 43076, "num_cc_carrying_balance": 10, "loan_purpose": "credit_card", "loan_amount": 6000, "grade": "B", "interest_rate": 9, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 75000}, {"state": "OH", "emp_length": 4.0, "term": 60, "homeownership": "mortgage", "annual_income": 254000, "verified_income": "Not Verified", "debt_to_income": 0.2381496062992125, "total_credit_limit": 422619, "total_credit_utilized": 60490, "num_cc_carrying_balance": 2, "loan_purpose": "home_improvement", "loan_amount": 25000, "grade": "B", "interest_rate": 9, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 254000}, {"state": "IN", "emp_length": 6.0, "term": 36, "homeownership": "mortgage", "annual_income": 67000, "verified_income": "Source Verified", "debt_to_income": 1.077044776119403, "total_credit_limit": 349825, "total_credit_utilized": 72162, "num_cc_carrying_balance": 4, "loan_purpose": "home_improvement", "loan_amount": 6400, "grade": "B", "interest_rate": 9, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 67000}, {"state": "NY", "emp_length": 2.0, "term": 36, "homeownership": "rent", "annual_income": 28800, "verified_income": "Source Verified", "debt_to_income": 0.0997222222222222, "total_credit_limit": 15980, "total_credit_utilized": 2872, "num_cc_carrying_balance": 1, "loan_purpose": "debt_consolidation", "loan_amount": 3000, "grade": "D", "interest_rate": 17, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 28800}, {"state": "MO", "emp_length": 10.0, "term": 36, "homeownership": "mortgage", "annual_income": 80000, "verified_income": "Not Verified", "debt_to_income": 0.3509125, "total_credit_limit": 258439, "total_credit_utilized": 28073, "num_cc_carrying_balance": 3, "loan_purpose": "credit_card", "loan_amount": 14500, "grade": "A", "interest_rate": 6, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 80000}, {"state": "FL", "emp_length": 6.0, "term": 60, "homeownership": "rent", "annual_income": 34000, "verified_income": "Not Verified", "debt_to_income": 0.6975, "total_credit_limit": 87705, "total_credit_utilized": 23715, "num_cc_carrying_balance": 10, "loan_purpose": "credit_card", "loan_amount": 10000, "grade": "A", "interest_rate": 7, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 34000}, {"state": "FL", "emp_length": 3.0, "term": 60, "homeownership": "mortgage", "annual_income": 80000, "verified_income": "Source Verified", "debt_to_income": 0.1668541666666666, "total_credit_limit": 330394, "total_credit_utilized": 32036, "num_cc_carrying_balance": 4, "loan_purpose": "debt_consolidation", "loan_amount": 18500, "grade": "C", "interest_rate": 12, "public_record_bankrupt": 1, "loan_status": "Current", "has_second_income": true, "total_income": 192000}, {"state": "MD", "emp_length": 8.0, "term": 36, "homeownership": "rent", "annual_income": 73000, "verified_income": "Source Verified", "debt_to_income": 0.4143287671232876, "total_credit_limit": 36182, "total_credit_utilized": 30246, "num_cc_carrying_balance": 3, "loan_purpose": "debt_consolidation", "loan_amount": 17000, "grade": "D", "interest_rate": 17, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 73000}, {"state": "HI", "emp_length": 10.0, "term": 36, "homeownership": "mortgage", "annual_income": 120000, "verified_income": "Not Verified", "debt_to_income": 0.7989083333333333, "total_credit_limit": 452712, "total_credit_utilized": 95869, "num_cc_carrying_balance": 4, "loan_purpose": "credit_card", "loan_amount": 12000, "grade": "A", "interest_rate": 5, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 120000}, {"state": "CT", "emp_length": 10.0, "term": 36, "homeownership": "rent", "annual_income": 100000, "verified_income": "Source Verified", "debt_to_income": 0.27809, "total_credit_limit": 74805, "total_credit_utilized": 27809, "num_cc_carrying_balance": 3, "loan_purpose": "credit_card", "loan_amount": 16000, "grade": "A", "interest_rate": 7, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 100000}, {"state": "NE", "emp_length": 2.0, "term": 36, "homeownership": "mortgage", "annual_income": 105000, "verified_income": "Not Verified", "debt_to_income": 0.2681904761904762, "total_credit_limit": 279386, "total_credit_utilized": 28160, "num_cc_carrying_balance": 2, "loan_purpose": "home_improvement", "loan_amount": 16500, "grade": "A", "interest_rate": 5, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 105000}, {"state": "CA", "emp_length": 5.0, "term": 36, "homeownership": "rent", "annual_income": 34000, "verified_income": "Not Verified", "debt_to_income": 0.6292941176470588, "total_credit_limit": 33038, "total_credit_utilized": 21396, "num_cc_carrying_balance": 3, "loan_purpose": "debt_consolidation", "loan_amount": 3000, "grade": "A", "interest_rate": 7, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 34000}, {"state": "TX", "emp_length": 2.0, "term": 60, "homeownership": "mortgage", "annual_income": 98000, "verified_income": "Verified", "debt_to_income": 1.1071020408163266, "total_credit_limit": 319551, "total_credit_utilized": 108496, "num_cc_carrying_balance": 6, "loan_purpose": "credit_card", "loan_amount": 29400, "grade": "E", "interest_rate": 24, "public_record_bankrupt": 0, "loan_status": "Fully Paid", "has_second_income": false, "total_income": 98000}, {"state": "HI", "emp_length": 5.0, "term": 60, "homeownership": "rent", "annual_income": 68700, "verified_income": "Source Verified", "debt_to_income": 1.4995487627365356, "total_credit_limit": 119325, "total_credit_utilized": 103019, "num_cc_carrying_balance": 5, "loan_purpose": "debt_consolidation", "loan_amount": 13500, "grade": "D", "interest_rate": 18, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 68700}, {"state": "CA", "emp_length": 3.0, "term": 60, "homeownership": "rent", "annual_income": 43000, "verified_income": "Source Verified", "debt_to_income": 0.1546527777777777, "total_credit_limit": 60693, "total_credit_utilized": 22270, "num_cc_carrying_balance": 4, "loan_purpose": "debt_consolidation", "loan_amount": 18200, "grade": "B", "interest_rate": 10, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": true, "total_income": 144000}, {"state": "CA", "emp_length": 3.0, "term": 36, "homeownership": "rent", "annual_income": 100000, "verified_income": "Source Verified", "debt_to_income": 0.13823, "total_credit_limit": 69100, "total_credit_utilized": 13823, "num_cc_carrying_balance": 5, "loan_purpose": "other", "loan_amount": 6000, "grade": "A", "interest_rate": 7, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 100000}, {"state": "FL", "emp_length": 10.0, "term": 60, "homeownership": "mortgage", "annual_income": 76000, "verified_income": "Source Verified", "debt_to_income": 0.5898157894736842, "total_credit_limit": 249700, "total_credit_utilized": 44826, "num_cc_carrying_balance": 10, "loan_purpose": "debt_consolidation", "loan_amount": 18000, "grade": "D", "interest_rate": 19, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 76000}, {"state": "MS", "emp_length": 10.0, "term": 36, "homeownership": "mortgage", "annual_income": 80000, "verified_income": "Verified", "debt_to_income": 0.7373059317634845, "total_credit_limit": 136046, "total_credit_utilized": 124994, "num_cc_carrying_balance": 1, "loan_purpose": "car", "loan_amount": 5000, "grade": "C", "interest_rate": 14, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": true, "total_income": 169528}, {"state": "WI", "emp_length": 10.0, "term": 60, "homeownership": "mortgage", "annual_income": 50000, "verified_income": "Verified", "debt_to_income": 0.5234166666666666, "total_credit_limit": 375828, "total_credit_utilized": 87934, "num_cc_carrying_balance": 11, "loan_purpose": "debt_consolidation", "loan_amount": 40000, "grade": "D", "interest_rate": 20, "public_record_bankrupt": 0, "loan_status": "Fully Paid", "has_second_income": true, "total_income": 168000}, {"state": "WV", "emp_length": 0.0, "term": 36, "homeownership": "mortgage", "annual_income": 80000, "verified_income": "Not Verified", "debt_to_income": 0.7045375, "total_credit_limit": 197299, "total_credit_utilized": 56363, "num_cc_carrying_balance": 6, "loan_purpose": "debt_consolidation", "loan_amount": 4500, "grade": "B", "interest_rate": 9, "public_record_bankrupt": 0, "loan_status": "Fully Paid", "has_second_income": false, "total_income": 80000}, {"state": "CA", "emp_length": 1.0, "term": 36, "homeownership": "rent", "annual_income": 185000, "verified_income": "Not Verified", "debt_to_income": 0.2546756756756757, "total_credit_limit": 102500, "total_credit_utilized": 47115, "num_cc_carrying_balance": 2, "loan_purpose": "credit_card", "loan_amount": 15000, "grade": "B", "interest_rate": 9, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 185000}, {"state": "NJ", "emp_length": 5.0, "term": 60, "homeownership": "mortgage", "annual_income": 42000, "verified_income": "Source Verified", "debt_to_income": 0.0866666666666666, "total_credit_limit": 64800, "total_credit_utilized": 3640, "num_cc_carrying_balance": 5, "loan_purpose": "house", "loan_amount": 20000, "grade": "B", "interest_rate": 10, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 42000}, {"state": "MA", "emp_length": 2.0, "term": 36, "homeownership": "rent", "annual_income": 100000, "verified_income": "Verified", "debt_to_income": 0.3281962962962963, "total_credit_limit": 144700, "total_credit_utilized": 88613, "num_cc_carrying_balance": 4, "loan_purpose": "small_business", "loan_amount": 20000, "grade": "A", "interest_rate": 5, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": true, "total_income": 270000}, {"state": "TX", "emp_length": 5.0, "term": 36, "homeownership": "mortgage", "annual_income": 65000, "verified_income": "Not Verified", "debt_to_income": 0.2427384615384615, "total_credit_limit": 256974, "total_credit_utilized": 15778, "num_cc_carrying_balance": 7, "loan_purpose": "debt_consolidation", "loan_amount": 10000, "grade": "A", "interest_rate": 6, "public_record_bankrupt": 0, "loan_status": "Fully Paid", "has_second_income": false, "total_income": 65000}, {"state": "IN", "emp_length": 5.0, "term": 36, "homeownership": "own", "annual_income": 45000, "verified_income": "Not Verified", "debt_to_income": 0.1573111111111111, "total_credit_limit": 121323, "total_credit_utilized": 7079, "num_cc_carrying_balance": 4, "loan_purpose": "debt_consolidation", "loan_amount": 9000, "grade": "C", "interest_rate": 15, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 45000}, {"state": "RI", "emp_length": 10.0, "term": 60, "homeownership": "mortgage", "annual_income": 245000, "verified_income": "Verified", "debt_to_income": 0.1673632653061224, "total_credit_limit": 495163, "total_credit_utilized": 41004, "num_cc_carrying_balance": 6, "loan_purpose": "credit_card", "loan_amount": 35000, "grade": "B", "interest_rate": 11, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 245000}, {"state": "TX", "emp_length": 0.0, "term": 36, "homeownership": "mortgage", "annual_income": 50000, "verified_income": "Source Verified", "debt_to_income": 0.6396770833333333, "total_credit_limit": 203326, "total_credit_utilized": 122818, "num_cc_carrying_balance": 4, "loan_purpose": "debt_consolidation", "loan_amount": 40000, "grade": "C", "interest_rate": 12, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": true, "total_income": 192000}, {"state": "VA", "emp_length": 0.0, "term": 36, "homeownership": "rent", "annual_income": 116000, "verified_income": "Source Verified", "debt_to_income": 0.584396551724138, "total_credit_limit": 446850, "total_credit_utilized": 67790, "num_cc_carrying_balance": 7, "loan_purpose": "debt_consolidation", "loan_amount": 13125, "grade": "B", "interest_rate": 10, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 116000}, {"state": "NV", "emp_length": 5.0, "term": 36, "homeownership": "mortgage", "annual_income": 30000, "verified_income": "Not Verified", "debt_to_income": 0.5120089285714285, "total_credit_limit": 190832, "total_credit_utilized": 57345, "num_cc_carrying_balance": 6, "loan_purpose": "home_improvement", "loan_amount": 32000, "grade": "B", "interest_rate": 9, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": true, "total_income": 112000}, {"state": "MA", "emp_length": 4.0, "term": 60, "homeownership": "mortgage", "annual_income": 80000, "verified_income": "Not Verified", "debt_to_income": 0.2445412844036697, "total_credit_limit": 432092, "total_credit_utilized": 53310, "num_cc_carrying_balance": 5, "loan_purpose": "debt_consolidation", "loan_amount": 18000, "grade": "B", "interest_rate": 9, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": true, "total_income": 218000}, {"state": "CA", "emp_length": 7.0, "term": 36, "homeownership": "rent", "annual_income": 103000, "verified_income": "Source Verified", "debt_to_income": 0.2658349514563107, "total_credit_limit": 124900, "total_credit_utilized": 27381, "num_cc_carrying_balance": 5, "loan_purpose": "other", "loan_amount": 30000, "grade": "A", "interest_rate": 7, "public_record_bankrupt": 0, "loan_status": "Fully Paid", "has_second_income": false, "total_income": 103000}, {"state": "IL", "emp_length": 5.0, "term": 36, "homeownership": "rent", "annual_income": 58000, "verified_income": "Not Verified", "debt_to_income": 4.777258620689655, "total_credit_limit": 236668, "total_credit_utilized": 277081, "num_cc_carrying_balance": 5, "loan_purpose": "credit_card", "loan_amount": 4400, "grade": "D", "interest_rate": 18, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 58000}, {"state": "AZ", "emp_length": 0.0, "term": 36, "homeownership": "own", "annual_income": 55000, "verified_income": "Source Verified", "debt_to_income": 0.2990909090909091, "total_credit_limit": 35900, "total_credit_utilized": 16450, "num_cc_carrying_balance": 12, "loan_purpose": "debt_consolidation", "loan_amount": 7000, "grade": "D", "interest_rate": 17, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 55000}, {"state": "MN", "emp_length": null, "term": 36, "homeownership": "mortgage", "annual_income": 65000, "verified_income": "Not Verified", "debt_to_income": 0.7522461538461539, "total_credit_limit": 174860, "total_credit_utilized": 48896, "num_cc_carrying_balance": 4, "loan_purpose": "credit_card", "loan_amount": 25000, "grade": "A", "interest_rate": 7, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 65000}, {"state": "IL", "emp_length": 2.0, "term": 36, "homeownership": "rent", "annual_income": 32000, "verified_income": "Source Verified", "debt_to_income": 0.72128125, "total_credit_limit": 45594, "total_credit_utilized": 23081, "num_cc_carrying_balance": 4, "loan_purpose": "renewable_energy", "loan_amount": 6500, "grade": "A", "interest_rate": 6, "public_record_bankrupt": 1, "loan_status": "Current", "has_second_income": false, "total_income": 32000}, {"state": "MD", "emp_length": 5.0, "term": 36, "homeownership": "mortgage", "annual_income": 325000, "verified_income": "Source Verified", "debt_to_income": 0.3077507692307692, "total_credit_limit": 793009, "total_credit_utilized": 100019, "num_cc_carrying_balance": 11, "loan_purpose": "credit_card", "loan_amount": 35000, "grade": "A", "interest_rate": 6, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 325000}, {"state": "MD", "emp_length": 3.0, "term": 36, "homeownership": "rent", "annual_income": 70000, "verified_income": "Source Verified", "debt_to_income": 5.333728571428572, "total_credit_limit": 272878, "total_credit_utilized": 373361, "num_cc_carrying_balance": 2, "loan_purpose": "other", "loan_amount": 7500, "grade": "A", "interest_rate": 7, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 70000}, {"state": "CA", "emp_length": 10.0, "term": 60, "homeownership": "mortgage", "annual_income": 160000, "verified_income": "Verified", "debt_to_income": 0.3344, "total_credit_limit": 581604, "total_credit_utilized": 53504, "num_cc_carrying_balance": 3, "loan_purpose": "debt_consolidation", "loan_amount": 38500, "grade": "C", "interest_rate": 12, "public_record_bankrupt": 1, "loan_status": "Current", "has_second_income": false, "total_income": 160000}, {"state": "NJ", "emp_length": 6.0, "term": 36, "homeownership": "rent", "annual_income": 50000, "verified_income": "Source Verified", "debt_to_income": 1.25744, "total_credit_limit": 90398, "total_credit_utilized": 62872, "num_cc_carrying_balance": 5, "loan_purpose": "credit_card", "loan_amount": 15000, "grade": "C", "interest_rate": 16, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 50000}, {"state": "IL", "emp_length": 10.0, "term": 60, "homeownership": "rent", "annual_income": 71000, "verified_income": "Not Verified", "debt_to_income": 0.7425211267605634, "total_credit_limit": 115970, "total_credit_utilized": 52719, "num_cc_carrying_balance": 8, "loan_purpose": "car", "loan_amount": 24000, "grade": "B", "interest_rate": 10, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 71000}, {"state": "MI", "emp_length": 0.0, "term": 36, "homeownership": "mortgage", "annual_income": 85000, "verified_income": "Not Verified", "debt_to_income": 0.818764705882353, "total_credit_limit": 131847, "total_credit_utilized": 69595, "num_cc_carrying_balance": 3, "loan_purpose": "debt_consolidation", "loan_amount": 24000, "grade": "B", "interest_rate": 9, "public_record_bankrupt": 0, "loan_status": "Fully Paid", "has_second_income": false, "total_income": 85000}, {"state": "CA", "emp_length": 5.0, "term": 36, "homeownership": "mortgage", "annual_income": 87000, "verified_income": "Source Verified", "debt_to_income": 0.0547241379310344, "total_credit_limit": 294946, "total_credit_utilized": 4761, "num_cc_carrying_balance": 3, "loan_purpose": "debt_consolidation", "loan_amount": 12800, "grade": "B", "interest_rate": 9, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 87000}, {"state": "TX", "emp_length": 10.0, "term": 36, "homeownership": "mortgage", "annual_income": 60000, "verified_income": "Not Verified", "debt_to_income": 0.7311833333333333, "total_credit_limit": 64017, "total_credit_utilized": 43871, "num_cc_carrying_balance": 5, "loan_purpose": "home_improvement", "loan_amount": 6000, "grade": "B", "interest_rate": 10, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 60000}, {"state": "NV", "emp_length": 0.0, "term": 36, "homeownership": "mortgage", "annual_income": 58500, "verified_income": "Verified", "debt_to_income": 0.3968205128205128, "total_credit_limit": 49234, "total_credit_utilized": 23214, "num_cc_carrying_balance": 2, "loan_purpose": "debt_consolidation", "loan_amount": 30000, "grade": "D", "interest_rate": 21, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 58500}, {"state": "NH", "emp_length": 2.0, "term": 36, "homeownership": "rent", "annual_income": 50000, "verified_income": "Source Verified", "debt_to_income": 0.50262, "total_credit_limit": 39814, "total_credit_utilized": 25131, "num_cc_carrying_balance": 4, "loan_purpose": "debt_consolidation", "loan_amount": 5825, "grade": "B", "interest_rate": 10, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 50000}, {"state": "IL", "emp_length": 2.0, "term": 36, "homeownership": "own", "annual_income": 103000, "verified_income": "Not Verified", "debt_to_income": 0.9735922330097088, "total_credit_limit": 150027, "total_credit_utilized": 100280, "num_cc_carrying_balance": 4, "loan_purpose": "debt_consolidation", "loan_amount": 20000, "grade": "B", "interest_rate": 9, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 103000}, {"state": "TX", "emp_length": 9.0, "term": 36, "homeownership": "mortgage", "annual_income": 77500, "verified_income": "Verified", "debt_to_income": 0.6778580645161291, "total_credit_limit": 390156, "total_credit_utilized": 52534, "num_cc_carrying_balance": 2, "loan_purpose": "other", "loan_amount": 15000, "grade": "A", "interest_rate": 6, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 77500}]}}, {"mode": "vega-lite"});
+</script></div></div>
+</div>
+</section>
+<section id="id1">
+<h3>Boxplot<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># boxplot </span>
+<span class="n">box</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">___</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;___&#39;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">box</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># boxplot </span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">box</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">___</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">x</span><span class="o">=</span><span class="s1">&#39;___&#39;</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">box</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/altair/utils/schemapi.py:278,</span> in <span class="ni">SchemaBase.__getattr__</span><span class="nt">(self, attr)</span>
+<span class="g g-Whitespace">    </span><span class="mi">276</span> <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">277</span>     <span class="n">_getattr</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">SchemaBase</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__getattribute__</span>
+<span class="ne">--&gt; </span><span class="mi">278</span> <span class="k">return</span> <span class="n">_getattr</span><span class="p">(</span><span class="n">attr</span><span class="p">)</span>
+
+<span class="ne">AttributeError</span>: &#39;Chart&#39; object has no attribute &#39;___&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="histogram-and-boxplot">
+<h3>Histogram and boxplot<a class="headerlink" href="#histogram-and-boxplot" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">vconcat</span><span class="p">(</span><span class="n">___</span><span class="p">,</span> <span class="n">___</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./code"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Boxplot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram-and-boxplot">Histogram and boxplot</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jan Kirenz
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
