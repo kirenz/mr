@@ -22,7 +22,10 @@ For a more detailed semester overview, take a look at the [course-schedule](../f
 |	7	|	25.04.	|	Classification	|	Regression modeling	|
 |	8	|	02.05.	|	Foundations of inference	|	Classification	|
 |	9	|	09.05.	|	Foundations of inference	|	Foundations of inference	|
-|	10	|	16.05.	|	Foundations of inference	|	Exam exercise in lab	|
-|	11	|	23.05.	|	Statistical inference	|	Statistical inference	|
-|	12	|	30.05.	|	Statistical inference	|	Statistical inference	|
+|	10	|	16.05.	|	Exam exercise	|	Exam exercise	|
+|	11	|	23.05.	|	Foundations of inference	|	Statistical inference	|
+|	12	|	30.05.	|	No lecture	|	No lecture	|
 |	13	|	06.06.	|	Statistical inference	|	Statistical inference	|
+|	14	|	13.06.	|	Statistical inference	|	Statistical inference	|
+|	15	|	20.06.	|	Statistical inference	|	Statistical inference	|
+|	16	|	27.06.	|	Statistical inference	|	Statistical inference	|
