@@ -6,9 +6,9 @@
 (prepare)=
 ## Prepare
 
-📚 Read the [syllabus](../docs/course-syllabus.md)
+📚 Read the [syllabus](../files/course-syllabus.md)
 
-📚 Read the [support resources](../docs/course-support.md)
+📚 Read the [support resources](../files/course-support.md)
 
 First Data Analysis (Nr. 4): [📚](https://openintro-ims.netlify.app/data-hello.html#case-study-stents-strokes)
 
@@ -37,4 +37,4 @@ Data basics (Nr. 5): [☑️](https://forms.gle/EJT7mcYgPi8drKgR9)
 
 ---
 
-Back to [course schedule](../docs/course-schedule.md) ⏎
+Back to [course schedule](../files/course-schedule.md) ⏎

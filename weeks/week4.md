@@ -57,4 +57,4 @@ None
 
 ---
 
-Back to [course schedule](../docs/course-schedule.md) ⏎
+Back to [course schedule](../files/course-schedule.md) ⏎

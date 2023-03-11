@@ -45,4 +45,4 @@ Multiple predictors regression 1 (Nr. 43): [☑️](https://forms.gle/wHPHMvbTDc
 
 ---
 
-Back to [course schedule](../docs/course-schedule.md) ⏎
+Back to [course schedule](../files/course-schedule.md) ⏎

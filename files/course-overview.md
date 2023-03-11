@@ -9,7 +9,7 @@ This overview will be updated as the semester progresses.
 :::
 
 
-For a more detailed semester overview, take a look at the [course-schedule](../docs/course-schedule.md). 
+For a more detailed semester overview, take a look at the [course-schedule](../files/course-schedule.md). 
 
 |	Week	|	Date	|	Market Research (MR)	|	Statistics (S)	|
 |	---	|	---	|	---	|	---	|
