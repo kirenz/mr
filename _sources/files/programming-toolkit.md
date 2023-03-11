@@ -168,7 +168,7 @@ Open a Juptyer Notebook in VS Code:
 
 ```{admonition} To do
 :class: tip
-- Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
+- Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/files/datascience/jupyter-notebooks)
 ```
 
 If you can't select a kernel (like the so called `base` kernel), try to close and restart VS Code once again.
