@@ -6,6 +6,7 @@
 (prepare)=
 ## Prepare
 
+
 📚 Read the [syllabus](../files/course-syllabus.md)
 
 📚 Read the [support resources](../files/course-support.md)
@@ -14,6 +15,13 @@ First Data Analysis (Nr. 4): [📚](https://openintro-ims.netlify.app/data-hello
 
 Data basics (Nr. 5): [📚](https://openintro-ims.netlify.app/data-hello.html#data-basics)
 
+
+*Optional:* 
+
+*Install software on your local machine: [💻](https://github.com/kirenz/environments/blob/main/programming-toolkit.md)*
+
+
+*Create anaconda environment mr: [💻](https://github.com/kirenz/environments/blob/main/README.md)*
 
 ---
 
