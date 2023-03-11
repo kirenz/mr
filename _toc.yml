@@ -1,17 +1,17 @@
 format: jb-book
-root: docs/course-overview.md
+root: files/course-overview.md
 parts:
   - caption: Course information
     chapters:
-      - file: docs/course-schedule.md
-      - file: docs/course-syllabus.md
-      - file: docs/course-support.md
-  #  - file: docs/course-faq.md
+      - file: files/course-schedule.md
+      - file: files/course-syllabus.md
+      - file: files/course-support.md
+  #  - file: files/course-faq.md
   - caption: Programming
     chapters:
       - file: code/code-overview.md
-      - file: docs/programming-toolkit.md
-      - file: docs/programming-environment.md
+      - file: files/programming-toolkit.md
+      - file: files/programming-environment.md
   - caption: Weekly materials
     chapters:
       - file: weeks/weeks-overview.md
