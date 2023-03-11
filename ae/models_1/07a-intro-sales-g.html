@@ -163,7 +163,6 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../code/code-overview.html">Code overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../files/programming-toolkit.html">Programming toolkit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../files/programming-environment.html">Anaconda environment</a></li>
 </ul>
@@ -472,11 +471,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DataTransformerRegistry.enable(&#39;default&#39;)
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="data">
@@ -503,101 +497,11 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>sales</th>
-      <th>ads</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2500</td>
-      <td>1000</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>4500</td>
-      <td>2000</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>6500</td>
-      <td>3000</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>8500</td>
-      <td>4000</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>10500</td>
-      <td>5000</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>12500</td>
-      <td>6000</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>14500</td>
-      <td>7000</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>16500</td>
-      <td>8000</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>18500</td>
-      <td>9000</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>20500</td>
-      <td>10000</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
 <p><em>Do you recognize a relationship between the two variables?</em></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 10 entries, 0 to 9
-Data columns (total 2 columns):
- #   Column  Non-Null Count  Dtype
----  ------  --------------  -----
- 0   sales   10 non-null     int64
- 1   ads     10 non-null     int64
-dtypes: int64(2)
-memory usage: 288.0 bytes
 </pre></div>
 </div>
 </div>
@@ -619,62 +523,6 @@ memory usage: 288.0 bytes
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<div id="altair-viz-2117428254d241dd88d1c7df01a0528a"></div>
-<script type="text/javascript">
-  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2117428254d241dd88d1c7df01a0528a") {
-      outputDiv = document.getElementById("altair-viz-2117428254d241dd88d1c7df01a0528a");
-    }
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.17.0?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
-    };
-
-    function maybeLoadScript(lib, version) {
-      var key = `${lib.replace("-", "")}_version`;
-      return (VEGA_DEBUG[key] == version) ?
-        Promise.resolve(paths[lib]) :
-        new Promise(function(resolve, reject) {
-          var s = document.createElement('script');
-          document.getElementsByTagName("head")[0].appendChild(s);
-          s.async = true;
-          s.onload = () => {
-            VEGA_DEBUG[key] = version;
-            return resolve(paths[lib]);
-          };
-          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-          s.src = paths[lib];
-        });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else {
-      maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "4.17.0"))
-        .then(() => maybeLoadScript("vega-embed", "6"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-f926378e94df973e31740dd0ff4004df"}, "mark": "point", "encoding": {"tooltip": [{"field": "ads", "type": "quantitative"}, {"field": "sales", "type": "quantitative"}], "x": {"axis": {"title": "Ads (in $)"}, "field": "ads", "type": "quantitative"}, "y": {"axis": {"title": "Sales (in units)"}, "field": "sales", "type": "quantitative"}}, "selection": {"selector001": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-f926378e94df973e31740dd0ff4004df": [{"sales": 2500, "ads": 1000}, {"sales": 4500, "ads": 2000}, {"sales": 6500, "ads": 3000}, {"sales": 8500, "ads": 4000}, {"sales": 10500, "ads": 5000}, {"sales": 12500, "ads": 6000}, {"sales": 14500, "ads": 7000}, {"sales": 16500, "ads": 8000}, {"sales": 18500, "ads": 9000}, {"sales": 20500, "ads": 10000}]}}, {"mode": "vega-lite"});
-</script></div></div>
 </div>
 </section>
 <section id="model">
@@ -693,62 +541,6 @@ memory usage: 288.0 bytes
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<div id="altair-viz-6a47be1564f54826aa01934899575106"></div>
-<script type="text/javascript">
-  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6a47be1564f54826aa01934899575106") {
-      outputDiv = document.getElementById("altair-viz-6a47be1564f54826aa01934899575106");
-    }
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.17.0?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
-    };
-
-    function maybeLoadScript(lib, version) {
-      var key = `${lib.replace("-", "")}_version`;
-      return (VEGA_DEBUG[key] == version) ?
-        Promise.resolve(paths[lib]) :
-        new Promise(function(resolve, reject) {
-          var s = document.createElement('script');
-          document.getElementsByTagName("head")[0].appendChild(s);
-          s.async = true;
-          s.onload = () => {
-            VEGA_DEBUG[key] = version;
-            return resolve(paths[lib]);
-          };
-          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-          s.src = paths[lib];
-        });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else {
-      maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "4.17.0"))
-        .then(() => maybeLoadScript("vega-embed", "6"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"data": {"name": "data-f926378e94df973e31740dd0ff4004df"}, "mark": "point", "encoding": {"tooltip": [{"field": "ads", "type": "quantitative"}, {"field": "sales", "type": "quantitative"}], "x": {"axis": {"title": "Ads (in $)"}, "field": "ads", "type": "quantitative"}, "y": {"axis": {"title": "Sales (in units)"}, "field": "sales", "type": "quantitative"}}, "selection": {"selector001": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}}, {"data": {"name": "data-ff15a5032d34ac55aede39568eae4b25"}, "mark": {"type": "point", "color": "red", "size": 300, "tooltip": "Ads = 2000, Sales = 4500"}, "encoding": {"x": {"axis": {"title": "Ads (in $)"}, "field": "ads", "type": "quantitative"}, "y": {"axis": {"title": "Sales (in units)"}, "field": "sales", "type": "quantitative"}}}], "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-f926378e94df973e31740dd0ff4004df": [{"sales": 2500, "ads": 1000}, {"sales": 4500, "ads": 2000}, {"sales": 6500, "ads": 3000}, {"sales": 8500, "ads": 4000}, {"sales": 10500, "ads": 5000}, {"sales": 12500, "ads": 6000}, {"sales": 14500, "ads": 7000}, {"sales": 16500, "ads": 8000}, {"sales": 18500, "ads": 9000}, {"sales": 20500, "ads": 10000}], "data-ff15a5032d34ac55aede39568eae4b25": [{"sales": 4500, "ads": 2000}]}}, {"mode": "vega-lite"});
-</script></div></div>
 </div>
 <section id="prediction">
 <h3>Prediction<a class="headerlink" href="#prediction" title="Permalink to this heading">#</a></h3>
@@ -774,17 +566,6 @@ memory usage: 288.0 bytes
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
 <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># YOUR CODE HERE</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span>
-
-<span class="ne">NotImplementedError</span>: 
 </pre></div>
 </div>
 </div>

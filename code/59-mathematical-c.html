@@ -163,7 +163,6 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="code-overview.html">Code overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../files/programming-toolkit.html">Programming toolkit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../files/programming-environment.html">Anaconda environment</a></li>
 </ul>
@@ -442,11 +441,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DataTransformerRegistry.enable(&#39;default&#39;)
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="data">
@@ -474,22 +468,6 @@ document.write(`
 <span class="n">sat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">sat_mean</span><span class="p">,</span> <span class="n">sat_sd</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span>
 
 <span class="n">act</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">act_mean</span><span class="p">,</span> <span class="n">act_sd</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">sat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">sat_mean</span><span class="p">,</span> <span class="n">sat_sd</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">act</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">act_mean</span><span class="p">,</span> <span class="n">act_sd</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span>
-
-<span class="nn">File mtrand.pyx:1540,</span> in <span class="ni">numpy.random.mtrand.RandomState.normal</span><span class="nt">()</span>
-
-<span class="nn">File _common.pyx:585,</span> in <span class="ni">numpy.random._common.cont</span><span class="nt">()</span>
-
-<span class="ne">ValueError</span>: could not convert string to float: &#39;&#39;
 </pre></div>
 </div>
 </div>

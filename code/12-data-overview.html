@@ -163,7 +163,6 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="code-overview.html">Code overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../files/programming-toolkit.html">Programming toolkit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../files/programming-environment.html">Anaconda environment</a></li>
 </ul>
@@ -457,387 +456,10 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>emp_title</th>
-      <th>emp_length</th>
-      <th>state</th>
-      <th>homeownership</th>
-      <th>annual_income</th>
-      <th>verified_income</th>
-      <th>debt_to_income</th>
-      <th>annual_income_joint</th>
-      <th>verification_income_joint</th>
-      <th>debt_to_income_joint</th>
-      <th>...</th>
-      <th>sub_grade</th>
-      <th>issue_month</th>
-      <th>loan_status</th>
-      <th>initial_listing_status</th>
-      <th>disbursement_method</th>
-      <th>balance</th>
-      <th>paid_total</th>
-      <th>paid_principal</th>
-      <th>paid_interest</th>
-      <th>paid_late_fees</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>global config engineer</td>
-      <td>3.0</td>
-      <td>NJ</td>
-      <td>mortgage</td>
-      <td>90000.0</td>
-      <td>Verified</td>
-      <td>18.01</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>C3</td>
-      <td>Mar-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>27015.86</td>
-      <td>1999.33</td>
-      <td>984.14</td>
-      <td>1015.19</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>warehouse office clerk</td>
-      <td>10.0</td>
-      <td>HI</td>
-      <td>rent</td>
-      <td>40000.0</td>
-      <td>Not Verified</td>
-      <td>5.04</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>C1</td>
-      <td>Feb-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>4651.37</td>
-      <td>499.12</td>
-      <td>348.63</td>
-      <td>150.49</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>assembly</td>
-      <td>3.0</td>
-      <td>WI</td>
-      <td>rent</td>
-      <td>40000.0</td>
-      <td>Source Verified</td>
-      <td>21.15</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>D1</td>
-      <td>Feb-2018</td>
-      <td>Current</td>
-      <td>fractional</td>
-      <td>Cash</td>
-      <td>1824.63</td>
-      <td>281.80</td>
-      <td>175.37</td>
-      <td>106.43</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>customer service</td>
-      <td>1.0</td>
-      <td>PA</td>
-      <td>rent</td>
-      <td>30000.0</td>
-      <td>Not Verified</td>
-      <td>10.16</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>A3</td>
-      <td>Jan-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>18853.26</td>
-      <td>3312.89</td>
-      <td>2746.74</td>
-      <td>566.15</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>security supervisor</td>
-      <td>10.0</td>
-      <td>CA</td>
-      <td>rent</td>
-      <td>35000.0</td>
-      <td>Verified</td>
-      <td>57.96</td>
-      <td>57000.0</td>
-      <td>Verified</td>
-      <td>37.66</td>
-      <td>...</td>
-      <td>C3</td>
-      <td>Mar-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>21430.15</td>
-      <td>2324.65</td>
-      <td>1569.85</td>
-      <td>754.80</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>9995</th>
-      <td>owner</td>
-      <td>10.0</td>
-      <td>TX</td>
-      <td>rent</td>
-      <td>108000.0</td>
-      <td>Source Verified</td>
-      <td>22.28</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>A4</td>
-      <td>Jan-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>21586.34</td>
-      <td>2969.80</td>
-      <td>2413.66</td>
-      <td>556.14</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>9996</th>
-      <td>director</td>
-      <td>8.0</td>
-      <td>PA</td>
-      <td>mortgage</td>
-      <td>121000.0</td>
-      <td>Verified</td>
-      <td>32.38</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>D3</td>
-      <td>Feb-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>9147.44</td>
-      <td>1456.31</td>
-      <td>852.56</td>
-      <td>603.75</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>9997</th>
-      <td>toolmaker</td>
-      <td>10.0</td>
-      <td>CT</td>
-      <td>mortgage</td>
-      <td>67000.0</td>
-      <td>Verified</td>
-      <td>45.26</td>
-      <td>107000.0</td>
-      <td>Source Verified</td>
-      <td>29.57</td>
-      <td>...</td>
-      <td>E2</td>
-      <td>Feb-2018</td>
-      <td>Current</td>
-      <td>fractional</td>
-      <td>Cash</td>
-      <td>27617.65</td>
-      <td>4620.80</td>
-      <td>2382.35</td>
-      <td>2238.45</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>9998</th>
-      <td>manager</td>
-      <td>1.0</td>
-      <td>WI</td>
-      <td>mortgage</td>
-      <td>80000.0</td>
-      <td>Source Verified</td>
-      <td>11.99</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>A1</td>
-      <td>Feb-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>21518.12</td>
-      <td>2873.31</td>
-      <td>2481.88</td>
-      <td>391.43</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>9999</th>
-      <td>operations analyst</td>
-      <td>3.0</td>
-      <td>CT</td>
-      <td>rent</td>
-      <td>66000.0</td>
-      <td>Not Verified</td>
-      <td>20.82</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>B4</td>
-      <td>Feb-2018</td>
-      <td>Current</td>
-      <td>whole</td>
-      <td>Cash</td>
-      <td>11574.83</td>
-      <td>1658.56</td>
-      <td>1225.17</td>
-      <td>433.39</td>
-      <td>0.0</td>
-    </tr>
-  </tbody>
-</table>
-<p>10000 rows × 55 columns</p>
-</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 10000 entries, 0 to 9999
-Data columns (total 55 columns):
- #   Column                            Non-Null Count  Dtype  
----  ------                            --------------  -----  
- 0   emp_title                         9167 non-null   object 
- 1   emp_length                        9183 non-null   float64
- 2   state                             10000 non-null  object 
- 3   homeownership                     10000 non-null  object 
- 4   annual_income                     10000 non-null  float64
- 5   verified_income                   10000 non-null  object 
- 6   debt_to_income                    9976 non-null   float64
- 7   annual_income_joint               1495 non-null   float64
- 8   verification_income_joint         1455 non-null   object 
- 9   debt_to_income_joint              1495 non-null   float64
- 10  delinq_2y                         10000 non-null  int64  
- 11  months_since_last_delinq          4342 non-null   float64
- 12  earliest_credit_line              10000 non-null  int64  
- 13  inquiries_last_12m                10000 non-null  int64  
- 14  total_credit_lines                10000 non-null  int64  
- 15  open_credit_lines                 10000 non-null  int64  
- 16  total_credit_limit                10000 non-null  int64  
- 17  total_credit_utilized             10000 non-null  int64  
- 18  num_collections_last_12m          10000 non-null  int64  
- 19  num_historical_failed_to_pay      10000 non-null  int64  
- 20  months_since_90d_late             2285 non-null   float64
- 21  current_accounts_delinq           10000 non-null  int64  
- 22  total_collection_amount_ever      10000 non-null  int64  
- 23  current_installment_accounts      10000 non-null  int64  
- 24  accounts_opened_24m               10000 non-null  int64  
- 25  months_since_last_credit_inquiry  8729 non-null   float64
- 26  num_satisfactory_accounts         10000 non-null  int64  
- 27  num_accounts_120d_past_due        9682 non-null   float64
- 28  num_accounts_30d_past_due         10000 non-null  int64  
- 29  num_active_debit_accounts         10000 non-null  int64  
- 30  total_debit_limit                 10000 non-null  int64  
- 31  num_total_cc_accounts             10000 non-null  int64  
- 32  num_open_cc_accounts              10000 non-null  int64  
- 33  num_cc_carrying_balance           10000 non-null  int64  
- 34  num_mort_accounts                 10000 non-null  int64  
- 35  account_never_delinq_percent      10000 non-null  float64
- 36  tax_liens                         10000 non-null  int64  
- 37  public_record_bankrupt            10000 non-null  int64  
- 38  loan_purpose                      10000 non-null  object 
- 39  application_type                  10000 non-null  object 
- 40  loan_amount                       10000 non-null  int64  
- 41  term                              10000 non-null  int64  
- 42  interest_rate                     10000 non-null  float64
- 43  installment                       10000 non-null  float64
- 44  grade                             10000 non-null  object 
- 45  sub_grade                         10000 non-null  object 
- 46  issue_month                       10000 non-null  object 
- 47  loan_status                       10000 non-null  object 
- 48  initial_listing_status            10000 non-null  object 
- 49  disbursement_method               10000 non-null  object 
- 50  balance                           10000 non-null  float64
- 51  paid_total                        10000 non-null  float64
- 52  paid_principal                    10000 non-null  float64
- 53  paid_interest                     10000 non-null  float64
- 54  paid_late_fees                    10000 non-null  float64
-dtypes: float64(17), int64(25), object(13)
-memory usage: 4.2+ MB
 </pre></div>
 </div>
 </div>
@@ -849,107 +471,11 @@ memory usage: 4.2+ MB
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>homeownership</th>
-      <th>application_type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>mortgage</td>
-      <td>individual</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>rent</td>
-      <td>individual</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>rent</td>
-      <td>individual</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>rent</td>
-      <td>individual</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>rent</td>
-      <td>joint</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>9995</th>
-      <td>rent</td>
-      <td>individual</td>
-    </tr>
-    <tr>
-      <th>9996</th>
-      <td>mortgage</td>
-      <td>individual</td>
-    </tr>
-    <tr>
-      <th>9997</th>
-      <td>mortgage</td>
-      <td>joint</td>
-    </tr>
-    <tr>
-      <th>9998</th>
-      <td>mortgage</td>
-      <td>individual</td>
-    </tr>
-    <tr>
-      <th>9999</th>
-      <td>rent</td>
-      <td>individual</td>
-    </tr>
-  </tbody>
-</table>
-<p>10000 rows × 2 columns</p>
-</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Show info about variables</span>
 <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;homeownership&quot;</span><span class="p">,</span> <span class="s2">&quot;application_type&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 10000 entries, 0 to 9999
-Data columns (total 2 columns):
- #   Column            Non-Null Count  Dtype 
----  ------            --------------  ----- 
- 0   homeownership     10000 non-null  object
- 1   application_type  10000 non-null  object
-dtypes: object(2)
-memory usage: 156.4+ KB
 </pre></div>
 </div>
 </div>
@@ -980,19 +506,6 @@ memory usage: 156.4+ KB
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 10000 entries, 0 to 9999
-Data columns (total 2 columns):
- #   Column            Non-Null Count  Dtype   
----  ------            --------------  -----   
- 0   homeownership     10000 non-null  category
- 1   application_type  10000 non-null  category
-dtypes: category(2)
-memory usage: 19.9 KB
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1001,21 +514,11 @@ memory usage: 19.9 KB
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;mortgage&#39;, &#39;own&#39;, &#39;rent&#39;], dtype=&#39;object&#39;)
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Show levels of categorical variable</span>
 <span class="n">df</span><span class="o">.</span><span class="n">application_type</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">categories</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;individual&#39;, &#39;joint&#39;], dtype=&#39;object&#39;)
 </pre></div>
 </div>
 </div>
@@ -1031,26 +534,11 @@ memory usage: 19.9 KB
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mortgage    4789
-rent        3858
-own         1353
-Name: homeownership, dtype: int64
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Summarizing the frequencies for each value</span>
 <span class="n">df</span><span class="o">.</span><span class="n">application_type</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>individual    8505
-joint         1495
-Name: application_type, dtype: int64
 </pre></div>
 </div>
 </div>
@@ -1062,53 +550,6 @@ Name: application_type, dtype: int64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>homeownership</th>
-      <th>application_type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>count</th>
-      <td>10000</td>
-      <td>10000</td>
-    </tr>
-    <tr>
-      <th>unique</th>
-      <td>3</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>top</th>
-      <td>mortgage</td>
-      <td>individual</td>
-    </tr>
-    <tr>
-      <th>freq</th>
-      <td>4789</td>
-      <td>8505</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
 </section>
 </section>

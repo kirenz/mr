@@ -163,7 +163,6 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../code/code-overview.html">Code overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="programming-toolkit.html">Programming toolkit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="programming-environment.html">Anaconda environment</a></li>
 </ul>
@@ -561,6 +560,24 @@ This is referred to as object introspection.</p></li>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">Type:</span>        str
+<span class=" -Color -Color-Red">String form:</span> something else
+<span class=" -Color -Color-Red">Length:</span>      14
+<span class=" -Color -Color-Red">Docstring:</span>  
+str(object=&#39;&#39;) -&gt; str
+str(bytes_or_buffer[, encoding[, errors]]) -&gt; str
+
+Create a new string object from the given object. If encoding or
+errors is specified, then the object must expose a data buffer
+that will be decoded using the given encoding and error handler.
+Otherwise, returns the result of object.__str__() (if defined)
+or repr(object).
+encoding defaults to sys.getdefaultencoding().
+errors defaults to &#39;strict&#39;.
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>If the object is a function or instance method, the docstring, if defined, will also be shown:</p></li>
@@ -568,6 +585,20 @@ This is referred to as object introspection.</p></li>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>print<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">Docstring:</span>
+print(value, ..., sep=&#39; &#39;, end=&#39;\n&#39;, file=sys.stdout, flush=False)
+
+Prints the values to a stream, or to sys.stdout by default.
+Optional keyword arguments:
+file:  a file-like object (stream); defaults to the current sys.stdout.
+sep:   string inserted between values, default a space.
+end:   string appended after the last value, default a newline.
+flush: whether to forcibly flush the stream.
+<span class=" -Color -Color-Red">Type:</span>      builtin_function_or_method
 </pre></div>
 </div>
 </div>
@@ -1210,6 +1241,19 @@ Range from 0 to 10 by 2:  [0, 2, 4, 6, 8]
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">Signature:</span> add_numbers<span class=" -Color -Color-Blue">(</span>a<span class=" -Color -Color-Blue">,</span> b<span class=" -Color -Color-Blue">)</span>
+<span class=" -Color -Color-Red">Docstring:</span>
+Add two numbers together
+
+Returns
+-------
+the_sum : type of arguments
+<span class=" -Color -Color-Red">File:</span>      /var/folders/35/43bdsj9j64j16410rds5g9vr0000gp/T/ipykernel_8411/1411870314.py
+<span class=" -Color -Color-Red">Type:</span>      function
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>Using <code class="docutils literal notranslate"><span class="pre">??</span></code> will also show the function’s source code if possible:</p></li>
@@ -1217,6 +1261,23 @@ Range from 0 to 10 by 2:  [0, 2, 4, 6, 8]
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>add_numbers<span class="o">??</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">Signature:</span> add_numbers<span class=" -Color -Color-Blue">(</span>a<span class=" -Color -Color-Blue">,</span> b<span class=" -Color -Color-Blue">)</span>
+<span class=" -Color -Color-Red">Source:</span>   
+<span class=" -Color -Color-Green">def</span> add_numbers<span class=" -Color -Color-Blue">(</span>a<span class=" -Color -Color-Blue">,</span> b<span class=" -Color -Color-Blue">):</span>
+    <span class=" -Color -Color-Blue">&quot;&quot;&quot;</span>
+<span class=" -Color -Color-Blue">    Add two numbers together</span>
+
+<span class=" -Color -Color-Blue">    Returns</span>
+<span class=" -Color -Color-Blue">    -------</span>
+<span class=" -Color -Color-Blue">    the_sum : type of arguments</span>
+<span class=" -Color -Color-Blue">    &quot;&quot;&quot;</span>
+    <span class=" -Color -Color-Green">return</span> a <span class=" -Color -Color-Blue">+</span> b
+<span class=" -Color -Color-Red">File:</span>      /var/folders/35/43bdsj9j64j16410rds5g9vr0000gp/T/ipykernel_8411/1411870314.py
+<span class=" -Color -Color-Red">Type:</span>      function
 </pre></div>
 </div>
 </div>
