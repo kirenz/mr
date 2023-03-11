@@ -9,7 +9,7 @@ parts:
   #  - file: files/course-faq.md
   - caption: Programming
     chapters:
-      - file: code/code-overview.md
+      #- file: code/code-overview.md
       - file: files/programming-toolkit.md
       - file: files/programming-environment.md
   - caption: Weekly materials
