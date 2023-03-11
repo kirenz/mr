@@ -1,0 +1,23 @@
+# Altair marks
+
+
+
+| **Mark Name** | **Method**            | **Description**                                  | **Example**                                                                                                                                  |
+| ------------- | --------------------- | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| arc           | **mark\_arc()**       | A pie chart.                                     | [Pie Chart](https://altair-viz.github.io/gallery/pie_chart.html#gallery-pie-chart)                                                           |
+| area          | **mark\_area()**      | A filled area plot.                              | [Simple Stacked Area Chart](https://altair-viz.github.io/gallery/simple_stacked_area_chart.html#gallery-simple-stacked-area-chart)           |
+| bar           | **mark\_bar()**       | A bar plot.                                      | [Simple Bar Chart](https://altair-viz.github.io/gallery/simple_bar_chart.html#gallery-simple-bar-chart)                                      |
+| circle        | **mark\_circle()**    | A scatter plot with filled circles.              | [One Dot Per Zipcode](https://altair-viz.github.io/gallery/one_dot_per_zipcode.html#gallery-one-dot-per-zipcode)                             |
+| geoshape      | **mark\_geoshape()**  | A geographic shape                               | [Choropleth Map](https://altair-viz.github.io/gallery/choropleth.html#gallery-choropleth)                                                    |
+| image         | **mark\_image()**     | A scatter plot with image markers.               | [Image Mark](https://altair-viz.github.io/user_guide/marks.html#user-guide-image-mark)                                                       |
+| line          | **mark\_line()**      | A line plot.                                     | [Simple Line Chart](https://altair-viz.github.io/gallery/simple_line_chart.html#gallery-simple-line-chart)                                   |
+| point         | **mark\_point()**     | A scatter plot with configurable point shapes.   | [Multi-panel Scatter Plot with Linked Brushing](https://altair-viz.github.io/gallery/scatter_linked_brush.html#gallery-scatter-linked-brush) |
+| rect          | **mark\_rect()**      | A filled rectangle, used for heatmaps            | [Simple Heatmap](https://altair-viz.github.io/gallery/simple_heatmap.html#gallery-simple-heatmap)                                            |
+| rule          | **mark\_rule()**      | A vertical or horizontal line spanning the axis. | [Candlestick Chart](https://altair-viz.github.io/gallery/candlestick_chart.html#gallery-candlestick-chart)                                   |
+| square        | **mark\_square()**    | A scatter plot with filled squares.              | N/A                                                                                                                                          |
+| text          | **mark\_text()**      | A scatter plot with points represented by text.  | [Bar Chart with Labels](https://altair-viz.github.io/gallery/bar_chart_with_labels.html#gallery-bar-chart-with-labels)                       |
+| tick          | **mark\_tick()**      | A vertical or horizontal tick mark.              | [Simple Strip Plot](https://altair-viz.github.io/gallery/strip_plot.html#gallery-strip-plot)                                                 |
+| trail         | **mark\_trail()**     | A line with variable widths.                     | [Line Chart with Varying Size](https://altair-viz.github.io/gallery/trail_marker.html#gallery-trail-marker)                                  |
+| box plot      | **mark\_boxplot()**   | A box plot.                                      | [Boxplot with Min/Max Whiskers](https://altair-viz.github.io/gallery/boxplot.html#gallery-boxplot)                                           |
+| error band    | **mark\_errorband()** | A continuous band around a line.                 | [Line Chart with Confidence Interval Band](https://altair-viz.github.io/gallery/line_with_ci.html#gallery-line-with-ci)                      |
+| error bar     | **mark\_errorbar()**  | An errorbar around a point.                      | [Error Bars showing Confidence Interval](https://altair-viz.github.io/gallery/errorbars_with_ci.html#gallery-errorbars-with-ci)              |
