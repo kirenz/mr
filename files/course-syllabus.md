@@ -9,13 +9,13 @@
 | Market research   | Tuesday   | 14:15 am - 15:45 pm   |  Room 108  |
 | Statistics        | Tuesday   | 16:00 pm - 17:30 pm   |  Room 108  |
 
-<!-- 
-```{image} ../_static/img/room.png
+
+```{image} ../_static/img/room-108.png
 :alt: course location
 :class: bg-primary mb-1
 :width: 400px
 :align: center
-``` -->
+``` 
 
 
 ## Course topics
