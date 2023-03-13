@@ -29,3 +29,4 @@ For a more detailed semester overview, take a look at the [course-schedule](../f
 |	14	|	13.06.	|	Statistical inference	|	Statistical inference	|
 |	15	|	20.06.	|	Statistical inference	|	Statistical inference	|
 |	16	|	27.06.	|	Statistical inference	|	Statistical inference	|
+
