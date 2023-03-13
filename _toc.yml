@@ -6,12 +6,6 @@ parts:
       - docs: docs/course-schedule.md
       - docs: docs/course-syllabus.md
       - docs: docs/course-support.md
-  #  - docs: docs/course-faq.md
-#  - caption: Programming
-#    chapters:
-      #- docs: code/code-overview.md
-#      - docs: docs/programming-toolkit.md
-#      - docs: docs/programming-environment.md
   - caption: Weekly materials
     chapters:
       - docs: weeks/weeks-overview.md
