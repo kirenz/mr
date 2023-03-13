@@ -17,8 +17,8 @@ repository:
   branch: main
 
 html:
-  use_issues_button: true
-  use_repository_button: true
+  use_issues_button: false
+  use_repository_button: false
 
 sphinx:
   config:
@@ -27,6 +27,6 @@ sphinx:
       - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
 
 # Colab
-launch_buttons:
-  colab_url: "https://colab.research.google.com"
-  binderhub_url: ""
+#launch_buttons:
+#  colab_url: "https://colab.research.google.com"
+#  binderhub_url: ""
