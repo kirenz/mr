@@ -1,30 +1,30 @@
 format: jb-book
-root: files/course-overview.md
+root: docs/course-overview.md
 parts:
   - caption: Course information
     chapters:
-      - file: files/course-schedule.md
-      - file: files/course-syllabus.md
-      - file: files/course-support.md
-  #  - file: files/course-faq.md
+      - docs: docs/course-schedule.md
+      - docs: docs/course-syllabus.md
+      - docs: docs/course-support.md
+  #  - docs: docs/course-faq.md
 #  - caption: Programming
 #    chapters:
-      #- file: code/code-overview.md
-#      - file: files/programming-toolkit.md
-#      - file: files/programming-environment.md
+      #- docs: code/code-overview.md
+#      - docs: docs/programming-toolkit.md
+#      - docs: docs/programming-environment.md
   - caption: Weekly materials
     chapters:
-      - file: weeks/weeks-overview.md
+      - docs: weeks/weeks-overview.md
         sections:
-          - file: weeks/week1.md
-        # - file: weeks/week2.md
-        # - file: weeks/week3.md
-        # - file: weeks/week4.md
-        # - file: weeks/week5.md
-        # - file: weeks/week6.md
-        # - file: weeks/week7.md
-        # - file: weeks/week8.md
-        # - file: weeks/week9.md
-        # - file: weeks/week10.md
-        # - file: weeks/week11.md
-        # - file: weeks/week12.md
+          - docs: weeks/week1.md
+        # - docs: weeks/week2.md
+        # - docs: weeks/week3.md
+        # - docs: weeks/week4.md
+        # - docs: weeks/week5.md
+        # - docs: weeks/week6.md
+        # - docs: weeks/week7.md
+        # - docs: weeks/week8.md
+        # - docs: weeks/week9.md
+        # - docs: weeks/week10.md
+        # - docs: weeks/week11.md
+        # - docs: weeks/week12.md
