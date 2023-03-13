@@ -45,7 +45,7 @@ Contingency tables with proportions (Nr. 19): [📚](https://openintro-ims.netli
 Download slides: [📑](https://drive.google.com/file/d/1-ZClN3oVlIwMtL8n1Z4dWyTIqH7kMdO4/view?usp=sharing)
 
 
-Create the Anaconda environment `mr`: [💾](../files/programming-environment.md)
+Create the Anaconda environment `mr`: [💾](../docs/programming-environment.md)
 
 ---
 
@@ -61,4 +61,4 @@ Code overview: [🖥](../code/code-overview.md)
 
 ---
 
-Back to [course schedule](../files/course-schedule.md) ⏎
+Back to [course schedule](../docs/course-schedule.md) ⏎
