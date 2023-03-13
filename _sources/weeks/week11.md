@@ -55,9 +55,9 @@ Slides: [📑](https://drive.google.com/file/d/10w_k9Awxqsacu5eTXYbdFJ4VFuczV00h
 
 Two proportions hypothesis test:
 
-- Exercise 7 in chapter 17: [Solution](https://files.google.com/spreadsheets/d/1EoNdTF_e788W9-cFH1FrtuncMdnnHRCO13GxitfsqHw/edit?usp=sharing) 
+- Exercise 7 in chapter 17: [Solution](https://docs.google.com/spreadsheets/d/1EoNdTF_e788W9-cFH1FrtuncMdnnHRCO13GxitfsqHw/edit?usp=sharing) 
 
 
 ---
 
-Back to [course schedule](../files/course-schedule.md) ⏎
+Back to [course schedule](../docs/course-schedule.md) ⏎

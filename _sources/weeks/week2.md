@@ -41,4 +41,4 @@ Observations (Nr. 10): [☑️](https://forms.gle/V36KmsTjeH2finms9)
 
 ---
 
-Back to [course schedule](../files/course-schedule.md) ⏎
+Back to [course schedule](../docs/course-schedule.md) ⏎

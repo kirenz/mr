@@ -3,12 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mean squared error &#8212; Market Research</title>
   
   
@@ -44,7 +43,6 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -68,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="None"/>
   </head>
   
   
@@ -132,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="../../files/course-overview.html">
+<a class="navbar-brand logo" href="../../docs/course-overview.html">
   
   
   
@@ -152,16 +150,22 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../../files/course-overview.html">
+                <a class="reference internal" href="../../docs/course-overview.html">
                     Course overview
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course information</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../files/course-schedule.html">Course schedule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../files/course-syllabus.html">Course syllabus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../files/course-support.html">Course support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/course-schedule.html">Course schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/course-syllabus.html">Course syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/course-support.html">Course support</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../code/code-overview.html">Code overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/programming-toolkit.html">Programming toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/programming-environment.html">Anaconda environment</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly materials</span></p>
 <ul class="nav bd-sidenav">
@@ -210,6 +214,84 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/kirenz/mr/blob/main/ae/models_3/07b-2-mse-g.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/kirenz/mr" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/kirenz/mr/issues/new?title=Issue%20on%20page%20%2Fae/models_3/07b-2-mse-g.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
 
 
 
@@ -382,10 +464,10 @@ document.write(`
 </div>
 </div>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="mean-squared-error">
-<h1>Mean squared error<a class="headerlink" href="#mean-squared-error" title="Permalink to this heading">#</a></h1>
-<section id="setup">
-<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h2>
+<div class="tex2jax_ignore mathjax_ignore section" id="mean-squared-error">
+<h1>Mean squared error<a class="headerlink" href="#mean-squared-error" title="Permalink to this headline">#</a></h1>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">#</a></h2>
 <p>We need the following modules:</p>
 <ul class="simple">
 <li><p>pandas</p></li>
@@ -399,11 +481,11 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="data">
-<h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h2>
-<section id="create-data">
-<h3>Create data<a class="headerlink" href="#create-data" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h2>
+<div class="section" id="create-data">
+<h3>Create data<a class="headerlink" href="#create-data" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
@@ -414,9 +496,9 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="data-structure">
-<h3>Data structure<a class="headerlink" href="#data-structure" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="data-structure">
+<h3>Data structure<a class="headerlink" href="#data-structure" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
@@ -431,10 +513,10 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="model">
-<h2>Model<a class="headerlink" href="#model" title="Permalink to this heading">#</a></h2>
+</div>
+</div>
+<div class="section" id="model">
+<h2>Model<a class="headerlink" href="#model" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">intercept</span> <span class="o">=</span> <span class="mi">500</span> 
@@ -445,8 +527,8 @@ document.write(`
 </div>
 </div>
 </div>
-<section id="calculate-mean-squared-error">
-<h3>Calculate mean squared error<a class="headerlink" href="#calculate-mean-squared-error" title="Permalink to this heading">#</a></h3>
+<div class="section" id="calculate-mean-squared-error">
+<h3>Calculate mean squared error<a class="headerlink" href="#calculate-mean-squared-error" title="Permalink to this headline">#</a></h3>
 <hr class="docutils" />
 <p>Step 1: calculate the squared difference between true outcome and prediction:</p>
 <p>The general formula:</p>
@@ -600,9 +682,9 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="root-mean-squared-error">
-<h3>Root mean squared error<a class="headerlink" href="#root-mean-squared-error" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="root-mean-squared-error">
+<h3>Root mean squared error<a class="headerlink" href="#root-mean-squared-error" title="Permalink to this headline">#</a></h3>
 <hr class="docutils" />
 <p>Another important measure is the root mean squared error:</p>
 <p>The general formula:</p>
@@ -646,18 +728,18 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="mean-absolute-error">
-<h3>Mean absolute error<a class="headerlink" href="#mean-absolute-error" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="mean-absolute-error">
+<h3>Mean absolute error<a class="headerlink" href="#mean-absolute-error" title="Permalink to this headline">#</a></h3>
 <p>Another performance measure (which is less commonly used) is the mean absolute error:</p>
 <p>The general formula:</p>
 <div class="math notranslate nohighlight">
 \[Mean\ absolute\ error \ (MAE) = \frac{1}{n} \times \sum_{i=1}^{n}(y_i-\hat{y_i})\]</div>
-</section>
-<section id="use-functions">
-<h3>Use functions<a class="headerlink" href="#use-functions" title="Permalink to this heading">#</a></h3>
-<section id="id1">
-<h4>Mean squared error<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
+</div>
+<div class="section" id="use-functions">
+<h3>Use functions<a class="headerlink" href="#use-functions" title="Permalink to this headline">#</a></h3>
+<div class="section" id="id1">
+<h4>Mean squared error<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales_prediction&#39;</span><span class="p">])</span>
@@ -665,9 +747,9 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="id2">
-<h4>Root mean squared error<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h4>
+</div>
+<div class="section" id="id2">
+<h4>Root mean squared error<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales_prediction&#39;</span><span class="p">],</span> <span class="n">squared</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -675,9 +757,9 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="id3">
-<h4>Mean absolute error<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h4>
+</div>
+<div class="section" id="id3">
+<h4>Mean absolute error<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;sales_prediction&#39;</span><span class="p">])</span>
@@ -685,10 +767,10 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

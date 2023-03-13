@@ -46,4 +46,4 @@ Correlation (Nr. 35): [☑️](https://forms.gle/5ntV6z8yHk8g4qgZ8)
 
 ---
 
-Back to [course schedule](../files/course-schedule.md) ⏎
+Back to [course schedule](../docs/course-schedule.md) ⏎
