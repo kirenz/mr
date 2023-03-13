@@ -29,7 +29,7 @@ Data basics (Nr. 5): [📚](https://openintro-ims.netlify.app/data-hello.html#da
 ## Participate
 
 
-Download slides: [📑](https://drive.google.com/file/d/1-WrEI0wxKQX_MJyt6sAvy4UVuNo0EVWS/view?usp=sharing)
+Download slides: [📑](https://drive.google.com/file/d/1SF30Q4B-i8UhiK_xW7okgKDbtii8lw2j/view?usp=sharing)
 
 
 ---
