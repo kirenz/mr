@@ -1,7 +1,1 @@
 jupyter-book
-matplotlib
-numpy
-pandas
-seaborn
-altair
-scikit-learn
