@@ -6,6 +6,7 @@ This page contains a detailed overview about the topics, readings,  application 
 This overview will be updated as the semester progresses.
 :::
 
+
 |	Week	|	Nr.	|	Date	|	Topic	|	Prepare	|	Slides	|	AE	|	Q	|
 |	---	|	---	|	---	|	---	|	---	|	---	|	---	|	---	|
 |	1	|	1	|	14.03.	|	Data driven	|		|	[📑](https://drive.google.com/file/d/1-WrEI0wxKQX_MJyt6sAvy4UVuNo0EVWS/view?usp=sharing)	|		|		|
