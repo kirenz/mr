@@ -10,7 +10,7 @@ parts:
     chapters:
       - docs: weeks/weeks-overview.md
         sections:
-          - docs: weeks/week1.md
+        - docs: weeks/week1.md
         # - docs: weeks/week2.md
         # - docs: weeks/week3.md
         # - docs: weeks/week4.md
