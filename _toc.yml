@@ -3,22 +3,22 @@ root: docs/course-overview.md
 parts:
   - caption: Course information
     chapters:
-      - docs: docs/course-schedule.md
-      - docs: docs/course-syllabus.md
-      - docs: docs/course-support.md
+    - file: docs/course-schedule.md
+    - file: docs/course-syllabus.md
+    - file: docs/course-support.md
   - caption: Weekly materials
     chapters:
-      - docs: weeks/weeks-overview.md
+    - file: weeks/weeks-overview.md
         sections:
-        - docs: weeks/week1.md
-        # - docs: weeks/week2.md
-        # - docs: weeks/week3.md
-        # - docs: weeks/week4.md
-        # - docs: weeks/week5.md
-        # - docs: weeks/week6.md
-        # - docs: weeks/week7.md
-        # - docs: weeks/week8.md
-        # - docs: weeks/week9.md
-        # - docs: weeks/week10.md
-        # - docs: weeks/week11.md
-        # - docs: weeks/week12.md
+        - file: weeks/week1.md
+        # - file: weeks/week2.md
+        # - file: weeks/week3.md
+        # - file: weeks/week4.md
+        # - file: weeks/week5.md
+        # - file: weeks/week6.md
+        # - file: weeks/week7.md
+        # - file: weeks/week8.md
+        # - file: weeks/week9.md
+        # - file: weeks/week10.md
+        # - file: weeks/week11.md
+        # - file: weeks/week12.md
