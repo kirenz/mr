@@ -51,4 +51,4 @@ Fitting a line and residuals (Nr. 33): [☑️](https://forms.gle/JFMXzjByDRGZtb
 
 ---
 
-Back to [course schedule](../files/course-schedule.md) ⏎
+Back to [course schedule](../docs/course-schedule.md) ⏎
