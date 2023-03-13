@@ -7,9 +7,9 @@
 ## Prepare
 
 
-📚 Read the [syllabus](../files/course-syllabus.md)
+Read the syllabus: [📚](../files/course-syllabus.md)
 
-📚 Read the [support resources](../files/course-support.md)
+Read the support resources: [📚](../files/course-support.md)
 
 First Data Analysis (Nr. 4): [📚](https://openintro-ims.netlify.app/data-hello.html#case-study-stents-strokes)
 
