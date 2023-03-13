@@ -45,4 +45,4 @@ E-exam practice (room 108, 16:00 - 17:30)
 
 ---
 
-Back to [course schedule](../files/course-schedule.md) ⏎
+Back to [course schedule](../docs/course-schedule.md) ⏎
