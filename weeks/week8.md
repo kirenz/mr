@@ -43,4 +43,4 @@ Go to the code overview: [🖥](../code/code-overview.md)
 
 ---
 
-Back to [course schedule](../files/course-schedule.md) ⏎
+Back to [course schedule](../docs/course-schedule.md) ⏎
