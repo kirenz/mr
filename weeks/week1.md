@@ -37,7 +37,10 @@ Download slides: [📑](https://drive.google.com/file/d/1SF30Q4B-i8UhiK_xW7okgKD
 (practice)=
 ## Practice
 
-First Data Analysis (Nr 4, 1_netflix.ipynb):[💻](https://github.com/kirenz/lab-ims)
+First Data Analysis (Nr 4, 1_netflix.ipynb): Link zu **GitHub Repo** [💻](https://github.com/kirenz/lab-ims)
+
+First Data Analysis (Nr 4, 1_netflix.ipynb): Direkter Link zu **Colab**[💻](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ae/1_netflix.ipynb)
+
 
 
 Data basics (Nr. 5): [☑️](https://forms.gle/EJT7mcYgPi8drKgR9)
