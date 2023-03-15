@@ -27,6 +27,6 @@ sphinx:
       - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
 
 # Colab
-#launch_buttons:
-#  colab_url: "https://colab.research.google.com"
-#  binderhub_url: ""
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
+  binderhub_url: ""
