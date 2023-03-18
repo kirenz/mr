@@ -22,18 +22,15 @@ Observations (Nr. 10): [📚](https://openintro-ims.netlify.app/data-design.html
 Download slides: [📑](https://drive.google.com/file/d/1-3uVavxMAvDNMnRiN7sXsZRTReRNsZpj/view?usp=sharing)
 
 
-Data manipulation with pandas (Nr 6): [💻](../code/6-pandas-intro-short-c.ipynb)
-
-Go to this GitHub-Repo: [umfrage](https://github.com/kirenz/umfrage)
-
-
-
+Go to the code overview: [🖥](../code/code-overview.md)
 
 
 ---
 
 (practice)=
 ## Practice
+
+
 
 Population and sample (Nr. 7): [☑️](https://forms.gle/qPYg55ncRyUGCqXH8)
 
