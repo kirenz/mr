@@ -6,15 +6,15 @@ In the exam, you will get a copy of the following code cheat sheets:
 
 - [Pandas cheat sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
 
-- [Altair marks](../code/altair-marks.md)
+- [Altair marks cheat sheet](../code/altair-marks.md)
 
-- [Scikit-learn cheat sheets (see Moodle)](https://e-learning.hdm-stuttgart.de/moodle/course/view.php?id=2464#section-2)
+- [Scikit-learn cheat sheets (see Moodle)](https://e-learning.hdm-stuttgart.de/moodle/mod/resource/view.php?id=284764&redirect=1)
 
 ---
 
 ## Week 1
 
-[First Data Analysis (Nr. 4): 💻](../ae/ae1/01-1b-netflix-g.ipynb)
+[💻 lab-ims: 1_netflix.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ae/1_netflix.ipynb)
 
 
 ```{note}
@@ -28,11 +28,35 @@ You should be able to:
 
 ---
 
+
 ## Week 2
+
+[💻 lab-pandas: 1_import_store.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/ae/1_import_store.ipynb)
+[💻 lab-pandas: 2_columns.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/ae/2_columns.ipynb)
+[💻 lab-pandas: 3_data_types.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/ae/3_data_types.ipynb)
+[💻 lab-pandas: 4_statistics.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/ae/4_statistics.ipynb)
+[💻 lab-pandas: 5_selection.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/ae/5_selection.ipynb)
+[💻 lab-pandas: 6_filter.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/ae/6_filter.ipynb)
+
+<br>
 
 [GitHub-Repo: umfrage](https://github.com/kirenz/umfrage)
 
+```{note}
 
+You should be able to:
+
+- Import and store CSV and Excel data
+- Get a data overview and show the dataframe metadata
+- Rename columns
+- Change data types
+- Calculate statistics
+- Select and filter data
+- Save data as CSV and Excel
+
+```
+
+<!--
 
 ```{note}
 
@@ -46,6 +70,9 @@ You should be able to:
 - Save data as CSV
 
 ```
+
+
+
 
 *Not relevant: dummy-variables*
 
@@ -262,3 +289,5 @@ You don't need to memorize the code (it would be provided in the exam). However,
 ```
 
 ---
+
+-->
