@@ -11,11 +11,10 @@ This overview will be updated as the semester progresses.
 
 For a more detailed semester overview, take a look at the [course-schedule](../files/course-schedule.md). 
 
-
 |	Week	|	Date	|	Market Research (MR)	|	Statistics (S)	|	Slides	|	Materials	|
 |	---	|	---	|	---	|	---	|	---	|	---	|
 |	1	|	14.03.	|	Introduction	|	Introduction to data	|	[📑](https://drive.google.com/file/d/1SF30Q4B-i8UhiK_xW7okgKDbtii8lw2j/view?usp=sharing)	|	[📁](../weeks/week1.md)	|
-|	2	|	21.03.	|	Data preparation	|	Study design	|	[📑](https://drive.google.com/file/d//view?usp=sharing)	|	[📁](../weeks/week2.md)	|
+|	2	|	21.03.	|	Data preparation	|	Study design	|	[📑](https://drive.google.com/file/d/1-3uVavxMAvDNMnRiN7sXsZRTReRNsZpj/view?usp=sharing)	|	[📁](../weeks/week2.md)	|
 |	3	|	28.03.	|	Exploratory data analysis	|	Exploratory data analysis	|		|		|
 |	4	|	04.04.	|	Data	|	Exploratory data analysis	|		|		|
 |	5	|	11.04.	|	Introduction to models	|	Regression modeling	|		|		|
@@ -30,4 +29,3 @@ For a more detailed semester overview, take a look at the [course-schedule](../f
 |	14	|	13.06.	|	Statistical inference	|	Statistical inference	|		|		|
 |	15	|	20.06.	|	Statistical inference	|	Statistical inference	|		|		|
 |	16	|	27.06.	|	Statistical inference	|	Statistical inference	|		|		|
-
