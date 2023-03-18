@@ -16,12 +16,12 @@ First Data Analysis (Nr. 4): [📚](https://openintro-ims.netlify.app/data-hello
 Data basics (Nr. 5): [📚](https://openintro-ims.netlify.app/data-hello.html#data-basics)
 
 
-*Optional:* 
+- *Optional (if you want to install the necessary software on your computer):* 
 
-*Install software on your local machine: [💻](https://github.com/kirenz/environments/blob/main/programming-toolkit.md)*
+  - *Install software on your local machine: [💻](https://github.com/kirenz/environments/blob/main/programming-toolkit.md)*
 
 
-*Create anaconda environment mr: [💻](https://github.com/kirenz/environments/blob/main/README.md)*
+  - *Create anaconda environment mr: [💻](https://github.com/kirenz/environments/blob/main/README.md)*
 
 ---
 
@@ -37,10 +37,7 @@ Download slides: [📑](https://drive.google.com/file/d/1SF30Q4B-i8UhiK_xW7okgKD
 (practice)=
 ## Practice
 
-First Data Analysis (Nr 4, 1_netflix.ipynb): Link zu **GitHub Repo** [💻](https://github.com/kirenz/lab-ims)
-
-First Data Analysis (Nr 4, 1_netflix.ipynb): Direkter Link zu **Colab**[💻](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ae/1_netflix.ipynb)
-
+Go to the code overview: [🖥](../code/code-overview.md)
 
 
 Data basics (Nr. 5): [☑️](https://forms.gle/EJT7mcYgPi8drKgR9)
