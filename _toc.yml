@@ -13,7 +13,7 @@ parts:
         sections:
           - file: weeks/week1.md
           - file: weeks/week2.md
-            # - file: weeks/week3.md
+          - file: weeks/week3.md
             # - file: weeks/week4.md
             # - file: weeks/week5.md
             # - file: weeks/week6.md
