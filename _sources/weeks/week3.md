@@ -31,7 +31,7 @@
 (participate)=
 ## Participate
 
-Download slides: [📑](https://drive.google.com/file/d/1-ZClN3oVlIwMtL8n1Z4dWyTIqH7kMdO4/view?usp=sharing)
+Download slides: [📑](https://drive.google.com/file/d/1V3NJO8CmMciX5v8l1oF0JDurHTKRCUEF/view?usp=sharing)
 
 
 
