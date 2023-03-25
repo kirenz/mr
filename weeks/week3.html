@@ -65,6 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'weeks/week3';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Week 2" href="week2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -158,15 +159,15 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course information</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../docs/course-schedule.html">Course schedule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../code/code-overview.html">Code overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docs/course-syllabus.html">Course syllabus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docs/course-support.html">Course support</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly materials</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="weeks-overview.html">Overview</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="weeks-overview.html">Overview</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="week1.html">Week 1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="week2.html">Week 2</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Week 3</a></li>
 </ul>
 </li>
 </ul>
@@ -334,28 +335,33 @@ document.write(`
 <hr class="docutils" />
 <section id="prepare">
 <span id="id1"></span><h2>Prepare<a class="headerlink" href="#prepare" title="Permalink to this heading">#</a></h2>
-<p>Introduction to Altair (Nr. 11): <a class="reference external" href="https://uwdata.github.io/visualization-curriculum/altair_introduction.html">📚</a></p>
-<p>Loans data (Nr. 12): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#explore-categorical">📚</a></p>
-<p>Simple bar chart (Nr. 13): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#contingency-tables-and-bar-plots">📚</a></p>
-<p>Dodged bar plot (Nr. 14): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#bar-plots-with-two-variables">📚</a></p>
-<p>Stacked bar plot (Nr. 15): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#bar-plots-with-two-variables">📚</a></p>
-<p>Standardized bar plot (Nr. 16): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#bar-plots-with-two-variables">📚</a></p>
-<p>Pie chart (Nr. 17): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#pie-charts">📚</a></p>
-<p>Contingency tables (Nr. 18): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#contingency-tables-and-bar-plots">📚</a></p>
-<p>Contingency tables with proportions (Nr. 19): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#row-and-column-proportions">📚</a></p>
-<hr class="docutils" />
+<ul class="simple">
+<li><p>Loans data (Nr. 11): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#explore-categorical">📚</a></p></li>
+<li><p>Simple bar chart (Nr. 12): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#contingency-tables-and-bar-plots">📚</a></p></li>
+<li><p>Dodged bar plot (Nr. 13): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#bar-plots-with-two-variables">📚</a></p></li>
+<li><p>Stacked bar plot (Nr. 14): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#bar-plots-with-two-variables">📚</a></p></li>
+<li><p>Standardized bar plot (Nr. 15): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#bar-plots-with-two-variables">📚</a></p></li>
+<li><p>Pie chart (Nr. 16): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#pie-charts">📚</a></p></li>
+<li><p>Contingency tables (Nr. 17): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#contingency-tables-and-bar-plots">📚</a></p></li>
+<li><p>Contingency tables with proportions (Nr. 18): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#row-and-column-proportions">📚</a></p></li>
+<li><p>Scatterplot (Nr. 19): <a class="reference external" href="https://openintro-ims.netlify.app/explore-numerical.html#scatterplots">📚</a></p></li>
+<li><p>Dot plot mean median and mode (Nr. 20): <a class="reference external" href="https://openintro-ims.netlify.app/explore-numerical.html#dotplots">📚</a></p></li>
+<li><p>Histogram  (Nr. 21): <a class="reference external" href="https://openintro-ims.netlify.app/explore-numerical.html#histograms">📚</a></p></li>
+<li><p>Variance and standard deviation (Nr. 22): <a class="reference external" href="https://openintro-ims.netlify.app/explore-numerical.html#histograms">📚</a></p></li>
+<li><p>Box Plot (Nr. 23): <a class="reference external" href="https://openintro-ims.netlify.app/explore-numerical.html#boxplots">📚</a></p></li>
+<li><p>Robust statistics and transformations (Nr. 24): <a class="reference external" href="https://openintro-ims.netlify.app/explore-numerical.html#robust-statistics">📚</a></p></li>
+<li><p>Comparing numerical data across groups (Nr. 25): <a class="reference external" href="https://openintro-ims.netlify.app/explore-categorical.html#comparing-numerical-data-across-groups">📚</a></p></li>
+</ul>
 <hr class="docutils" />
 </section>
 <section id="participate">
 <span id="id2"></span><h2>Participate<a class="headerlink" href="#participate" title="Permalink to this heading">#</a></h2>
 <p>Download slides: <a class="reference external" href="https://drive.google.com/file/d/1-ZClN3oVlIwMtL8n1Z4dWyTIqH7kMdO4/view?usp=sharing">📑</a></p>
-<p>Create the Anaconda environment <code class="docutils literal notranslate"><span class="pre">mr</span></code>: <span class="xref myst">💾</span></p>
-<hr class="docutils" />
 <hr class="docutils" />
 </section>
 <section id="practice">
 <span id="id3"></span><h2>Practice<a class="headerlink" href="#practice" title="Permalink to this heading">#</a></h2>
-<p>Code overview: <a class="reference internal" href="../code/code-overview.html"><span class="doc std std-doc">🖥</span></a></p>
+<p>Code overview: <a class="reference internal" href="../docs/code-overview.html"><span class="doc std std-doc">🖥</span></a></p>
 <hr class="docutils" />
 <p>Back to <a class="reference internal" href="../docs/course-schedule.html"><span class="doc std std-doc">course schedule</span></a> ⏎</p>
 </section>
@@ -389,6 +395,15 @@ document.write(`
                 <footer class="bd-footer-article">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="week2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Week 2</p>
+      </div>
+    </a>
 </div>
                 </footer>
               

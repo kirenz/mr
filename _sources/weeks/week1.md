@@ -37,7 +37,7 @@ Download slides: [📑](https://drive.google.com/file/d/1SF30Q4B-i8UhiK_xW7okgKD
 (practice)=
 ## Practice
 
-Go to the code overview: [🖥](../code/code-overview.md)
+Go to the code overview: [🖥](../docs/code-overview.md)
 
 
 Data basics (Nr. 5): [☑️](https://forms.gle/EJT7mcYgPi8drKgR9)
