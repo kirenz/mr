@@ -22,7 +22,7 @@ Observations (Nr. 10): [📚](https://openintro-ims.netlify.app/data-design.html
 Download slides: [📑](https://drive.google.com/file/d/1-3uVavxMAvDNMnRiN7sXsZRTReRNsZpj/view?usp=sharing)
 
 
-Go to the code overview: [🖥](../code/code-overview.md)
+Go to the code overview: [🖥](../docs/code-overview.md)
 
 
 ---
