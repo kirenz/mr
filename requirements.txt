@@ -1,1 +1,4 @@
 jupyter-book
+sphinx-book-theme
+sphinx
+pydata-sphinx-theme==0.13.1
