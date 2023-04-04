@@ -72,6 +72,8 @@ You should be able to:
 - [💻 lab-altair: 05-5-box-plot-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/05-5-box-plot-altair.ipynb)
 - [💻 lab-altair: 05-7-transforming-data-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/05-7-transforming-data-altair.ipynb)
 - [💻 lab-altair: 04-6-comparisons-across-groups-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/04-6-comparisons-across-groups-altair.ipynb)
+- [💻 lab-pandas: 04-1-contingency-table-bar-plot.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/ae/04-1-contingency-table-bar-plot.ipynb)
+- [💻 lab-pandas: 04-3-row-column-proportions.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/ae/04-3-row-column-proportions.ipynb)
 
 
 ```{note}
