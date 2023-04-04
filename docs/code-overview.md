@@ -63,8 +63,7 @@ You should be able to:
 - [💻 lab-altair: 04-1-bar-chart-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/04-1-bar-chart-altair.ipynb)
 - [💻 lab-altair: 04-2-stacked-bar-chart-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/04-2-stacked-bar-chart-altair.ipynb)
 - [💻 lab-altair: 04-2-standardized-bar-chart-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/04-2-standardized-bar-chart-altair.ipynb)
-- [💻 lab-altair: 04-4-pie-charts-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/04-4-pie-charts-altair.ipynb)
-- [💻 lab-altair: 04-6-comparisons-across-groups-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/04-6-comparisons-across-groups-altair.ipynb)
+- [💻 lab-altair: 04-4-pie-charts-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/04-4-pie-charts-altair.ipynb) (not relevant)
 - [💻 lab-altair: 05-1-scatterplot-paired-data-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/05-1-scatterplot-paired-data-altair.ipynb)
 - [💻 lab-altair: 05-2-dot-plots-mean-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/05-2-dot-plots-mean-altair.ipynb)
 - [💻 lab-altair: 05-3-histograms-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/05-3-histograms-altair.ipynb)
@@ -72,6 +71,7 @@ You should be able to:
 - [💻 lab-altair: 05-3-pairplot-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/05-3-pairplot-altair.ipynb)
 - [💻 lab-altair: 05-5-box-plot-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/05-5-box-plot-altair.ipynb)
 - [💻 lab-altair: 05-7-transforming-data-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/05-7-transforming-data-altair.ipynb)
+- [💻 lab-altair: 04-6-comparisons-across-groups-altair.ipynb](https://colab.research.google.com/github/kirenz/lab-altair/blob/main/ae/04-6-comparisons-across-groups-altair.ipynb)
 
 
 ```{note}
