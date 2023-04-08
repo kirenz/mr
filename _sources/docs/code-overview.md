@@ -96,6 +96,19 @@ You should be able to create:
 ```
 
 
+
+---
+
+## Week 4
+
+
+- [💻 lab-models: 1_intro_sales.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/ae/1_intro_sales.ipynb)
+- [💻 lab-models: 2_mse.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/ae/2_mse.ipynb)
+- [💻 lab-models: 3_mse.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/ae/3_mse.ipynb)
+- [💻 lab-models: 4_mse.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/ae/4_mse.ipynb)
+- [💻 lab-models: 5_fitting.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/ae/5_fitting.ipynb)
+
+
 <!--
 
 ---
