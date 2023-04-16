@@ -7,18 +7,10 @@
 (prepare)=
 ## Prepare
 
-Correlation (Nr. 35): [📚](https://openintro-ims.netlify.app/model-slr.html#describing-linear-relationships-with-correlation)
-
-Least squares regression (Nr. 36): [📚](https://openintro-ims.netlify.app/model-slr.html#least-squares-regression)
-
-R squared (Nr. 37): [📚](https://openintro-ims.netlify.app/model-slr.html#r-squared)
-
-Categorical predictors with two levels (Nr. 38): [📚](https://openintro-ims.netlify.app/model-slr.html#categorical-predictor-two-levels)
-
+- Categorical predictors with two levels (Nr. 32): [📚](https://openintro-ims.netlify.app/model-slr.html#categorical-predictor-two-levels)
 
 ---
 
----
 
 
 (participate)=
