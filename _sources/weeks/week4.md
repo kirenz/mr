@@ -6,11 +6,8 @@
 (prepare)=
 ## Prepare
 
-- Fitting a line and residuals (Nr. 28): [📚](https://openintro-ims.netlify.app/model-slr.html#fit-line-res-cor)
-- Correlation (Nr. 29): [📚](https://openintro-ims.netlify.app/model-slr.html#describing-linear-relationships-with-correlation)
-- Least squares regression (Nr. 30): [📚](https://openintro-ims.netlify.app/model-slr.html#least-squares-regression)
-- R squared (Nr. 31): [📚](https://openintro-ims.netlify.app/model-slr.html#r-squared)
-- Categorical predictors with two levels (Nr. 32): [📚](https://openintro-ims.netlify.app/model-slr.html#categorical-predictor-two-levels)
+
+
 
 ---
 

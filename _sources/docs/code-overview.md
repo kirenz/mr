@@ -109,6 +109,26 @@ You should be able to create:
 - [💻 lab-models: 5_fitting.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/ae/5_fitting.ipynb)
 
 
+```{note}
+You should be able to use scikit-learn to:
+
+- Fit a model
+- Make predictions
+- Evaluate your model (with MSE, MAE and RMSE)
+
+```
+
+---
+
+## Week 5
+
+- [💻 lab-ims: 07-1-fitting.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/07-1-fitting.ipynb)
+- [💻 lab-ims: 07-2-correlation.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/07-2-correlation.ipynb)
+- [💻 lab-ims: 07-3-least-squares.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/07-3-least-squares.ipynb)
+- [💻 lab-ims: 07-4-strength-fit.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/07-4-strength-fit.ipynb)
+- [💻 lab-ims: 07-5-categorical.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/07-5-categorical.ipynb)
+
+
 <!--
 
 ---
