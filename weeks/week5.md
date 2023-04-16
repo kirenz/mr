@@ -7,11 +7,11 @@
 (prepare)=
 ## Prepare
 
-Fitting a line and residuals (Nr. 33): [📚](https://openintro-ims.netlify.app/model-slr.html#fit-line-res-cor)
+- Fitting a line and residuals (Nr. 28): [📚](https://openintro-ims.netlify.app/model-slr.html#fit-line-res-cor)
+- Correlation (Nr. 29): [📚](https://openintro-ims.netlify.app/model-slr.html#describing-linear-relationships-with-correlation)
+- Least squares regression (Nr. 30): [📚](https://openintro-ims.netlify.app/model-slr.html#least-squares-regression)
+- R squared (Nr. 31): [📚](https://openintro-ims.netlify.app/model-slr.html#r-squared)
 
-
-
----
 
 ---
 
@@ -20,10 +20,9 @@ Fitting a line and residuals (Nr. 33): [📚](https://openintro-ims.netlify.app/
 ## Participate
 
 
-Slides: [📑](https://drive.google.com/file/d/1-aNNxcxxtxU7shWEGJrpw8k88XmUym_0/view?usp=sharing)
 
 
-Go to the code overview: [🖥](../code/code-overview.md)
+Go to the code overview: [🖥](../docs/code-overview.md)
 
 
 ---
