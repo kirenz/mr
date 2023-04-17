@@ -27,25 +27,15 @@ Go to the code overview: [🖥](../docs/code-overview.md)
 
 ---
 
----
 
 
 (practice)=
 ## Practice
 
+Fitting a line and residuals (Nr. 28): [☑️](https://forms.gle/JFMXzjByDRGZtbDx8)
 
-Models 1: Sales and ads (Nr. 29): [💻](../ae/models_1/07a-intro-sales-g.ipynb)
+Correlation (Nr. 29): [☑️](https://forms.gle/5ntV6z8yHk8g4qgZ8)
 
-
-Models 2: Mean squared error 1 (Nr. 30): [💻](../ae/models_2/07b-1-mse-g.ipynb)
-
-
-Models 3: Mean squared error 2 (Nr. 31): [💻](../ae/models_3/07b-2-mse-g.ipynb)
-
-
-Models 4: Mean squared error 3 (Nr. 32): [💻](../ae/models_4/07b-3-mse-g.ipynb)
-
-Fitting a line and residuals (Nr. 33): [☑️](https://forms.gle/JFMXzjByDRGZtbDx8)
 
 
 ---
