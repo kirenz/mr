@@ -5,6 +5,7 @@ This page contains a detailed overview about the topics, readings and questions 
 :::{Note}
 This overview will be updated as the semester progresses.
 :::
+
 |	Lecture	|	Week	|	Nr.	|	Date	|	Topic	|	Prepare	|	Q	|
 |	---	|	---	|	---	|	---	|	---	|	---	|	---	|
 |	OC	|	1	|	1	|	14.03.	|	Data driven	|		|		|
@@ -38,3 +39,8 @@ This overview will be updated as the semester progresses.
 |	IMS	|	5	|	29	|	18.04.	|	Correlation	|	[📚](https://openintro-ims.netlify.app/model-slr.html#describing-linear-relationships-with-correlation)	|	[☑️](https://forms.gle/5ntV6z8yHk8g4qgZ8)	|
 |	IMS	|	5	|	30	|	18.04.	|	Least squares regression	|	[📚](https://openintro-ims.netlify.app/model-slr.html#least-squares-regression)	|		|
 |	IMS	|	5	|	31	|	18.04.	|	R squared	|	[📚](https://openintro-ims.netlify.app/model-slr.html#r-squared)	|		|
+|	IMS	|	5	|	32	|	18.04.	|	Categorical predictors with two levels	|	[📚](https://openintro-ims.netlify.app/model-slr.html#categorical-predictor-two-levels)	|		|
+|	IMS	|	6	|	33	|	25.04.	|	Outliers	|	[📚](https://openintro-ims.netlify.app/model-slr.html#outliers-in-regression)	|		|
+|	IMS	|	6	|	34	|	25.04.	|	Multiple predictors regression (multiple files)	|	[📚](https://openintro-ims.netlify.app/model-mlr.html#model-mlr)	|	[☑️](https://forms.gle/wHPHMvbTDczNaQD97)	|
+|	OC	|	6	|	35	|	25.04.	|	Data splitting	|		|		|
+|	OC	|	7	|	36	|	02.05.	|	Classification	|		|		|
