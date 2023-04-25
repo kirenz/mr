@@ -138,6 +138,18 @@ You should be able to use scikit-learn and Pandas to:
 
 ```
 
+---
+
+## Week 6
+
+- [💻 lab-ims: 08a-1-multiple.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08a-1-multiple.ipynb)
+- [💻 lab-ims: 08a-2-multiple.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08a-2-multiple.ipynb)
+- [💻 lab-ims: 08a-3-multiple.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08a-3-multiple.ipynb)
+- [💻 lab-ims: 08c-1-sales.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08c-1-sales.ipynb)
+- [💻 lab-ims: 08c-2-sales.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08c-2-sales.ipynb)
+
+
+
 
 <!--
 
