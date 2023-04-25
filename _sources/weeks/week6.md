@@ -7,7 +7,10 @@
 (prepare)=
 ## Prepare
 
-- Categorical predictors with two levels (Nr. 32): [📚](https://openintro-ims.netlify.app/model-slr.html#categorical-predictor-two-levels)
+- Outliers (Nr. 33): [📚](https://openintro-ims.netlify.app/model-slr.html#outliers-in-regression)
+
+- Multiple predictors regression (Nr. 34): [📚](https://openintro-ims.netlify.app/model-mlr.html#model-mlr)
+
 
 ---
 
@@ -16,24 +19,18 @@
 (participate)=
 ## Participate
 
+Download slides: [📑](https://drive.google.com/file/d/1-JPP0ZadpjrbCYcg2U_sJJAmGx7E4dVH/view?usp=sharing)
 
-Slides: [📑](https://drive.google.com/file/d/10DuEFUE-BVH1NYf84KyXeYA1Ajdre-0I/view?usp=sharing)
-
-Go to the code overview: [🖥](../code/code-overview.md)
-
-
+Go to the code overview: [🖥](../docs/code-overview.md)
 
 ---
 
----
 
 
 (practice)=
 ## Practice
 
 
-
-Correlation (Nr. 35): [☑️](https://forms.gle/5ntV6z8yHk8g4qgZ8)
 
 
 ---

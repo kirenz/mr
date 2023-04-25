@@ -20,10 +20,10 @@
 ## Participate
 
 
+Download slides: [📑](https://drive.google.com/file/d/11rMNNx4rQsvE2udngnV0ftW179X9z1My/view?usp=sharing)
 
 
 Go to the code overview: [🖥](../docs/code-overview.md)
-
 
 ---
 
@@ -31,6 +31,7 @@ Go to the code overview: [🖥](../docs/code-overview.md)
 
 (practice)=
 ## Practice
+
 
 Fitting a line and residuals (Nr. 28): [☑️](https://forms.gle/JFMXzjByDRGZtbDx8)
 
