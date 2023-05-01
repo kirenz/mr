@@ -7,31 +7,23 @@
 (prepare)=
 ## Prepare
 
-Precision recall and F1 score (Nr. 40): [📚](https://mlu-explain.github.io/precision-recall/)
 
-ROC Curve and AUC (Nr. 41): [📚](https://mlu-explain.github.io/roc-auc/)
+- Precision recall and F1 score (Nr. 37): [📚](https://mlu-explain.github.io/precision-recall/)
 
-Outliers (Nr. 42): [📚](https://openintro-ims.netlify.app/model-slr.html#outliers-in-regression)
-
-Multiple predictors regression (Nr. 43): [📚](https://openintro-ims.netlify.app/model-mlr.html#model-mlr)
-
+- ROC Curve and AUC (Nr. 38): [📚](https://mlu-explain.github.io/roc-auc/)
 
 ---
 
----
 
 
 (participate)=
 ## Participate
 
 
-Slides: [📑](https://drive.google.com/file/d/10MFDRHaWTV56zVBqBE95xUTaeSxF7ICb/view?usp=sharing)
+Slides: [📑](https://drive.google.com/file/d/1-aiBNvPgltpKfGQmgU3IsPTy70yKSOul/view?usp=sharing)
 
-Go to the code overview: [🖥](../code/code-overview.md)
+Go to the code overview: [🖥](../docs/code-overview.md)
 
-
-
----
 
 ---
 
@@ -40,7 +32,6 @@ Go to the code overview: [🖥](../code/code-overview.md)
 ## Practice
 
 
-Multiple predictors regression 1 (Nr. 43): [☑️](https://forms.gle/wHPHMvbTDczNaQD97)
 
 
 ---
