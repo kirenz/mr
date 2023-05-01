@@ -18,12 +18,5 @@ For a more detailed semester overview, take a look at the [course-schedule](../f
 |	3	|	04.04.	|	Exploratory data analysis	|	Exploratory data analysis	|	[📑](https://drive.google.com/file/d/1V3NJO8CmMciX5v8l1oF0JDurHTKRCUEF/view?usp=sharing)	|	[📁](../weeks/week3.md)	|
 |	4	|	11.04.	|	Introduction to models	|	Regression modeling	|	[📑](https://drive.google.com/file/d/11kQmPmg1HNLuvCBEouHzmAYzoA1ObGeD/view?usp=sharing)	|	[📁](../weeks/week4.md)	|
 |	5	|	18.04.	|	Regression modeling	|	Regression modeling	|	[📑](https://drive.google.com/file/d/11rMNNx4rQsvE2udngnV0ftW179X9z1My/view?usp=sharing)	|	[📁](../weeks/week5.md)	|
-|	6	|	25.04.	|	Regression modeling	|	Regression modeling	|	[📑](https://drive.google.com/file/d/1-JPP0ZadpjrbCYcg2U_sJJAmGx7E4dVH/view?usp=sharing)	|	[📁](../weeks/week6.md)	|
-|	7	|	02.05.	|	Classification	|	Classification	|		|		|
-|	8	|	09.05.	|	Logistic Regression	|	Logistic Regression	|		|		|
-|	9	|	16.05.	|	Foundations of inference	|	Foundations of inference	|		|		|
-|	10	|	23.05.	|	Foundations of inference	|	Foundations of inference	|		|		|
-|	11	|	06.06.	|	E-Exam preparation	|	E-Exam preparation	|		|		|
-|	12	|	13.06.	|	Statistical inference	|	No lecture	|		|		|
-|	13	|	20.06.	|	Statistical inference	|	Statistical inference	|		|		|
-|	14	|	27.06.	|	Statistical inference	|	Statistical inference	|		|		|
+|	6	|	25.04.	|	Regression modeling	|	Regression modeling	|	[📑](https://drive.google.com/file/d/1-TDLrIfgnlLRtCHKJOnrE4LOZ2sZHPOc/view?usp=sharing)	|	[📁](../weeks/week6.md)	|
+|	7	|	02.05.	|	Classification	|	Data splitting and Classification	|	[📑](https://drive.google.com/file/d/1-aiBNvPgltpKfGQmgU3IsPTy70yKSOul/view?usp=sharing)	|	[📁](../weeks/week7.md)	|
