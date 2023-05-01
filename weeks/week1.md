@@ -20,7 +20,6 @@ Data basics (Nr. 5): [📚](https://openintro-ims.netlify.app/data-hello.html#da
 
   - *Install software on your local machine: [💻](https://github.com/kirenz/environments/blob/main/programming-toolkit.md)*
 
-
   - *Create anaconda environment mr: [💻](https://github.com/kirenz/environments/blob/main/README.md)*
 
 ---
