@@ -19,7 +19,7 @@
 (participate)=
 ## Participate
 
-Download slides: [📑](https://drive.google.com/file/d/1-JPP0ZadpjrbCYcg2U_sJJAmGx7E4dVH/view?usp=sharing)
+Download slides: [📑](https://drive.google.com/file/d/1-TDLrIfgnlLRtCHKJOnrE4LOZ2sZHPOc/view?usp=sharing)
 
 Go to the code overview: [🖥](../docs/code-overview.md)
 
@@ -30,6 +30,7 @@ Go to the code overview: [🖥](../docs/code-overview.md)
 (practice)=
 ## Practice
 
+Multiple predictors regression 1 (Nr. 34): [☑️](https://forms.gle/wHPHMvbTDczNaQD97)
 
 
 
