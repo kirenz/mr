@@ -7,6 +7,16 @@
 (prepare)=
 ## Prepare
 
+Precision recall and F1 score (Nr. 40): [📚](https://mlu-explain.github.io/precision-recall/)
+
+ROC Curve and AUC (Nr. 41): [📚](https://mlu-explain.github.io/roc-auc/)
+
+Outliers (Nr. 42): [📚](https://openintro-ims.netlify.app/model-slr.html#outliers-in-regression)
+
+Multiple predictors regression (Nr. 43): [📚](https://openintro-ims.netlify.app/model-mlr.html#model-mlr)
+
+
+
 Randomization introduction (Nr. 46): [📚](https://openintro-ims.netlify.app/foundations-randomization.html)
 
 Randomization experiments (Nr. 47): [📚](https://openintro-ims.netlify.app/foundations-randomization.html#caseStudySexDiscrimination)
