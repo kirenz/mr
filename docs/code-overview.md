@@ -133,8 +133,10 @@ You should be able to use scikit-learn to:
 You should be able to use scikit-learn and Pandas to:
 
 - Obtain correlations
+- Fit a model
 - Use a categorical predictor in your model
-- Evaluate your model with R squared 
+- Make predictions
+- Evaluate your model (with MSE, MAE and RMSE)
 
 ```
 
@@ -142,14 +144,42 @@ You should be able to use scikit-learn and Pandas to:
 
 ## Week 6
 
-- [💻 lab-ims: 08a-1-multiple.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08a-1-multiple-c.ipynb)
-- [💻 lab-ims: 08a-2-multiple.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08a-2-multiple-c.ipynb)
-- [💻 lab-ims: 08a-3-multiple.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08a-3-multiple-c.ipynb)
-- [💻 lab-ims: 08c-1-sales.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08c-1-sales-c.ipynb)
-- [💻 lab-ims: 08c-2-sales.ipynb (with data splitting)](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08c-2-sales-c.ipynb)
+- [💻 lab-ims: 08a-1-multiple-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08a-1-multiple-c.ipynb)
+- [💻 lab-ims: 08a-2-multiple-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08a-2-multiple-c.ipynb)
+- [💻 lab-ims: 08a-3-multiple-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08a-3-multiple-c.ipynb)
+- [💻 lab-ims: 08c-1-sales-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08c-1-sales-c.ipynb)
 
 
 
+```{note}
+You should be able to use scikit-learn and Pandas to:
+
+- Obtain correlations
+- Fit a multiple regression model
+- Evaluate your model with R squared 
+
+```
+
+---
+
+## Week 7
+
+- [💻 lab-models: happier-c.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/mr/happier-c.ipynb)
+
+- [💻 lab-models: happier-splitting-c.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/mr/happier-splitting-c.ipynb)
+
+- [💻 lab-ims: 08c-2-sales-c.ipynb (with data splitting)](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08c-2-sales-c.ipynb)
+
+
+```{note}
+You should be able to use scikit-learn and Pandas to:
+
+- Prepare your data (lower case, etc.)
+- Perform data splitting (train test split)
+- Fit a model using K-fold cross validation
+- Evaluate your model
+
+```
 
 <!--
 
