@@ -42,5 +42,7 @@ This overview will be updated as the semester progresses.
 |	IMS	|	5	|	32	|	18.04.	|	Categorical predictors with two levels	|	[📚](https://openintro-ims.netlify.app/model-slr.html#categorical-predictor-two-levels)	|		|
 |	IMS	|	6	|	33	|	25.04.	|	Outliers	|	[📚](https://openintro-ims.netlify.app/model-slr.html#outliers-in-regression)	|		|
 |	IMS	|	6	|	34	|	25.04.	|	Multiple predictors regression (multiple files)	|	[📚](https://openintro-ims.netlify.app/model-mlr.html#model-mlr)	|	[☑️](https://forms.gle/wHPHMvbTDczNaQD97)	|
-|	OC	|	6	|	35	|	25.04.	|	Data splitting	|		|		|
+|	OC	|	7	|	35	|	02.05.	|	Data splitting	|		|		|
 |	OC	|	7	|	36	|	02.05.	|	Classification	|		|		|
+|	OC	|	7	|	37	|	02.05.	|	Precision recall and F1 score	|	[📚](https://mlu-explain.github.io/precision-recall/)	|		|
+|	OC	|	7	|	38	|	02.05.	|	ROC Curve and AUC	|	[📚](https://mlu-explain.github.io/roc-auc/)	|		|
