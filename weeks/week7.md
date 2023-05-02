@@ -20,7 +20,7 @@
 ## Participate
 
 
-Slides: [📑](https://drive.google.com/file/d/1-aiBNvPgltpKfGQmgU3IsPTy70yKSOul/view?usp=sharing)
+Slides: [📑](https://drive.google.com/file/d/1-fxkpBPLeReVCcIYN47vcjrHX45xb1up/view?usp=sharing)
 
 Go to the code overview: [🖥](../docs/code-overview.md)
 
