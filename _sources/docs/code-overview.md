@@ -168,8 +168,12 @@ You should be able to use scikit-learn and Pandas to:
 
 - [💻 lab-models: happier-splitting-c.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/mr/happier-splitting-c.ipynb)
 
+
+<!--
+
 - [💻 lab-ims: 08c-2-sales-c.ipynb (with data splitting)](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08c-2-sales-c.ipynb)
 
+-->
 
 ```{note}
 You should be able to use scikit-learn and Pandas to:
