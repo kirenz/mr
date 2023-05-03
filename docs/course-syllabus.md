@@ -80,14 +80,23 @@ The AEs are due within **three days** after the corresponding lecture. For examp
 
 Because these AEs are for practice, they will be graded based on completion. Successful on-time completion of at least 80% of every AE will result in full credit (+10 bouns points in exam).  -->
 
+
+
 (exams)=
 ### Exam
 
-There will be one exam at the end of the semester. Through the exam you have the opportunity to demonstrate what you've learned in the course.
+- There will be one electronic exam at the end of the semester (90 minutes) .
+
+- The exam will partly consist of the exercises provided in the book "Introduction to Modern Statistics (IMS)". Note that only the *odd numbered* exercises are exam relevant. 
+
+- The exam will also contain other content ("OC") besides topics covered in "Introduction to Modern Statistics (IMS)". Take a look at the [course syllabus](../docs/course-syllabus.md) to get an overview about contents from IMS and OC.
+
+- In the exam, you will also need to perform coding tasks like the ones provided in the [course overview](../docs/code-overview.md)
+
 
 <!-- The exam will focus on the conceptual understanding of the content but will also cover programming topics.   -->
 
-More details about the exams will be given during the semester.
+
 
 
 ## Grading
