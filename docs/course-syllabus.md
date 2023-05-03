@@ -89,9 +89,9 @@ Because these AEs are for practice, they will be graded based on completion. Suc
 
 - The exam will partly consist of the exercises provided in the book "Introduction to Modern Statistics (IMS)". Note that only the *odd numbered* exercises are exam relevant. 
 
-- The exam will also contain other content ("OC") besides topics covered in "Introduction to Modern Statistics (IMS)". Take a look at the [course syllabus](../docs/course-syllabus.md) to get an overview about contents from IMS and OC.
+- The exam will also contain other content ("OC") besides topics covered in "Introduction to Modern Statistics (IMS)". Take a look at the [course schedule](../docs/course-schedule.md) to get an overview about contents from IMS and OC.
 
-- In the exam, you will also need to perform coding tasks like the ones provided in the [course overview](../docs/code-overview.md)
+- In the exam, you will also need to perform coding tasks like the ones provided in the [code overview](../docs/code-overview.md)
 
 
 <!-- The exam will focus on the conceptual understanding of the content but will also cover programming topics.   -->
