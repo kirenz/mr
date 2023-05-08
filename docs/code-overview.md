@@ -185,6 +185,25 @@ You should be able to use scikit-learn and Pandas to:
 
 ```
 
+---
+
+## Week 8
+
+
+- [💻 lab-ims: 09a-logistic-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/09a-logistic-c.ipynb)
+
+- [💻 lab-ims: 09b-logistic-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/09b-logistic-c.ipynb)
+
+
+```{note}
+You should be able to use scikit-learn and Pandas to:
+
+- Perform data splitting (train test split)
+- Fit a logistic regresion model using K-fold cross validation
+- Evaluate your model (e.g., confusion matrix, classification report, ROC-curve, AUC)
+
+```
+
 <!--
 
 ---
