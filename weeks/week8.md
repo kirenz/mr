@@ -16,7 +16,7 @@
 ## Participate
 
 
-Slides: 
+Slides: [📑](https://drive.google.com/file/d/10pxsWKG9plIP9Jk6vULsCmfYtVHdUX0x/view?usp=sharing)
 
 Go to the code overview: [🖥](../docs/code-overview.md)
 
