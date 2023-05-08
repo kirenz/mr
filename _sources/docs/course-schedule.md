@@ -6,6 +6,7 @@ This page contains a detailed overview about the topics, readings and questions 
 This overview will be updated as the semester progresses.
 :::
 
+
 |	Lecture	|	Week	|	Nr.	|	Date	|	Topic	|	Prepare	|	Q	|
 |	---	|	---	|	---	|	---	|	---	|	---	|	---	|
 |	OC	|	1	|	1	|	14.03.	|	Data driven	|		|		|
@@ -47,3 +48,5 @@ This overview will be updated as the semester progresses.
 |	OC	|	7	|	37	|	02.05.	|	Classification	|		|		|
 |	OC	|	7	|	38	|	02.05.	|	Precision recall and F1 score	|	[📚](https://mlu-explain.github.io/precision-recall/)	|		|
 |	OC	|	7	|	39	|	02.05.	|	ROC Curve and AUC	|	[📚](https://mlu-explain.github.io/roc-auc/)	|		|
+|	IMS	|	8	|	40	|	09.05.	|	Probability of an event	|	[📚](https://openintro-ims.netlify.app/model-logistic.html#modelingTheProbabilityOfAnEvent)	|		|
+|	IMS	|	8	|	41	|	09.05.	|	Multiple predictors classification	|	[📚](https://openintro-ims.netlify.app/model-logistic.html#logistic-model-with-many-variables)	|		|

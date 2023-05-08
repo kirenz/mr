@@ -20,7 +20,7 @@ For a more detailed semester overview, take a look at the [course-schedule](../f
 |	5	|	18.04.	|	Regression modeling	|	Regression modeling	|	[📑](https://drive.google.com/file/d/11rMNNx4rQsvE2udngnV0ftW179X9z1My/view?usp=sharing)	|	[📁](../weeks/week5.md)	|
 |	6	|	25.04.	|	Regression modeling	|	Regression modeling	|	[📑](https://drive.google.com/file/d/1-TDLrIfgnlLRtCHKJOnrE4LOZ2sZHPOc/view?usp=sharing)	|	[📁](../weeks/week6.md)	|
 |	7	|	02.05.	|	Regression and Data Splitting	|	Classification	|	[📑](https://drive.google.com/file/d/10hpKApL25LEN-uOZr9XVKYCnhZ88BHWe/view?usp=sharing)	|	[📁](../weeks/week7.md)	|
-|	8	|	09.05.	|	Logistic Regression	|	Logistic Regression	|		|		|
+|	8	|	09.05.	|	Logistic Regression	|	Logistic Regression	|	[📑](https://drive.google.com/file/d/10pxsWKG9plIP9Jk6vULsCmfYtVHdUX0x/view?usp=sharing)	|	[📁](../weeks/week8.md)	|
 |	9	|	16.05.	|	Foundations of inference	|	Foundations of inference	|		|		|
 |	10	|	23.05.	|	Foundations of inference	|	Foundations of inference	|		|		|
 |	11	|	06.06.	|	E-Exam preparation	|	E-Exam preparation	|		|		|
