@@ -204,6 +204,15 @@ You should be able to use scikit-learn and Pandas to:
 
 ```
 
+## Week 9
+
+- [💻 lab-ims: 11a-discrimination-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/11a-discrimination-c.ipynb)
+
+- [💻 lab-ims: 11b-opportunity-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/11b-opportunity-c.ipynb)
+
+- [💻 lab-ims: 12a-medical-case-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/12a-medical-case-c.ipynb)
+
+
 <!--
 
 ---
