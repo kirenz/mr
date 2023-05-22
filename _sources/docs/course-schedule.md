@@ -6,7 +6,6 @@ This page contains a detailed overview about the topics, readings and questions 
 This overview will be updated as the semester progresses.
 :::
 
-
 |	Lecture	|	Week	|	Nr.	|	Date	|	Topic	|	Prepare	|	Q	|
 |	---	|	---	|	---	|	---	|	---	|	---	|	---	|
 |	OC	|	1	|	1	|	14.03.	|	Data driven	|		|		|
@@ -50,3 +49,12 @@ This overview will be updated as the semester progresses.
 |	OC	|	7	|	39	|	02.05.	|	ROC Curve and AUC	|	[📚](https://mlu-explain.github.io/roc-auc/)	|		|
 |	IMS	|	8	|	40	|	09.05.	|	Probability of an event	|	[📚](https://openintro-ims.netlify.app/model-logistic.html#modelingTheProbabilityOfAnEvent)	|		|
 |	IMS	|	8	|	41	|	09.05.	|	Multiple predictors classification	|	[📚](https://openintro-ims.netlify.app/model-logistic.html#logistic-model-with-many-variables)	|		|
+|	IMS	|	9	|	42	|	23.05.	|	Randomization introduction	|	[📚](https://openintro-ims.netlify.app/foundations-randomization.html)	|		|
+|	IMS	|	9	|	43	|	23.05.	|	Randomization experiments	|	[📚](https://openintro-ims.netlify.app/foundations-randomization.html#caseStudySexDiscrimination)	|		|
+|	IMS	|	9	|	44	|	23.05.	|	Hypothesis tesing summary	|	[📚](https://openintro-ims.netlify.app/foundations-randomization.html#chp11-review)	|		|
+|	IMS	|	9	|	45	|	23.05.	|	Randomization p-value	|	[📚](https://openintro-ims.netlify.app/foundations-randomization.html#p-value-and-statistical-significance)	|		|
+|	IMS	|	9	|	46	|	23.05.	|	Hypothesis tesing opportunity cost 	|	[📚](https://openintro-ims.netlify.app/foundations-randomization.html#caseStudyOpportunityCost)	|		|
+|	IMS	|	9	|	47	|	23.05.	|	Bootsrapping introduction	|	[📚](https://openintro-ims.netlify.app/foundations-bootstrapping.html)	|		|
+|	IMS	|	9	|	48	|	23.05.	|	Bootsrapping medical case	|	[📚](https://openintro-ims.netlify.app/foundations-bootstrapping.html#case-study-med-consult)	|		|
+|	IMS	|	9	|	49	|	23.05.	|	Bootsrapping tappers case	|	[📚](https://openintro-ims.netlify.app/foundations-bootstrapping.html#tapperscasestudy)	|		|
+|	IMS	|	9	|	50	|	23.05.	|	Bootsrapping confidence intervalls	|	[📚](https://openintro-ims.netlify.app/foundations-bootstrapping.html#ConfidenceIntervals)	|		|
