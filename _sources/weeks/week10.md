@@ -26,7 +26,7 @@ Decision errors (Nr. 62): [📚](https://openintro-ims.netlify.app/decerr.html)
 Slides: [📑](https://drive.google.com/file/d/10sGeOhA4V5dN8PxfIRbGar8ry1XgAyvt/view?usp=sharing)
 
 
-Go to the code overview: [🖥](../code/code-overview.md)
+Go to the code overview: [🖥](../docs/code-overview.md)
 
 
 
