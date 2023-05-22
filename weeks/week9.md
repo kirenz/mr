@@ -33,7 +33,7 @@ Bootsrapping confidence intervalls (Nr. 57): [📚](https://openintro-ims.netlif
 Slides: [📑](https://drive.google.com/file/d/10YvpqcO3HETCrRquhNt4C6lo22LbPGmH/view?usp=sharing)
 
 
-Go to the code overview: [🖥](../code/code-overview.md)
+Go to the code overview: [🖥](../docs/code-overview.md)
 
 
 
