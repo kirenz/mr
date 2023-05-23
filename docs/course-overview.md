@@ -23,7 +23,7 @@ For a more detailed semester overview, take a look at the [course-schedule](../f
 |	8	|	09.05.	|	Logistic Regression	|	Logistic Regression	|	[📑](https://drive.google.com/file/d/10pxsWKG9plIP9Jk6vULsCmfYtVHdUX0x/view?usp=sharing)	|	[📁](../weeks/week8.md)	|
 |	9	|	23.05.	|	Foundations of inference	|	Foundations of inference	|	[📑](https://drive.google.com/file/d/1127zcHToTjJQ82zkZIGYnk9nW_fp-2w7/view?usp=sharing)	|	[📁](../weeks/week9.md)	|
 |	10	|	06.06.	|	Foundations of inference	|	Foundations of inference	|		|		|
-|	11	|	13.06.	|	E-Exam preparation	|	E-Exam preparation	|		|		|
-|	12	|	20.06.	|	Statistical inference	|	No lecture	|		|		|
+|	11	|	13.06.	|	Foundations of inference	|	E-Exam preparation	|		|		|
+|	12	|	20.06.	|	Statistical inference	|	Statistical inference	|		|		|
 |	13	|	27.06.	|	Statistical inference	|	Statistical inference	|		|		|
 |	14	|	27.06.	|	Statistical inference	|	Statistical inference	|		|		|
