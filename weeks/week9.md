@@ -6,20 +6,15 @@
 
 (prepare)=
 ## Prepare
-
-Hypothesis tesing summary (Nr. 51): [📚](https://openintro-ims.netlify.app/foundations-randomization.html#chp11-review)
-
-Randomization p-value (Nr. 52): [📚](https://openintro-ims.netlify.app/foundations-randomization.html#p-value-and-statistical-significance)
-
-Hypothesis tesing opportunity cost  (Nr. 53): [📚](https://openintro-ims.netlify.app/foundations-randomization.html#caseStudyOpportunityCost)
-
-Bootsrapping introduction (Nr. 54): [📚](https://openintro-ims.netlify.app/foundations-bootstrapping.html)
-
-Bootsrapping medical case (Nr. 55): [📚](https://openintro-ims.netlify.app/foundations-bootstrapping.html#case-study-med-consult)
-
-Bootsrapping tappers case (Nr. 56): [📚](https://openintro-ims.netlify.app/foundations-bootstrapping.html#tapperscasestudy)
-
-Bootsrapping confidence intervalls (Nr. 57): [📚](https://openintro-ims.netlify.app/foundations-bootstrapping.html#ConfidenceIntervals)
+- Randomization introduction (Nr. 42): [📚](https://openintro-ims.netlify.app/foundations-randomization.html)
+- Randomization experiments (Nr. 43): [📚](https://openintro-ims.netlify.app/foundations-randomization.html#caseStudySexDiscrimination)
+- Hypothesis tesing summary (Nr. 44): [📚](https://openintro-ims.netlify.app/foundations-randomization.html#chp11-review)
+- Randomization p-value (Nr. 45): [📚](https://openintro-ims.netlify.app/foundations-randomization.html#p-value-and-statistical-significance)
+- Hypothesis tesing opportunity cost  (Nr. 46): [📚](https://openintro-ims.netlify.app/foundations-randomization.html#caseStudyOpportunityCost)
+- Bootsrapping introduction (Nr. 47): [📚](https://openintro-ims.netlify.app/foundations-bootstrapping.html)
+- Bootsrapping medical case (Nr. 48): [📚](https://openintro-ims.netlify.app/foundations-bootstrapping.html#case-study-med-consult)
+- Bootsrapping tappers case (Nr. 49): [📚](https://openintro-ims.netlify.app/foundations-bootstrapping.html#tapperscasestudy)
+- Bootsrapping confidence intervalls (Nr. 50): [📚](https://openintro-ims.netlify.app/foundations-bootstrapping.html#ConfidenceIntervals)
 
 ---
 
