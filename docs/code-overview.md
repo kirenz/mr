@@ -213,6 +213,12 @@ You should be able to use scikit-learn and Pandas to:
 - [💻 lab-ims: 12a-medical-case-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/12a-medical-case-c.ipynb)
 
 
+## Week 10
+
+- [💻 lab-ims: 13a-mathematical-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/13a-mathematical-c.ipynb)
+
+
+
 <!--
 
 ---
