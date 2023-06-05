@@ -11,6 +11,7 @@ This overview will be updated as the semester progresses.
 
 For a more detailed semester overview, take a look at the [course-schedule](../files/course-schedule.md). 
 
+
 |	Week	|	Date	|	Market Research (MR)	|	Statistics (S)	|	Slides	|	Materials	|
 |	---	|	---	|	---	|	---	|	---	|	---	|
 |	1	|	14.03.	|	Introduction	|	Introduction to data	|	[📑](https://drive.google.com/file/d/1SF30Q4B-i8UhiK_xW7okgKDbtii8lw2j/view?usp=sharing)	|	[📁](../weeks/week1.md)	|
@@ -22,8 +23,10 @@ For a more detailed semester overview, take a look at the [course-schedule](../f
 |	7	|	02.05.	|	Regression and Data Splitting	|	Classification	|	[📑](https://drive.google.com/file/d/10hpKApL25LEN-uOZr9XVKYCnhZ88BHWe/view?usp=sharing)	|	[📁](../weeks/week7.md)	|
 |	8	|	09.05.	|	Logistic Regression	|	Logistic Regression	|	[📑](https://drive.google.com/file/d/10pxsWKG9plIP9Jk6vULsCmfYtVHdUX0x/view?usp=sharing)	|	[📁](../weeks/week8.md)	|
 |	9	|	23.05.	|	Foundations of inference	|	Foundations of inference	|	[📑](https://drive.google.com/file/d/1127zcHToTjJQ82zkZIGYnk9nW_fp-2w7/view?usp=sharing)	|	[📁](../weeks/week9.md)	|
-|	10	|	06.06.	|	Foundations of inference	|	Foundations of inference	|		|		|
+|	10	|	06.06.	|	Foundations of inference	|	Foundations of inference	|	[📑](https://drive.google.com/file/d/11NFNhQblTp3aBLoDvcA2ePt66ATgojXp/view?usp=sharing)	|	[📁](../weeks/week10.md)	|
 |	11	|	13.06.	|	Foundations of inference	|	E-Exam preparation	|		|		|
 |	12	|	20.06.	|	Statistical inference	|	Statistical inference	|		|		|
 |	13	|	27.06.	|	Statistical inference	|	Statistical inference	|		|		|
 |	14	|	27.06.	|	Statistical inference	|	Statistical inference	|		|		|
+												
+												
