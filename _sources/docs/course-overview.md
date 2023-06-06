@@ -27,6 +27,4 @@ For a more detailed semester overview, take a look at the [course-schedule](../f
 |	11	|	13.06.	|	Foundations of inference	|	E-Exam preparation	|		|		|
 |	12	|	20.06.	|	Statistical inference	|	Statistical inference	|		|		|
 |	13	|	27.06.	|	Statistical inference	|	Statistical inference	|		|		|
-|	14	|	27.06.	|	Statistical inference	|	Statistical inference	|		|		|
-												
-												
+							
