@@ -19,5 +19,5 @@ parts:
       - file: weeks/week8.md
       - file: weeks/week9.md
       - file: weeks/week10.md
-        # - file: weeks/week11.md
+      - file: weeks/week11.md
         # - file: weeks/week12.md
