@@ -4,7 +4,7 @@ parts:
   - caption: Course information
     chapters:
       - file: docs/course-schedule.md
-      - file: code/code-overview.md
+      - file: docs/code-overview.md
       - file: docs/course-syllabus.md
       - file: docs/course-support.md
   - caption: Weekly materials
