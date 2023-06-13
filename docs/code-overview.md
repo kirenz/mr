@@ -149,6 +149,12 @@ You should be able to use scikit-learn and Pandas to:
 - [💻 lab-ims: 08a-3-multiple-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08a-3-multiple-c.ipynb)
 - [💻 lab-ims: 08c-1-sales-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08c-1-sales-c.ipynb)
 
+**Solutions:**
+
+- [💻 lab-ims: 08a-1-multiple-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08a-1-multiple.ipynb)
+- [💻 lab-ims: 08a-2-multiple-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08a-2-multiple.ipynb)
+- [💻 lab-ims: 08a-3-multiple-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08a-3-multiple.ipynb)
+- [💻 lab-ims: 08c-1-sales-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/08c-1-sales.ipynb)
 
 
 ```{note}
@@ -168,6 +174,12 @@ You should be able to use scikit-learn and Pandas to:
 
 - [💻 lab-models: happier-splitting-c.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/mr/happier-splitting-c.ipynb)
 
+
+**Solutions**
+
+- [💻 lab-models: happier-c.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/mr/happier.ipynb)
+
+- [💻 lab-models: happier-splitting-c.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/mr/happier-splitting.ipynb)
 
 <!--
 
@@ -194,6 +206,12 @@ You should be able to use scikit-learn and Pandas to:
 
 - [💻 lab-ims: 09b-logistic-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/09b-logistic-c.ipynb)
 
+**Solutions**
+
+- [💻 lab-ims: 09a-logistic-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/09a-logistic.ipynb)
+
+- [💻 lab-ims: 09b-logistic-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/09b-logistic.ipynb)
+
 
 ```{note}
 You should be able to use scikit-learn and Pandas to:
@@ -212,11 +230,23 @@ You should be able to use scikit-learn and Pandas to:
 
 - [💻 lab-ims: 12a-medical-case-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/12a-medical-case-c.ipynb)
 
+**Solutions**
+
+- [💻 lab-ims: 11a-discrimination-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/11a-discrimination.ipynb)
+
+- [💻 lab-ims: 11b-opportunity-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/11b-opportunity.ipynb)
+
+- [💻 lab-ims: 12a-medical-case-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/12a-medical-case.ipynb)
+
 
 ## Week 10
 
 - [💻 lab-ims: 13a-mathematical-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/13a-mathematical-c.ipynb)
 
+
+**Solutions**
+
+- [💻 lab-ims: 13a-mathematical-c.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ims/13a-mathematical.ipynb)
 
 
 <!--
