@@ -17,6 +17,11 @@ In the exam, you will get a copy of the following code cheat sheets:
 [💻 lab-ims: 1_netflix.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/ae/1_netflix.ipynb)
 
 
+**Solution hints**
+
+- [💻 lab-ims: 1_netflix.ipynb](https://colab.research.google.com/github/kirenz/lab-ims/blob/main/so/1_netflix.ipynb)
+
+
 ```{note}
 
 You should be able to:
@@ -37,6 +42,16 @@ You should be able to:
 - [💻 lab-pandas: 4_statistics.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/ae/4_statistics.ipynb)
 - [💻 lab-pandas: 5_selection.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/ae/5_selection.ipynb)
 - [💻 lab-pandas: 6_filter.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/ae/6_filter.ipynb)
+
+
+**Solutions**
+
+- [💻 lab-pandas: 1_import_store.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/so/1_import_store.ipynb)
+- [💻 lab-pandas: 2_columns.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/so/2_columns.ipynb)
+- [💻 lab-pandas: 3_data_types.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/so/3_data_types.ipynb)
+- [💻 lab-pandas: 4_statistics.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/so/4_statistics.ipynb)
+- [💻 lab-pandas: 5_selection.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/so/5_selection.ipynb)
+- [💻 lab-pandas: 6_filter.ipynb](https://colab.research.google.com/github/kirenz/lab-pandas/blob/main/so/6_filter.ipynb)
 
 <br>
 
@@ -107,6 +122,15 @@ You should be able to create:
 - [💻 lab-models: 3_mse.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/ae/3_mse.ipynb)
 - [💻 lab-models: 4_mse.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/ae/4_mse.ipynb)
 - [💻 lab-models: 5_fitting.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/ae/5_fitting.ipynb)
+
+
+**Solutions**
+
+- [💻 lab-models: 1_intro_sales.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/so/1_intro_sales.ipynb)
+- [💻 lab-models: 2_mse.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/so/2_mse.ipynb)
+- [💻 lab-models: 3_mse.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/so/3_mse.ipynb)
+- [💻 lab-models: 4_mse.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/so/4_mse.ipynb)
+- [💻 lab-models: 5_fitting.ipynb](https://colab.research.google.com/github/kirenz/lab-models/blob/main/so/5_fitting.ipynb)
 
 
 ```{note}
