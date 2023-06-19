@@ -25,5 +25,4 @@ For a more detailed semester overview, take a look at the [course-schedule](../f
 |	9	|	23.05.	|	Foundations of inference	|	Foundations of inference	|	[📑](https://drive.google.com/file/d/1127zcHToTjJQ82zkZIGYnk9nW_fp-2w7/view?usp=sharing)	|	[📁](../weeks/week9.md)	|
 |	10	|	06.06.	|	Foundations of inference	|	Foundations of inference	|	[📑](https://drive.google.com/file/d/11NFNhQblTp3aBLoDvcA2ePt66ATgojXp/view?usp=sharing)	|	[📁](../weeks/week10.md)	|
 |	11	|	13.06.	|	Foundations of inference	|	E-Exam preparation	|	 -	|	[📁](../weeks/week11.md)	|
-|	12	|	20.06.	|	Statistical inference	|	Statistical inference	|		|		|
-|	13	|	27.06.	|	Statistical inference	|	Statistical inference	|		|		|
+|	12	|	20.06.	|	Statistical inference	|	Statistical inference	|	[📑](https://drive.google.com/file/d/120mfhUNPrhvncou2tUFuPDTmPyT1HIh8/view?usp=sharing)	|	[📁](../weeks/week12.md)	|
