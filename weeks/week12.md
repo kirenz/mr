@@ -6,36 +6,29 @@
 (prepare)=
 ## Prepare
 
-- Two way tables randomization (Nr. 71): [📚](https://openintro-ims.netlify.app/inference-tables.html#randomization-test-of-independence)
-
-- Two way tables mathematical (Nr. 72): [📚](https://openintro-ims.netlify.app/inference-tables.html#mathchisq)
-
-
-- Not relevant for your exam:
-
-  - Two means randomization (Nr. 73): [📚](https://openintro-ims.netlify.app/inference-two-means.html#rand2mean)
-  - Two means bootstrapping (Nr. 74): [📚](https://openintro-ims.netlify.app/inference-two-means.html#bootstrap-confidence-interval-for-the-difference-in-means)
-  - Two means mathematical (Nr. 75): [📚](https://openintro-ims.netlify.app/inference-two-means.html#mathematical-model-for-estimating-the-difference-in-means)
-
+- Single proportion bootstrapping (Nr. 55): [📚](https://openintro-ims.netlify.app/inference-one-prop.html#one-prop-null-boot)
+- Single proportion mathematical (Nr. 56): [📚](https://openintro-ims.netlify.app/inference-one-prop.html#one-prop-norm)
+- Single proportion hypothesis testing (Nr. 57): [📚](https://openintro-ims.netlify.app/inference-one-prop.html#hypothesis-test-for-a-proportion)
+- Two proportions randomization (Nr. 58): [📚](https://openintro-ims.netlify.app/inference-two-props.html#two-prop-errors)
+- Two proportions bootstrapping (Nr. 59): [📚](https://openintro-ims.netlify.app/inference-two-props.html#two-prop-boot-ci)
+- Two proportions mathematical (Nr. 60): [📚](https://openintro-ims.netlify.app/inference-two-props.html#math-2prop)
+- Two proportions hypothesis test (Nr. 61): [📚](https://openintro-ims.netlify.app/inference-two-props.html#hypothesis-test-for-the-difference-between-two-proportions)
+- Two proportions mammogram (Nr. 62): [📚](https://openintro-ims.netlify.app/inference-two-props.html#hypothesis-test-for-the-difference-between-two-proportions)
 
 ---
 
----
+
 
 
 (participate)=
 ## Participate
 
 
-- The topic "two means ..." ist not relevant for your exam.
-
-
-Slides: [📑](https://drive.google.com/file/d/115Q0y2T7GD9VGEd3irJljxm4V684TT9O/view?usp=sharing)
+Slides: [📑](https://drive.google.com/file/d/120mfhUNPrhvncou2tUFuPDTmPyT1HIh8/view?usp=sharing)
 
 
 
 
----
 
 ---
 
@@ -43,7 +36,6 @@ Slides: [📑](https://drive.google.com/file/d/115Q0y2T7GD9VGEd3irJljxm4V684TT9O
 (practice)=
 ## Practice
 
-None
 
 
 ---
