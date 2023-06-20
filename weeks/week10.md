@@ -21,7 +21,7 @@
 
 Slides: [📑](https://drive.google.com/file/d/11NFNhQblTp3aBLoDvcA2ePt66ATgojXp/view?usp=sharing)
 
-The topic "Power" is not relevant for the exam.
+The topic "Power" in "Decision errors (Nr. 53)" is not relevant for the exam.
 
 
 Go to the code overview: [🖥](../docs/code-overview.md)
