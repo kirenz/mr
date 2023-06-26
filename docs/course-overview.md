@@ -11,20 +11,18 @@ This overview will be updated as the semester progresses.
 
 For a more detailed semester overview, take a look at the [course-schedule](../files/course-schedule.md). 
 
-
-|	Week	|	Date	|	Content	|	Slides	|	Materials	|	
-|	---	|	---	|	---	|	---	|	---	|	
-|	1	|	15.03.	|	Introduction	|	[📑](https://drive.google.com/file/d/11jh63a7vX49m9q3a9qJz0L8scmPijLMf/view?usp=sharing)	|	[📁](../weeks/week1.md)	|	
-|	2	|	22.03.	|	Decision Trees	|	[📑](https://drive.google.com/file/d/1-Ox-jFeNPPam4sxZzoI90L4hH_rq6bU9/view?usp=sharing)	|	[📁](../weeks/week2.md)	|	
-|	3	|	29.03.	|	Decision Trees	|	[📑](https://drive.google.com/file/d//view?usp=sharing)	|	[📁](../weeks/week3.md)	|	
-|	4	|	05.04.	|	AI and Marketing	|	[📑 🖥](https://kirenz.github.io/slides/ml/ml-overview#/title-slide)	|	[📁](../weeks/week4.md)	|	
-|	5	|	12.04.	|	Deep Learning	|	[📑](https://drive.google.com/file/d/1-1fCMnIrZYAQzAdKs_biGgtdrM9-Bsfz/view?usp=sharing)	|	[📁](../weeks/week5.md)	|	
-|	6	|	19.04.	|	Deep Learning	|	[📑 🖥](https://kirenz.github.io/huggingface/transformers/transformer-intuition.html#/title-slide)	|	[📁](../weeks/week6.md)	|	
-|	7	|	26.04.	|	Clustering	|	[📑](https://drive.google.com/file/d/1-PaXIIO0EyQltEg9wECCuj-31COvJ9_f/view?usp=sharing)	|	[📁](../weeks/week7.md)	|	
-|	8	|	03.05.	|	Clustering / Summary	|	[📑](https://drive.google.com/file/d/1-bWxMvD5SXgt9bcx0cY1MeCdEYEBiEjo/view?usp=sharing)	|	[📁](../weeks/week8.md)	|	
-|	9	|	10.05.	|	Digital Analytics	|	See weekly overview	|	[📁](../weeks/week9.md)	|	
-|	10	|	17.05.	|	Digital Analytics	|	See weekly overview	|	[📁](../weeks/week10.md)	|	
-|	11	|	24.05.	|	Digital Analytics	|	See weekly overview	|	[📁](../weeks/week11.md)	|	
-|	12	|	07.06.	|	Digital Analytics	|	See weekly overview	|	[📁](../weeks/week12.md)	|	
-|	13	|	14.06.	|	Marketing Analytics	|	See weekly overview	|	[📁](../weeks/week13.md)	|	
-|	14	|	21.06.	|	Marketing Analytics	|	See weekly overview	|	[📁](../weeks/week14.md)	|	
+|	Week	|	Date	|	Market Research (MR)	|	Statistics (S)	|	Slides	|	Materials	|
+|	---	|	---	|	---	|	---	|	---	|	---	|
+|	1	|	14.03.	|	Introduction	|	Introduction to data	|	[📑](https://drive.google.com/file/d/1SF30Q4B-i8UhiK_xW7okgKDbtii8lw2j/view?usp=sharing)	|	[📁](../weeks/week1.md)	|
+|	2	|	21.03.	|	Data preparation	|	Study design	|	[📑](https://drive.google.com/file/d/1-3uVavxMAvDNMnRiN7sXsZRTReRNsZpj/view?usp=sharing)	|	[📁](../weeks/week2.md)	|
+|	3	|	04.04.	|	Exploratory data analysis	|	Exploratory data analysis	|	[📑](https://drive.google.com/file/d/1V3NJO8CmMciX5v8l1oF0JDurHTKRCUEF/view?usp=sharing)	|	[📁](../weeks/week3.md)	|
+|	4	|	11.04.	|	Introduction to models	|	Regression modeling	|	[📑](https://drive.google.com/file/d/11kQmPmg1HNLuvCBEouHzmAYzoA1ObGeD/view?usp=sharing)	|	[📁](../weeks/week4.md)	|
+|	5	|	18.04.	|	Regression modeling	|	Regression modeling	|	[📑](https://drive.google.com/file/d/11rMNNx4rQsvE2udngnV0ftW179X9z1My/view?usp=sharing)	|	[📁](../weeks/week5.md)	|
+|	6	|	25.04.	|	Regression modeling	|	Regression modeling	|	[📑](https://drive.google.com/file/d/1-TDLrIfgnlLRtCHKJOnrE4LOZ2sZHPOc/view?usp=sharing)	|	[📁](../weeks/week6.md)	|
+|	7	|	02.05.	|	Regression and Data Splitting	|	Classification	|	[📑](https://drive.google.com/file/d/10hpKApL25LEN-uOZr9XVKYCnhZ88BHWe/view?usp=sharing)	|	[📁](../weeks/week7.md)	|
+|	8	|	09.05.	|	Logistic Regression	|	Logistic Regression	|	[📑](https://drive.google.com/file/d/10pxsWKG9plIP9Jk6vULsCmfYtVHdUX0x/view?usp=sharing)	|	[📁](../weeks/week8.md)	|
+|	9	|	23.05.	|	Foundations of inference	|	Foundations of inference	|	[📑](https://drive.google.com/file/d/1127zcHToTjJQ82zkZIGYnk9nW_fp-2w7/view?usp=sharing)	|	[📁](../weeks/week9.md)	|
+|	10	|	06.06.	|	Foundations of inference	|	Foundations of inference	|	[📑](https://drive.google.com/file/d/11NFNhQblTp3aBLoDvcA2ePt66ATgojXp/view?usp=sharing)	|	[📁](../weeks/week10.md)	|
+|	11	|	13.06.	|	Foundations of inference	|	E-Exam preparation	|	 -	|	[📁](../weeks/week11.md)	|
+|	12	|	20.06.	|	Statistical inference	|	Statistical inference	|	[📑](https://drive.google.com/file/d/120mfhUNPrhvncou2tUFuPDTmPyT1HIh8/view?usp=sharing)	|	[📁](../weeks/week12.md)	|
+|	13	|	27.06.	|	Statistical inference	|	Statistical inference	|	 -	|	[📁](../weeks/week13.md)	|
