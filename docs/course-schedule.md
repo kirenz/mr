@@ -61,3 +61,13 @@ This overview will be updated as the semester progresses.
 |	IMS	|	10	|	51	|	06.06.	|	Mathematical introduction	|	[📚](https://openintro-ims.netlify.app/foundations-mathematical.html)	|		|
 |	IMS	|	10	|	52	|	06.06.	|	Mathematical cases and confidence	|	[📚](https://openintro-ims.netlify.app/foundations-mathematical.html#caseopp)	|		|
 |	IMS	|	10	|	53	|	06.06.	|	Decision errors	|	[📚](https://openintro-ims.netlify.app/decerr.html)	|		|
+|	EXAM	|	11	|	54	|	13.06.	|	Exam exercise in lab	|		|		|
+|	IMS	|	12	|	55	|	20.06.	|	Single proportion bootstrapping	|	[📚](https://openintro-ims.netlify.app/inference-one-prop.html#one-prop-null-boot)	|		|
+|	IMS	|	12	|	56	|	20.06.	|	Single proportion mathematical	|	[📚](https://openintro-ims.netlify.app/inference-one-prop.html#one-prop-norm)	|		|
+|	IMS	|	12	|	57	|	20.06.	|	Single proportion hypothesis testing	|	[📚](https://openintro-ims.netlify.app/inference-one-prop.html#hypothesis-test-for-a-proportion)	|		|
+|	IMS	|	12	|	58	|	20.06.	|	Two proportions randomization	|	[📚](https://openintro-ims.netlify.app/inference-two-props.html#two-prop-errors)	|		|
+|	IMS	|	12	|	59	|	20.06.	|	Two proportions bootstrapping	|	[📚](https://openintro-ims.netlify.app/inference-two-props.html#two-prop-boot-ci)	|		|
+|	IMS	|	12	|	60	|	20.06.	|	Two proportions mathematical	|	[📚](https://openintro-ims.netlify.app/inference-two-props.html#math-2prop)	|		|
+|	IMS	|	12	|	61	|	20.06.	|	Two proportions hypothesis test	|	[📚](https://openintro-ims.netlify.app/inference-two-props.html#hypothesis-test-for-the-difference-between-two-proportions)	|		|
+|	IMS	|	12	|	62	|	20.06.	|	Two proportions mammogram	|	[📚](https://openintro-ims.netlify.app/inference-two-props.html#hypothesis-test-for-the-difference-between-two-proportions)	|		|
+|		|		|		|		|		|		|		|
