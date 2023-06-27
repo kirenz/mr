@@ -5,7 +5,7 @@
 
 ### Exercise 11
 
-Air quality. Histogram code in exercise-chap-5-11
+Air quality.
 
 
 - a: The median is the 50% of the distribution, which is about **30**.
@@ -29,7 +29,6 @@ Air quality. Histogram code in exercise-chap-5-11
 
 ### Exercise 5
 
--> Unterschied zw. log. Regression und Klassifikation?
 
 a) 33.5095 − 1.4207×𝚜𝚎𝚡𝚖𝚊𝚕𝚎 − 0.2787×𝚜𝚔𝚞𝚕𝚕_𝚠 + 0.5687×𝚝𝚘𝚝𝚊𝚕_𝚕 − 18057×𝚝𝚊𝚒𝚕_𝚕
  
@@ -45,7 +44,7 @@ e^-5.0781 / 1 + e^-5.0781 = **0.0062**
 
 ### Exercise 1
 
-Outside YouTube videos. c, d, f (all)
+Outside YouTube videos. 
 
 
 - a: The statistic is the proportion of outside videos among the 128 sampled. 
@@ -99,8 +98,6 @@ Bootstrap distributions of p', II.
 ### Exercise 3
 
 Defund the police.
-
--> wie man den p-Wert aus einem Histogramm schätzt?
 
 
 - a: 1/5 = 0.2
@@ -193,12 +190,6 @@ If it fits, it sits, standard errors
 
 ### Exercise 11
 
-
-11d nicht relevant für theoretischen Teil (Funktion wird benötigt)
-
-Statistics and employment, use the bootstrap
-
--> wie kommt der p value zustande? b
 
 
 - a: The parametric bootstrap distribution imposes the condition that the true population parameter is p=0.7, so it should be used to test whether the population from which the statistics majors were sample (i.e., the population of all statistics majors) has 70% employed students. The data bootstrap distribution should be used to find a confidence interval for the true proportion of statistics majors who are employed at least 5 hours per week.
@@ -293,8 +284,7 @@ Vegetarian college students.
 
 ### Exercise 23
 
--> p-value?
--> Null-value?
+
 
 a)
 
@@ -340,10 +330,6 @@ a)
 
 ### Exercise 25
 
-- b
-
--> p-value?
-
 see exercise 23 (the same)
 
 The hypotheses are as follows: H0:p=0.5
@@ -362,9 +348,7 @@ If in fact people cannot tell the difference between diet and regular soda and t
 
 ### Exercise 3
 
--> all
 
-- c
 
 Disaggregating Asian American tobacco use, confidence interval.
 
@@ -384,7 +368,6 @@ Disaggregating Asian American tobacco use, confidence interval.
 
 ### Exercise 13
 
--> p-value?
 
 - Before we can calculate a confidence interval, we must first check that the conditions are met. 
 - There aren’t at least 10 successes and 10 failures in each of the four groups (treatment/control and yawn/not yawn)  
@@ -406,37 +389,4 @@ The question for each part is, what proportion of the normal curve centered at �
 with a standard error of ...
 
 
-
-
-## Chapter 18 
-
-### Exercise 7
-
-Lizard habitats, randomization test.
-
--> Unabhängigkeit der Variablen ?
-
-- a: The imposed structure in a randomization test is that the two variables are *independent*. 
-  - That is, knowing the habitat where the lizard lives will not give any information about the likelihood of being in any of the sunshine states.
-
-- b: From the histogram, the Chi-squared values simulated with the randomization test (i.e., under the null hypothesis) range from zero to approximately 15.
-
--c: The null hypothesis is that the variables are independent: the habitat where the lizard lives will not give any information about the likelihood of being in any of the sunshine states. The alternative hypothesis is that the variables are associated: the habitat where the lizard lives will provide information about the likelihood of being in any of the sunshine states. The observed Chi-squared value is well away from the possible Chi-squared values seen under randomization, therefore the p-value is extremely small. The null hypothesis can be rejected, the habitat provides information about the likelihood of being in the different sunshine states.
-
-### Exercise 13
-
-Sleep deprived transportation workers.
-
-The hypotheses are 
-- H0: Sleep levels and profession are independent. 
-- HA: Sleep levels and profession are associated. 
-- The observations are independent and the sample sizes are large enough to conduct a Chi-square test of independence.
-
-<br>
-
-- The Chi-square statistic is 1.0243009 with 2 degrees of freedom. 
-
-- The p-value is 0.5992056. Since the p-value is high (default to alpha = 0.05), we fail to reject H0
-
-- The data do not provide convincing evidence of an association between sleep levels and profession.
 
