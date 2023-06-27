@@ -70,4 +70,4 @@ This overview will be updated as the semester progresses.
 |	IMS	|	12	|	60	|	20.06.	|	Two proportions mathematical	|	[📚](https://openintro-ims.netlify.app/inference-two-props.html#math-2prop)	|		|
 |	IMS	|	12	|	61	|	20.06.	|	Two proportions hypothesis test	|	[📚](https://openintro-ims.netlify.app/inference-two-props.html#hypothesis-test-for-the-difference-between-two-proportions)	|		|
 |	IMS	|	12	|	62	|	20.06.	|	Two proportions mammogram	|	[📚](https://openintro-ims.netlify.app/inference-two-props.html#hypothesis-test-for-the-difference-between-two-proportions)	|		|
-|		|		|		|		|		|		|		|
+|	IMS	|	13	|	63	|	27.06.	|	Repetition	|		|		|
