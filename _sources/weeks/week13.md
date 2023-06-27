@@ -29,7 +29,7 @@ Repetition of last lecture (Nr. 12)
 (practice)=
 ## Practice
 
-
+- [Detailed solutions to some exercises](../code/solutions_ims_questions.md) 
 
 ---
 

@@ -1,0 +1,966 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Solutions &#8212; Market Research</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'code/solutions_ims_questions';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../docs/course-overview.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../docs/course-overview.html">
+                    Course overview
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../docs/course-schedule.html">Course schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/code-overview.html">Code overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/course-syllabus.html">Course syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/course-support.html">Course support</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../weeks/week1.html">Week 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../weeks/week2.html">Week 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../weeks/week3.html">Week 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../weeks/week4.html">Week 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../weeks/week5.html">Week 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../weeks/week6.html">Week 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../weeks/week7.html">Week 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../weeks/week8.html">Week 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../weeks/week9.html">Week 9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../weeks/week10.html">Week 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../weeks/week11.html">Week 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../weeks/week12.html">Week 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../weeks/week13.html">Week 13</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/code/solutions_ims_questions.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Solutions</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-5">Chapter 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-11">Exercise 11</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-9">Chapter 9</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5">Exercise 5</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-12">Chapter 12</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1">Exercise 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3">Exercise 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exercise 5</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-16">Chapter 16</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Exercise 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-7">Exercise 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-9">Exercise 9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Exercise 11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-13">Exercise 13</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-15">Exercise 15</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-23">Exercise 23</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-25">Exercise 25</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-17">Chapter 17</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Exercise 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Exercise 13</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-21">Exercise 21</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-18">Chapter 18</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Exercise 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Exercise 13</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="solutions">
+<h1>Solutions<a class="headerlink" href="#solutions" title="Permalink to this heading">#</a></h1>
+<section id="chapter-5">
+<h2>Chapter 5<a class="headerlink" href="#chapter-5" title="Permalink to this heading">#</a></h2>
+<section id="exercise-11">
+<h3>Exercise 11<a class="headerlink" href="#exercise-11" title="Permalink to this heading">#</a></h3>
+<p>Air quality. Histogram code in exercise-chap-5-11</p>
+<ul class="simple">
+<li><p>a: The median is the 50% of the distribution, which is about <strong>30</strong>.</p></li>
+<li><p>b: Since the distribution is right skewed the <strong>mean is higher</strong> than the median.</p></li>
+<li><p>c: Quartile</p>
+<ul>
+<li><p>Q1: between 15 and 20.</p></li>
+<li><p>Q3: between 35 and 40.</p></li>
+<li><p>IQR: about 20.</p></li>
+</ul>
+</li>
+<li><p>d: Values that are considered to be unusually low or high lie more than 1.5×IQR away from the quartiles.</p>
+<ul>
+<li><p>Upper fence: Q3 + 1.5 × IQR = 37.5+1.5×20=67.5</p></li>
+<li><p>Lower fence: Q1 - 1.5 × IQR = 17.5+1.5×20=−12.5</p></li>
+<li><p>The lowest AQI recorded is not lower than 5</p></li>
+<li><p>The highest AQI recorded is not higher than 65, which are both within the fences.</p></li>
+<li><p>Therefore none of the days in this sample would be considered to have an unusually low or high AQI.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="chapter-9">
+<h2>Chapter 9<a class="headerlink" href="#chapter-9" title="Permalink to this heading">#</a></h2>
+<section id="exercise-5">
+<h3>Exercise 5<a class="headerlink" href="#exercise-5" title="Permalink to this heading">#</a></h3>
+<p>-&gt; Unterschied zw. log. Regression und Klassifikation?</p>
+<p>a) 33.5095 − 1.4207×𝚜𝚎𝚡𝚖𝚊𝚕𝚎 − 0.2787×𝚜𝚔𝚞𝚕𝚕_𝚠 + 0.5687×𝚝𝚘𝚝𝚊𝚕_𝚕 − 18057×𝚝𝚊𝚒𝚕_𝚕</p>
+<p>b) log (p’/1-p’)= 33.5095 − 1.4207×1 − 0.2787×63 + 0.5687×83 − 1.8057×37 = −5.0781</p>
+<p>auflösen nach p’:</p>
+<p>e^-5.0781 / 1 + e^-5.0781 = <strong>0.0062</strong></p>
+</section>
+</section>
+<section id="chapter-12">
+<h2>Chapter 12<a class="headerlink" href="#chapter-12" title="Permalink to this heading">#</a></h2>
+<section id="exercise-1">
+<h3>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this heading">#</a></h3>
+<p>Outside YouTube videos. c, d, f (all)</p>
+<ul class="simple">
+<li><p>a: The statistic is the proportion of outside videos among the 128 sampled.</p>
+<ul>
+<li><p>The statistic is <strong>0.289</strong>.</p></li>
+<li><p>The parameter is the proportion of outside videos among all YouTube videos.</p></li>
+<li><p>The parameter is not a number we can calculate (we cannot watch all YouTube videos).</p></li>
+</ul>
+</li>
+<li><p>b: Notation</p>
+<ul>
+<li><p>The notation used to describe the statistic is <strong>p’</strong>.</p></li>
+<li><p>The notation for the unknown parameter value is <strong>p</strong>.</p></li>
+</ul>
+</li>
+<li><p>c: For each bootstrap sample, calculate the proportion of YouTube videos which take place outdoors.</p>
+<ul>
+<li><p>See <a class="reference external" href="https://mr-ws22.github.io/website/code/56-medical-case.html">code in week 9</a></p></li>
+</ul>
+</li>
+<li><p>d: The histogram of bootstrap sample proportions will be centered at <strong>0.289</strong> (the sample proportion from the original dataset).</p></li>
+<li><p>e: To create the interval, we <em>count 50</em> bootstrap repetitions in from each tail of the histogram (leaving 90% or 900 bootstrap repetitions in the middle).</p>
+<ul>
+<li><p>A rough approximation for the inteval is (<strong>0.22</strong>, <strong>0.35</strong>).</p></li>
+</ul>
+</li>
+<li><p>f: We can be 90% confident that between 22% and 35% of all YouTube videos take place outdoors.</p></li>
+</ul>
+</section>
+<section id="exercise-3">
+<h3>Exercise 3<a class="headerlink" href="#exercise-3" title="Permalink to this heading">#</a></h3>
+<p>Twitter users and news.</p>
+<ul class="simple">
+<li><p>98% confidence interval: 0.98 x 1000 =  980; 2% = 0,02 * 1000 = 20</p>
+<ul>
+<li><p>start by finding the bootstrap proportions that separate 10 on the left, 980 in the middle, and 10 on the right (0,0125 steps: 0.475 0.4875 0.5    …   0.550  0,5625 0,575)</p></li>
+<li><p>lower bound is approximately <strong>0.48</strong>,</p></li>
+<li><p>upper bound is approximately <strong>0.56</strong></p></li>
+<li><p>With 98% confidence, the true proportion of all US adult Twitter users (in 2013) who get at least some of the news from Twitter is between 0.48 and 0.56.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id1">
+<h3>Exercise 5<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>Bootstrap distributions of p’, II.</p>
+<ul class="simple">
+<li><p>a: The data in <em>A</em> or perhaps <em>D</em> could have come from <strong>p=0.05</strong></p></li>
+<li><p>b:  The data in <em>A</em>, <em>B</em>, <em>C</em>, or <em>D</em> could have come from <strong>p=0.25</strong></p></li>
+<li><p>c: The data in <em>B</em> or <em>C</em> could have come from <strong>p=0.45</strong></p></li>
+<li><p>d: The data in <em>B</em> could have come from <strong>p=0.55</strong></p></li>
+<li><p>e: <em>None</em> of the data could have come from <strong>p=0.75</strong></p></li>
+</ul>
+</section>
+</section>
+<section id="chapter-16">
+<h2>Chapter 16<a class="headerlink" href="#chapter-16" title="Permalink to this heading">#</a></h2>
+<section id="id2">
+<h3>Exercise 3<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<p>Defund the police.</p>
+<p>-&gt; wie man den p-Wert aus einem Histogramm schätzt?</p>
+<ul class="simple">
+<li><p>a: 1/5 = 0.2</p>
+<ul>
+<li><p>H_A : <strong>p &gt; 0.20</strong></p></li>
+<li><p>H_0 : <strong>p = 0.20</strong></p></li>
+</ul>
+</li>
+<li><p>b: calculate statistic p’: 159 / 650 = <strong>0.245</strong> (we will compare this to H_0)</p></li>
+<li><p>c: Answers will vary.</p>
+<ul>
+<li><p>Each student can be represented with a card.</p></li>
+<li><p>Take 100 cards,</p></li>
+<li><p>20 black cards representing those who support proposals to defund police departments</p></li>
+<li><p>80 red cards representing those who do not.</p></li>
+<li><p>Shuffle the cards and draw with replacement (shuffling each time in between draws)</p></li>
+<li><p>650 cards representing the 650 respondents to the poll.</p></li>
+<li><p>Calculate the proportion of black cards in this sample, p̂ sim, i.e., the proportion of those who support proposals to defund police departments.</p></li>
+<li><p>The p-value will be the proportion of simulations where p̂ sim ≥ 0.245.
+(Note: We would generally use a computer to perform the simulations.)</p></li>
+</ul>
+</li>
+<li><p>d: There is only <em>one</em> simulated proportion that is at least 0.245,</p>
+<ul>
+<li><p>1 / 1000 = 0,001</p></li>
+<li><p>therefore the approximate p-value is <strong>0.001.</strong></p></li>
+<li><p>Your p-value may vary slightly since it is based on a visual estimate.</p></li>
+<li><p>Since the p-value is smaller than 0.05, we <em>reject H_0</em>.</p></li>
+<li><p>The data provide convincing evidence that the proportion of Seattle adults who support proposals to defund police departments is greater than 0.20, i.e. more than one in five.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="exercise-7">
+<h3>Exercise 7<a class="headerlink" href="#exercise-7" title="Permalink to this heading">#</a></h3>
+<p>If it fits, it sits, standard errors</p>
+<ul class="simple">
+<li><p>a: Mathematical model: SE(p’)= SQRT[(p x (1-p)) / n] =  SQRT[(0.5 x 0.5) / 7] = 0.189</p></li>
+<li><p>b: Steps to come up with the standard error:</p>
+<ul>
+<li><p>You first need to get a sense of the data (I find it useful to take the 95% confidence intervall since we know that a 95% confidence intervall equals roughly 2 standard errors)</p></li>
+<li><p>We have 1000 simulations -&gt; 2,5% on the left: 25 ; 2,5% on the right: 25; 950 in the middle</p></li>
+<li><p>The upper value is about 0.875 (this is my best guess)</p></li>
+<li><p>The lower value is about 0.125 (this is my best guess)</p></li>
+<li><p>We know that if we add the standard error about 2 times to the middle of the distribution, we reach the upper value.</p></li>
+<li><p>The middle of the distribution is about 0.5</p></li>
+<li><p>This means: 2xSE = (0.875 - 0.5) = 0.375</p></li>
+<li><p>and SE = 0.375/2 = 0.1875</p></li>
+</ul>
+</li>
+<li><p>c: Yes! The standard errors from the two methods are approximately the same.</p></li>
+<li><p>d: No. There are only 7 observations, so there is no way that the dataset could have at least 10 successes and 10 failures.</p></li>
+<li><p>e: Due to the small sample size, the sampling distribution shows that there are only a few possible values for the sample proportion. The mathematical model is a continuous curve which does not take into account that there are only a handful of distinct options. The mathematical model will overestimate some values and underestimate others (when calculating probabilities).</p></li>
+</ul>
+</section>
+<section id="exercise-9">
+<h3>Exercise 9<a class="headerlink" href="#exercise-9" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>a: The parametric bootstrap simulation was done with p=0.7 and the data bootstrap simulation was done with p=0.6</p></li>
+<li><p>b: The parametric bootstrap is centered at 0.7; the data bootstrap is centered at 0.6.</p></li>
+<li><p>c part 1: p. Steps to come up with the standard error:</p>
+<ul>
+<li><p>You first need to get a sense of the data (I find it useful to take the 95% confidence intervall since we know that a 95% confidence intervall equals roughly 2 standard errors)</p></li>
+<li><p>We have 1000 simulations for p -&gt; 2,5% on the left: 25 ; 2,5% on the right: 25; 950 in the middle</p></li>
+<li><p>The upper value is about 0.9 (this is my best guess)</p></li>
+<li><p>The lower value is about 0.5 (this is my best guess)</p></li>
+<li><p>We know that if we add the standard error about 2 times to the middle of the distribution, we reach the upper value.</p></li>
+<li><p>The middle of the distribution is about 0.7 (we use p in this example)</p></li>
+<li><p>This means: 2xSE = (0.9 - 0.7) = 0.2</p></li>
+<li><p>and SE = 0.2/2 = 0.1</p></li>
+</ul>
+</li>
+<li><p>c: part 2: p’ Steps to come up with the standard error:</p>
+<ul>
+<li><p>You first need to get a sense of the data (I find it useful to take the 95% confidence intervall since we know that a 95% confidence intervall equals roughly 2 standard errors)</p></li>
+<li><p>We have 1000 simulations for p’ -&gt; 2,5% on the left: 25 ; 2,5% on the right: 25; 950 in the middle</p></li>
+<li><p>The upper value is about 0.8125 (this is my best guess)</p></li>
+<li><p>The lower value is about 0.375 (this is my best guess)</p></li>
+<li><p>We know that if we add the standard error about 2 times to the middle of the distribution, we reach the upper value.</p></li>
+<li><p>The middle of the distribution is about 0.6 (we use p’ in this example)</p></li>
+<li><p>This means: 2xSE = (0.8125 - 0.6) = 0.2125</p></li>
+<li><p>and SE = 2.125/2 = 0.10625</p></li>
+</ul>
+</li>
+<li><p>c: part 3: The standard error of the sample proportion is given to be roughly 0.1 for both histograms.</p></li>
+<li><p>d: Both histograms are reasonably symmetric. Note that histograms which describe the variability of proportions become more skewed as the center of the distribution gets closer to 1 (or zero) because the boundary of 1.0 restricts the symmetry of the tail of the distribution. For this reason, the parametric bootstrap histogram is slightly more skewed (left).</p></li>
+</ul>
+</section>
+<section id="id3">
+<h3>Exercise 11<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>11d nicht relevant für theoretischen Teil (Funktion wird benötigt)</p>
+<p>Statistics and employment, use the bootstrap</p>
+<p>-&gt; wie kommt der p value zustande? b</p>
+<ul class="simple">
+<li><p>a: The parametric bootstrap distribution imposes the condition that the true population parameter is p=0.7, so it should be used to test whether the population from which the statistics majors were sample (i.e., the population of all statistics majors) has 70% employed students. The data bootstrap distribution should be used to find a confidence interval for the true proportion of statistics majors who are employed at least 5 hours per week.</p></li>
+<li><p>b:  Let p be the true proportion of all statistics majors who are employed at least 5 hours per week, while also being full-time students.</p>
+<ul>
+<li><p>H_A: p ≠ 0.7.</p></li>
+<li><p>The hypotheses can be written as: H_0:p = 0.7;</p></li>
+<li><p>Approximately <em>175</em> of the simulations had a bootstrapped sample proportion which is less than the observed value of 0.6.</p></li>
+<li><p>Therefore the p-value is (175/1000= 0,175 -&gt; 0,175 * 2 = 0,35) roughly 0.35, much too large to reject.</p></li>
+<li><p>There is no evidence that the proportion of full-time statistics majors who work is different from 70% (the overall university percentage).</p></li>
+</ul>
+</li>
+<li><p>c: Given 1000 bootstrap repetitions, a 98% percentile confidence interval is built to include:</p>
+<ul>
+<li><p>98% (980) bootstrapped proportions in the middle</p></li>
+<li><p>with 1% (10) on each end.</p></li>
+<li><p>By considering the data bootstrap distribution, the confidence interval goes roughly from <em>0.35</em> to <em>0.8</em>.</p></li>
+<li><p>We are 98% confident that the true proportion of all full-time student statistics majors who work at least 5 hours per week is between 35% and 80%.</p></li>
+</ul>
+</li>
+<li><p>d: Using the data bootstrap distribution we know that the standard error of the sample proportion is approximately 0.1.</p>
+<ul>
+<li><p>To find 98% of the normal distribution in the middle, we use the 99%,</p></li>
+<li><p>given by qnorm(0.99) = 2.33.</p></li>
+<li><p>The 98% confidence interval for the true proportion of all full-time student statistics majors who work at least 5 hours per week is: (0.6−2.33⋅0.1,0.6+2.33⋅0.1)→0.367to0.833.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="exercise-13">
+<h3>Exercise 13<a class="headerlink" href="#exercise-13" title="Permalink to this heading">#</a></h3>
+<p>Vegetarian college students.</p>
+<ul class="simple">
+<li><p>a: <strong>False</strong>.</p>
+<ul>
+<li><p>For the distribution of p̂ to be approximately normal</p></li>
+<li><p>we need to have at least <em>10 successes</em> and <em>10 failures</em> in our sample (on the average).</p></li>
+</ul>
+</li>
+<li><p>b: <strong>True</strong>.</p>
+<ul>
+<li><p>The success-failure condition is not satisfied np=50×0.08=4 and n(1−p)=50×0.92=46,</p></li>
+<li><p>therefore we know that the distribution of p̂ is not approximately normal.</p></li>
+<li><p>In most samples we would expect p̂ to be close to 0.08, the true population proportion.</p></li>
+<li><p>While p̂ can be as high as 1 (though we would expect this to effectively never happen),</p></li>
+<li><p>it can only go as low as 0.</p></li>
+<li><p>Therefore the distribution would probably take on a right-skewed shape.</p></li>
+</ul>
+</li>
+<li><p>c: <strong>False</strong>.</p>
+<ul>
+<li><p>p’ = 0.12 (is this value different from 0,08?)</p></li>
+<li><p>Standard error of p̂ in samples with n=125</p></li>
+<li><p>SE(p̂) =SQRT(p(1−p)/n)</p></li>
+<li><p>= √ ((0.08 × 0.92) / 125) = <em>0.0243</em></p></li>
+<li><p>Calculate difference: (0.12 − 0.080)/ 0.0243 = 1.65</p></li>
+<li><p>A p̂ of 0.12 is only 1.65 standard errors away from the mean, which would not be considered unusual.</p></li>
+</ul>
+</li>
+<li><p>d: <strong>True</strong>.</p>
+<ul>
+<li><p>Standard error of p̂ in samples with n=250</p></li>
+<li><p>SE(p̂) =SQRT(p(1−p)/n)</p></li>
+<li><p>= √ ((0.08 × 0.92) / 250) = <em>0.0172</em></p></li>
+<li><p>Calculate difference: (0.12 − 0.080)/ 0.0172 = 2.32</p></li>
+<li><p>A p̂ of 0.12 is 2.32 standard errors away from the mean, which might be considered unusual.</p></li>
+</ul>
+</li>
+<li><p>e: <strong>False</strong>.</p>
+<ul>
+<li><p>Since n appears under the square root sign in the formula for the standard error,</p></li>
+<li><p>increasing the sample size from 125 to 250 would decrease the standard error of the sample proportion only by a factor of SQRT(2)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="exercise-15">
+<h3>Exercise 15<a class="headerlink" href="#exercise-15" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>a: <strong>True</strong>.</p>
+<ul>
+<li><p>The success-failure condition is not satisfied np=30×0.90=27</p></li>
+<li><p>and n(1−p̂ )=30×0.10=3,</p></li>
+<li><p>therefore we know that the distribution of p̂ s not nearly normal.</p></li>
+<li><p>In most samples we would expect p̂ to be close to 0.90, the true population proportion.</p></li>
+<li><p>While p̂ can be as low as 0 (thought we would expect this to happen very rarely),</p></li>
+<li><p>it can only go as high as 1.</p></li>
+<li><p>Therefore the distribution would probably take on a <em>left-skewed</em> shape.</p></li>
+</ul>
+</li>
+<li><p>b: <strong>True</strong>.</p>
+<ul>
+<li><p>Since n appears in a square root for SE,</p></li>
+<li><p>using a sample size that is 4 times as large will reduce the SE by half.</p></li>
+</ul>
+</li>
+<li><p>c: <strong>True</strong>.</p>
+<ul>
+<li><p>The success-failure condition is satisfied np=140×0.90=126</p></li>
+<li><p>and n(1−p)=140×0.10=14,</p></li>
+<li><p>therefore the distribution of p̂</p></li>
+<li><p>is nearly normal.</p></li>
+</ul>
+</li>
+<li><p>d: <strong>True</strong>.</p>
+<ul>
+<li><p>The success-failure condition is satisfied np=280×0.90=252</p></li>
+<li><p>and n(1−p)=70×0.10=28,</p></li>
+<li><p>therefore the distribution of p̂ is nearly normal.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="exercise-23">
+<h3>Exercise 23<a class="headerlink" href="#exercise-23" title="Permalink to this heading">#</a></h3>
+<p>-&gt; p-value?
+-&gt; Null-value?</p>
+<p>a)</p>
+<p>(i) Let’s prepare for running a hypothesis test.</p>
+<ul class="simple">
+<li><p>We have a sample proportion of p̂ = 0.55</p></li>
+<li><p>and a sample size of n = 617 independents.</p></li>
+<li><p>We want to check for a majority (or minority), so we use the following hypotheses:</p>
+<ul>
+<li><p>H0: p = 0.5</p></li>
+<li><p>HA: p ≠ 0.5</p></li>
+</ul>
+</li>
+</ul>
+<p>(ii) Next, we check whether the conditions are met to proceed.</p>
+<ul class="simple">
+<li><p>Since this is a random sample, independence is satisfied.</p></li>
+<li><p>The success-failure condition is also satisfied:</p>
+<ul>
+<li><p>617×0.5</p></li>
+<li><p>and 617×(1−0.5)</p></li>
+<li><p>are both at least 10 (we use the null proportion p0=0.5
+for this check in a one-proportion hypothesis test).</p></li>
+</ul>
+</li>
+</ul>
+<p>(iii) Next, we can start performing calculations.</p>
+<ul class="simple">
+<li><p>We can model p̂ using a normal distribution with a standard error of</p></li>
+<li><p>SE=SQRT(p(1−p)n) = 0.02</p></li>
+<li><p>We use the null proportion, p0=0.5 to compute the standard error for a one-proportion hypothesis test.</p></li>
+<li><p>Next, we compute the test statistic:</p></li>
+<li><p>Z = (0.55 − 0.50)/ 0.02 = 2.5</p></li>
+<li><p>This yields a one-tail area of 0.0062, and a p-value of 2 × 0.0062=0.0124. (<em>you need software for this</em>)</p></li>
+</ul>
+<p>(iv) Lastly, we make a conclusion.</p>
+<ul class="simple">
+<li><p>Because the p-value is smaller than 0.05, we reject the null hypothesis.</p></li>
+<li><p>We have strong evidence that the support is different from 0.5, and since the data provide a point estimate above 0.5, we have strong evidence to support this claim by the TV pundit.</p></li>
+<li><p>b: No. Generally we expect a hypothesis test and a confidence interval to align,</p>
+<ul>
+<li><p>so we would expect the confidence interval to show a range of plausible values entirely above 0.5</p></li>
+<li><p>However, if the confidence level is misaligned (e.g., a 99% confidence level and a α=0.05 significance level), then this is no longer generally true.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="exercise-25">
+<h3>Exercise 25<a class="headerlink" href="#exercise-25" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>b</p></li>
+</ul>
+<p>-&gt; p-value?</p>
+<p>see exercise 23 (the same)</p>
+<p>The hypotheses are as follows: H0:p=0.5
+. HA:p&gt;0.5
+. Before conducting the hypothesis test, we must first check that the conditions for inference are satisfied. Independence (random sample, &lt;10%
+of population) is satisfied, as is the success-failure conditions (using p0=0.5
+, we expect 40 successes and 40 failures). The test statistic and the p-value can be calculated as shown below. Since the p-value &lt;α
+(use α=0.05
+since not given), we reject the null hypothesis. The data provide strong evidence that the rate of correctly identifying a soda for these people is significantly better than just by random guessing.</p>
+<p>p̂ Zp−value=5380=0.6625=p̂ −p0p0(1−p0)n‾‾‾‾‾‾‾√=0.6625−0.50.5×0.580‾‾‾‾‾‾√=0.16250.0559=2.91=P(p̂ &gt;0.6625 | p=0.5)=P(Z&gt;2.91)=1−0.9982=0.0018
+If in fact people cannot tell the difference between diet and regular soda and they randomly guess, the probability of getting a random sample of 80 people where 53 or more identify a soda correctly would be 0.0018.</p>
+</section>
+</section>
+<section id="chapter-17">
+<h2>Chapter 17<a class="headerlink" href="#chapter-17" title="Permalink to this heading">#</a></h2>
+<section id="id4">
+<h3>Exercise 3<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<p>-&gt; all</p>
+<ul class="simple">
+<li><p>c</p></li>
+</ul>
+<p>Disaggregating Asian American tobacco use, confidence interval.</p>
+<ul class="simple">
+<li><p>a: The bootstrapped difference in proportions</p>
+<ul>
+<li><p>appear to vary from about 0.052 to 0.077,</p></li>
+<li><p>resulting in a standard error of roughly 0.00625.</p></li>
+</ul>
+</li>
+<li><p>b: The bootstrap SE confidence interval can be constructed using:</p>
+<ul>
+<li><p>p’_Filipino - p’_Chinese +- 1.96 * SE</p></li>
+<li><p>= 0.065 +- 1.96 * 0.00625</p></li>
+<li><p>= (<strong>0.0528, 0.0772</strong>).</p></li>
+<li><p>We are 95% confident that the true proportion of Filipino Americans who are current smokers is between 5.28 and 7.72 percentage points higher in the control vaccine group than the proportion of Chinese Americans who smoke.</p></li>
+</ul>
+</li>
+<li><p>c: The bootstrap distribution indicates that the bootstrap differences vary from roughly 0.052 to 0.077. (my best guess)</p>
+<ul>
+<li><p>We are 95% confident that the true proportion of Filipino Americans who are current smokers is between 5.2 and 7.7 percentage points higher in the control vaccine group than the proportion of Chinese Americans who smoke.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id5">
+<h3>Exercise 13<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<p>-&gt; p-value?</p>
+<ul class="simple">
+<li><p>Before we can calculate a confidence interval, we must first check that the conditions are met.</p></li>
+<li><p>There aren’t at least 10 successes and 10 failures in each of the four groups (treatment/control and yawn/not yawn)</p></li>
+<li><p>(p’_C - p’_T) is not expected to be approximately normal</p></li>
+<li><p>-&gt; therefore cannot calculate a confidence interval for the difference between the proportions of participants who yawned in the treatment and control groups using large sample techniques and a critical Z score.</p></li>
+</ul>
+</section>
+<section id="exercise-21">
+<h3>Exercise 21<a class="headerlink" href="#exercise-21" title="Permalink to this heading">#</a></h3>
+<p><strong>THIS TASK IS NOT EXAM RELEVANT</strong></p>
+<p>Malaria vaccine effectiveness, effect size.</p>
+<p>In order to reject the null hypothesis, the difference in sample proportions will need to be more than 2 standard errors from zero. Which means that the difference will be smaller than -2 * standard error.</p>
+<p>The question for each part is, what proportion of the normal curve centered at δ
+with a standard error of …</p>
+</section>
+</section>
+<section id="chapter-18">
+<h2>Chapter 18<a class="headerlink" href="#chapter-18" title="Permalink to this heading">#</a></h2>
+<section id="id6">
+<h3>Exercise 7<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<p>Lizard habitats, randomization test.</p>
+<p>-&gt; Unabhängigkeit der Variablen ?</p>
+<ul class="simple">
+<li><p>a: The imposed structure in a randomization test is that the two variables are <em>independent</em>.</p>
+<ul>
+<li><p>That is, knowing the habitat where the lizard lives will not give any information about the likelihood of being in any of the sunshine states.</p></li>
+</ul>
+</li>
+<li><p>b: From the histogram, the Chi-squared values simulated with the randomization test (i.e., under the null hypothesis) range from zero to approximately 15.</p></li>
+</ul>
+<p>-c: The null hypothesis is that the variables are independent: the habitat where the lizard lives will not give any information about the likelihood of being in any of the sunshine states. The alternative hypothesis is that the variables are associated: the habitat where the lizard lives will provide information about the likelihood of being in any of the sunshine states. The observed Chi-squared value is well away from the possible Chi-squared values seen under randomization, therefore the p-value is extremely small. The null hypothesis can be rejected, the habitat provides information about the likelihood of being in the different sunshine states.</p>
+</section>
+<section id="id7">
+<h3>Exercise 13<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<p>Sleep deprived transportation workers.</p>
+<p>The hypotheses are</p>
+<ul class="simple">
+<li><p>H0: Sleep levels and profession are independent.</p></li>
+<li><p>HA: Sleep levels and profession are associated.</p></li>
+<li><p>The observations are independent and the sample sizes are large enough to conduct a Chi-square test of independence.</p></li>
+</ul>
+<br>
+<ul class="simple">
+<li><p>The Chi-square statistic is 1.0243009 with 2 degrees of freedom.</p></li>
+<li><p>The p-value is 0.5992056. Since the p-value is high (default to alpha = 0.05), we fail to reject H0</p></li>
+<li><p>The data do not provide convincing evidence of an association between sleep levels and profession.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./code"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-5">Chapter 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-11">Exercise 11</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-9">Chapter 9</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5">Exercise 5</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-12">Chapter 12</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1">Exercise 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3">Exercise 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exercise 5</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-16">Chapter 16</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Exercise 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-7">Exercise 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-9">Exercise 9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Exercise 11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-13">Exercise 13</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-15">Exercise 15</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-23">Exercise 23</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-25">Exercise 25</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-17">Chapter 17</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Exercise 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Exercise 13</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-21">Exercise 21</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-18">Chapter 18</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Exercise 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Exercise 13</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jan Kirenz
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
