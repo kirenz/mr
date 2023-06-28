@@ -332,15 +332,24 @@ a)
 
 see exercise 23 (the same)
 
-The hypotheses are as follows: H0:p=0.5
-. HA:p>0.5
-. Before conducting the hypothesis test, we must first check that the conditions for inference are satisfied. Independence (random sample, <10%
- of population) is satisfied, as is the success-failure conditions (using p0=0.5
-, we expect 40 successes and 40 failures). The test statistic and the p-value can be calculated as shown below. Since the p-value <α
- (use α=0.05
- since not given), we reject the null hypothesis. The data provide strong evidence that the rate of correctly identifying a soda for these people is significantly better than just by random guessing.
+The hypotheses are as follows: H0:p=0.5. HA:p>0.5
 
-p̂ Zp−value=5380=0.6625=p̂ −p0p0(1−p0)n‾‾‾‾‾‾‾√=0.6625−0.50.5×0.580‾‾‾‾‾‾√=0.16250.0559=2.91=P(p̂ >0.6625 | p=0.5)=P(Z>2.91)=1−0.9982=0.0018
+Before conducting the hypothesis test, we must first check that the conditions for inference are satisfied. Independence (random sample, <10% of population is satisfied, as is the success-failure conditions (using p0=0.5), we expect 40 successes and 40 failures). 
+
+The test statistic and the p-value can be calculated as shown below. Since the p-value <α
+ (use α=0.05 since not given), we reject the null hypothesis. The data provide strong evidence that the rate of correctly identifying a soda for these people is significantly better than just by random guessing.
+
+- p' = 53/80 = 0.6625 
+
+- Z = [(p' - p_0) / SQRT((p_0(1-p_0))/n)]
+
+- Z =[(0.6625 − 0.50) / SQRT((0.5×0.5) /80)] 
+
+- Z = 0.16250/0.0559 =2.91
+
+- p-Value = P(p' > 0.6625 | p=0.5) = P(Z>2.91) = 1−0.9982 = 0.0018
+
+
 If in fact people cannot tell the difference between diet and regular soda and they randomly guess, the probability of getting a random sample of 80 people where 53 or more identify a soda correctly would be 0.0018.
 
 
